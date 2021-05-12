@@ -50,3 +50,11 @@ jobs:
           source('scripts/NRT_SST_Plots_MODISA.R')
           source('scripts/NRT_SST_Plots_OI.R')
         shell: Rscript {0}
+        
+      - name: Commit files
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add *.png
+          git commit -am "add images"
+          git push 
