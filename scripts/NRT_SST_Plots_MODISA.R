@@ -45,9 +45,9 @@ curr_clim %>%
   filter(!is.na(sst_7day)) %>% 
   ggplot() +
   geom_tile(aes(x = lon, y = lat, fill = sst_7day)) +
-  scale_fill_gradientn(colours = jet(50), limits=c(0,25), breaks = c(5,10, 15, 20)) +
+  scale_fill_gradientn(colours = jet(50), limits=c(0,30), breaks = c(0,5,10, 15, 20,25,30)) +
   geom_contour(aes(x = lon, y = lat, z = sst_7day), size = 0.5,
-               breaks = c(5,10, 15, 20), colour = "black") +
+               breaks = c(0,5,10, 15, 20,25,30), colour = "black") +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "black", ticks.linewidth = 1.5,
                                frame.colour = "black", frame.linewidth = 1.5)) +
