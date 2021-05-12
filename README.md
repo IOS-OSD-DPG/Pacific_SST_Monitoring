@@ -1,11 +1,12 @@
 ---
 # SST Monitoring
-### Andrea Hilborn
+#### Andrea Hilborn
 ### Last updated: **2021-05-11**
 ---
 
 These maps show the mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly from the latest 7 days of data.
 Two datasets are shown here for comparison - MODIS-Aqua daytime SST provided by NASA, and NCDC Optimal Interpolation gap-filled data. Data is accessed via the NOAA CoastWatch ERDDAP server.
+**These figures are provisional and correctness is not guaranteed. :)**
 
 ## MODIS-Aqua:
 
