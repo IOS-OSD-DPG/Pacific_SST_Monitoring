@@ -63,7 +63,7 @@ curr_clim %>%
 
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg.png"), 
+ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
 
 # 7-day climatology anomaly ####
@@ -95,5 +95,5 @@ curr_clim %>%
 
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_anom_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_anom.png"), 
+ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_anom.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)

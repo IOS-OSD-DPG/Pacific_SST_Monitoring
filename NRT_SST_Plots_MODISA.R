@@ -8,7 +8,7 @@ reg$long = (360 - reg$long)*-1
 
 
 #######
-datavar = "OI" # "MODISA" or "OI"
+datavar = "MODISA" # "MODISA" or "OI"
 #######
 datasource = ""
 # Region limits:
@@ -20,8 +20,7 @@ lonlim = c(-160,-120)
 # Re: Charles - Similar to pals::brewer.rdylbu 
 death_cauldron = rev(c("#A50026", "#EA5839", "#F67B49", "#FB9F5A", "#FDBE70","#FDDA8A", "#FFFFBF","#EDF8DE", #reds
                        "#DAF0F6", "#BCE1EE", "#9ECFE3", "#80B6D6", "#649AC7", "#4A7BB7", "#3C59A6", "#313695"))
-datasource = if_else(datavar == "MODISA", "This is modis data source", "This is oi data source")
-# Plot rolling 7-day composite for datavar 
+
 # 7-day mean, sd, N
 curr7days <- readRDS(paste0("data/",datavar,"_SST7day_rollingavgbackup_current.rds"))
 # Climatological mean, sd, N
@@ -46,7 +45,7 @@ curr_clim %>%
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "black", ticks.linewidth = 1.5,
                                frame.colour = "black", frame.linewidth = 1.5)) +
-  theme(legend.position = "right") +
+  theme(legend.position = "right",panel.background = element_rect(fill = "grey80")) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
   labs(fill = 'SST (°C)',
        title = paste(start, "to", end,"Mean Day SST"),
@@ -58,7 +57,7 @@ curr_clim %>%
 
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg.png"), 
+ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
 
 # 7-day climatology anomaly ####
@@ -86,7 +85,7 @@ curr_clim %>%
 
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_anom_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_anom.png"), 
+ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_anom.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
 
 
@@ -102,7 +101,7 @@ curr_clim %>%
     guides(fill = guide_colorbar(barheight = 12, 
                                  ticks.colour = "black", ticks.linewidth = 1.5,
                                  frame.colour = "black", frame.linewidth = 1.5)) +
-    theme(legend.position = "right") +
+    theme(legend.position = "right",panel.background = element_rect(fill = "grey80")) +
     coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
     labs(fill = 'Total \nObservations',
          title = paste(start, "to", end,"Day SST, Number of Observations"),
@@ -115,5 +114,5 @@ curr_clim %>%
   
   ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_n_",end,".png"), 
          device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-  ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_n.png"), 
+  ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_n.png"), 
          device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
