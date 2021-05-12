@@ -53,8 +53,9 @@ jobs:
         
       - name: Commit files
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
+          date > generated.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add *.png
-          git commit -am "add images"
+          git commit -m "generated"
           git push 
