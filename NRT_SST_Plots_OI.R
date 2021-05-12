@@ -76,11 +76,14 @@ curr_clim %>%
                        limits = c(-3,3), breaks = seq(-3,3,1)) +
   # geom_contour(aes(x = lon, y = lat, z = perc90_above), size = 0.5,
   #              breaks = c(0), colour = "green") +
-  geom_contour(aes(x = lon, y = lat, z = sd_above), size = 0.5,
-               breaks = c(0), colour = "black") +
+  geom_contour(aes(x = lon, y = lat, z = sd_above, colour = "1.29 SD"), 
+               size = 0.3, breaks = 0) +
+  scale_colour_manual(name = NULL, guide = "legend", 
+                      values = c("1.29 SD" = "black")) +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "black", ticks.linewidth = 1.5, 
-                               frame.colour = "black", frame.linewidth = 1.5)) +
+                               frame.colour = "black", frame.linewidth = 1.5),
+         colour = guide_legend(override.aes = list(linetype = 1, shape = NA))) +
   theme(legend.position = "right",panel.background = element_rect(fill = "grey80")) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
   labs(fill = 'Anomaly (°C)',
