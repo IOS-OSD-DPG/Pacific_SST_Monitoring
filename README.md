@@ -1,11 +1,7 @@
 ---
-title: "SST Monitoring"
-author: "Andrea Hilborn"
-date: "Last updated: 2021-05-11"
-output: 
-  html_document:
-    theme: paper
-    highlight: tango
+# SST Monitoring
+### Andrea Hilborn
+### Last updated: **2021-05-11**
 ---
 
 These maps show the mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly from the latest 7 days of data.
