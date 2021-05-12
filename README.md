@@ -10,7 +10,7 @@ Two datasets are shown for comparison - MODIS-Aqua daytime SST provided by NASA,
 
 This will be updated on Mondays and Thursdays. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures).
 
-## MODIS-Aqua NRT SST:
+## MODIS-Aqua Near Real Time SST:
 
 The first plot shows 7-day mean day-time MODIS-Aqua SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, calculated by comparison to the climatology of mean SST from **2003-2020** during the same week. The third map shows the number of times a given pixel had data in the most recent week. 
 The spatial resolution is 0.04166 degrees with low quality pixels masked out.
