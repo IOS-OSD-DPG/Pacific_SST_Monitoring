@@ -53,7 +53,7 @@ curr_clim %>%
                                frame.colour = "black", frame.linewidth = 1.5)) +
   theme(legend.position = "right",panel.background = element_rect(fill = "grey90")) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
-  labs(fill = 'SST (°C)',
+  labs(fill = expression("SST " ( degree*C)),
        title = paste(start, "to", end,"Mean Day SST"),
        subtitle = paste(datavar,"NRT Sea Surface Temperature"),
        caption = datasource) + xlab(NULL) + ylab(NULL) +
@@ -85,7 +85,7 @@ curr_clim %>%
   theme(legend.position = "right",
         panel.background = element_rect(fill = "grey90")) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
-  labs(fill = 'Anomaly (°C)',
+  labs(fill = expression("Anomaly " ( degree*C)),
        title = paste(start, "to", end,"SST Anomaly"),
        subtitle = paste(datavar,"NRT Sea Surface Temperature Anomaly"),
        caption = datasource) +
