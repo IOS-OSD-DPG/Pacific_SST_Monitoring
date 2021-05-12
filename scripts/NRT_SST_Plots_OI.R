@@ -1,6 +1,7 @@
 library(dplyr)
 library(ggplot2)
 library(mapdata)
+library(pals)
 theme_set(theme_bw())
 reg = map_data("world2Hires")
 reg = subset(reg, region %in% c('Canada', 'USA'))
@@ -44,7 +45,7 @@ curr_clim %>%
   filter(!is.na(sst_7day)) %>% 
   ggplot() +
   geom_tile(aes(x = lon, y = lat, fill = sst_7day)) +
-  scale_fill_gradientn(colours = pals::jet(50), limits=c(0,25), breaks = c(5,10, 15, 20)) +
+  scale_fill_gradientn(colours = jet(50), limits=c(0,25), breaks = c(5,10, 15, 20)) +
   geom_contour(aes(x = lon, y = lat, z = sst_7day), size = 0.5,
                breaks = c(5,10, 15, 20), colour = "black") +
   guides(fill = guide_colorbar(barheight = 12, 
@@ -77,7 +78,7 @@ curr_clim %>%
   # geom_contour(aes(x = lon, y = lat, z = perc90_above), size = 0.5,
   #              breaks = c(0), colour = "green") +
   geom_contour(aes(x = lon, y = lat, z = sd_above, colour = "1.29 SD"), 
-               size = 0.3, breaks = 0) +
+               size = 0.5, breaks = 0) +
   scale_colour_manual(name = NULL, guide = "legend", 
                       values = c("1.29 SD" = "black")) +
   guides(fill = guide_colorbar(barheight = 12, 
