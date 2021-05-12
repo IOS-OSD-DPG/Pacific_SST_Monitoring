@@ -15,9 +15,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  build: # jobname
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -26,8 +24,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
-      # Set up R defined above
       - name: Set up R ${{ matrix.r-version }}
         uses: r-lib/actions/setup-r@v1
         with:
@@ -45,8 +41,8 @@ jobs:
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          Rscript -e 'install.packages(c("rerddap","dplyr",
-          "ggplot2","mapdata","pals","lubridate"))'
+          install.packages(c("rerddap","dplyr","ggplot2","mapdata","pals","lubridate"))
+        shell: Rscript {0}
           
       - name: Updating SST data 
         run: |
