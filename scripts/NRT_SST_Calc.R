@@ -1,6 +1,7 @@
 # Near real-time plots of SST and anomalies using CoastWatch Data
 library(rerddap)
 library(dplyr)
+options(dplyr.summarise.inform = FALSE)
 library(ggplot2)
 library(lubridate)
 theme_set(theme_bw())
