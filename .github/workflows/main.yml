@@ -1,0 +1,56 @@
+# SST Plot update workflow
+
+name: SST_Update
+ 
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: "0 15 * * 1,4"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build: # jobname
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        r-version: ['4.0.2']
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: Set up R ${{ matrix.r-version }}
+        uses: r-lib/actions/setup-r@v1
+        with:
+          r-version: ${{ matrix.r-version }}
+          
+      - name: Cache R packages
+        id: cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-shinydoc
+          restore-keys: |
+            ${{ runner.os }}-
+          
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          install.packages(c("rerddap","dplyr","ggplot2","mapdata","pals","lubridate"))
+        shell: Rscript {0}
+          
+      - name: Updating SST data 
+        run: |
+          source('scripts/NRT_SST_Calc.R')
+        shell: Rscript {0}
+        
+      - name: Running plots
+        run: |
+          source('scripts/NRT_SST_Plots_MODISA.R')
+          source('scripts/NRT_SST_Plots_OI.R')
+        shell: Rscript {0}

@@ -11,9 +11,10 @@ Two datasets are shown for comparison - MODIS-Aqua daytime SST provided by NASA,
 
 This will be updated on Mondays and Thursdays. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures).
 
-## MODIS-Aqua:
+## MODIS-Aqua NRT SST:
 
-The first plot shows 7-day mean day-time MODIS-Aqua SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, calculated by comparison to the climatology of mean SST from **2003-2020** during the same week. The third map shows the number of times a given pixel had data in the most recent week.
+The first plot shows 7-day mean day-time MODIS-Aqua SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, calculated by comparison to the climatology of mean SST from **2003-2020** during the same week. The third map shows the number of times a given pixel had data in the most recent week. 
+The spatial resolution is 0.04166 degrees with low quality pixels masked out.
 
 <img src="SST_MODISA_7-day_rollingavg.png" width="445" /> <img src="SST_MODISA_7-day_rollingavg_anom.png" width="460" /> 
 
@@ -21,9 +22,9 @@ The first plot shows 7-day mean day-time MODIS-Aqua SST, with contours at 5-degr
 
 <img src="SST_MODISA_7-day_rollingavg_n.png" width="400" /> 
 
-## NOAA OISST:
+## OISST:
 
-The first plot is 7-day mean daily OI interpolated SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, calculated by subtracting the mean SST from **1991-2020** during the same week. 
+The first plot is 7-day mean daily OI interpolated SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, calculated by subtracting the mean SST from **1991-2020** during the same week. The spatial resolution is 0.25 degrees.
 
 <img src="SST_OI_7-day_rollingavg.png" width="445" /> <img src="SST_OI_7-day_rollingavg_anom.png" width="460" />
 
@@ -42,3 +43,4 @@ The first plot is 7-day mean daily OI interpolated SST, with contours at 5-degre
 * California Current Blob Tracker: https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-projects-blobtracker
 * CoastWatch ERDDAP Server: https://coastwatch.pfeg.noaa.gov/erddap/index.html
 * Huang, Boyin; Liu, Chunying; Banzon, Viva F.; Freeman, Eric; Graham, Garrett; Hankins, Bill; Smith, Thomas M.; Zhang, Huai-Min. (2020): NOAA 0.25-degree Daily Optimum Interpolation Sea Surface Temperature (OISST), Version 2.1. NOAA National Centers for Environmental Information. https://doi.org/10.25921/RE9P-PT57.
+* NASA Goddard Space Flight Center, Ocean Ecology Laboratory, Ocean Biology Processing Group. Moderate-resolution Imaging Spectroradiometer (MODIS) Aqua NRT SST data; NASA OB.DAAC, Greenbelt, MD, USA.
