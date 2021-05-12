@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        r-version: [4.0.2]
+        r-version: ['4.0.2']
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -29,7 +29,7 @@ jobs:
       
       # Set up R defined above
       - name: Set up R ${{ matrix.r-version }}
-        uses: r-lib/actions/setup-R@v1
+        uses: r-lib/actions/setup-r@v1
         with:
           r-version: ${{ matrix.r-version }}
           
