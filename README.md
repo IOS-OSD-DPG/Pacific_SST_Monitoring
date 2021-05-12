@@ -1,7 +1,7 @@
 ---
 # Pacific SST Monitoring
 #### Andrea Hilborn
-### Last updated: **2021-05-11**
+### Last updated: (data/date.md)
 ---
 
 These maps show the mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly for the Northeast Pacific from the latest 7 days of data.
