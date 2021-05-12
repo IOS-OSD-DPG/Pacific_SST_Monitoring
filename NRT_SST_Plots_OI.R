@@ -29,12 +29,11 @@ clim7days <- readRDS(paste0("data/",datavar,"_SST7day_rollingavgbackup_climatolo
 
 curr_clim <- full_join(curr7days, clim7days, by = c("lon","lat"))
 curr_clim$diff_7day_deg <- curr_clim$sst_7day-curr_clim$sst_7day_clim
-if (datavar == "OI") {
-  curr_clim$sd_1.3_pos <- (curr_clim$sst_7day_clim+(curr_clim$sst_7day_climsd*1.29))
-  curr_clim$sd_1.3_neg <- (curr_clim$sst_7day_clim-(curr_clim$sst_7day_climsd*1.29))
-  curr_clim$sd_above <- curr_clim$sd_1.3_pos-curr_clim$sst_7day
-  curr_clim$perc90_above <- curr_clim$sst_7day_90-curr_clim$sst_7day
-}
+# Calculate data outside 90th percentile / 1.3 times the SD
+curr_clim$sd_1.3_pos <- (curr_clim$sst_7day_clim+(curr_clim$sst_7day_climsd*1.29))
+curr_clim$sd_above <- curr_clim$sd_1.3_pos-curr_clim$sst_7day
+curr_clim$perc90_above <- curr_clim$sst_7day_90-curr_clim$sst_7day
+  
 start = unique(curr_clim$start_date)
 end = unique(curr_clim$end_date)
 start = start[!is.na(start)]

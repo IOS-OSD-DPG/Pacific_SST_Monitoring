@@ -19,6 +19,7 @@ lonlim = c(-160,-120)
 # "Boiling cauldron of death" palette 
 # Re: Charles - Similar to pals::brewer.rdylbu 
 death_cauldron = rev(c("#A50026", "#EA5839", "#F67B49", "#FB9F5A", "#FDBE70","#FDDA8A", "#FFFFBF","#EDF8DE", #reds
+                       "#ededed",
                        "#DAF0F6", "#BCE1EE", "#9ECFE3", "#80B6D6", "#649AC7", "#4A7BB7", "#3C59A6", "#313695"))
 
 # 7-day mean, sd, N
@@ -28,6 +29,9 @@ clim7days <- readRDS(paste0("data/",datavar,"_SST7day_rollingavgbackup_climatolo
 
 curr_clim <- full_join(curr7days, clim7days, by = c("lon","lat"))
 curr_clim$diff_7day_deg <- curr_clim$sst_7day-curr_clim$sst_7day_clim
+# Calculate data outside 90th percentile / 1.3 times the SD
+curr_clim$sd_1.3_pos <- (curr_clim$sst_7day_clim+(curr_clim$sst_7day_climsd*1.29))
+curr_clim$sd_above <- curr_clim$sd_1.3_pos-curr_clim$sst_7day
 
 start = unique(curr_clim$start_date)
 end = unique(curr_clim$end_date)
@@ -45,7 +49,7 @@ curr_clim %>%
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "black", ticks.linewidth = 1.5,
                                frame.colour = "black", frame.linewidth = 1.5)) +
-  theme(legend.position = "right",panel.background = element_rect(fill = "grey80")) +
+  theme(legend.position = "right",panel.background = element_rect(fill = "grey90")) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
   labs(fill = 'SST (°C)',
        title = paste(start, "to", end,"Mean Day SST"),
@@ -69,10 +73,12 @@ curr_clim %>%
   geom_tile(aes(x = lon, y = lat, fill = diff_7day_deg)) +
   scale_fill_gradientn(colours = death_cauldron, 
                        limits = c(-3,3), breaks = seq(-3,3,1)) +
+  geom_contour(aes(x = lon, y = lat, z = sd_above), size = 0.3,
+               breaks = c(0), colour = "black") +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "black", ticks.linewidth = 1.5, 
                                frame.colour = "black", frame.linewidth = 1.5)) +
-  theme(legend.position = "right",panel.background = element_rect(fill = "grey80")) +
+  theme(legend.position = "right",panel.background = element_rect(fill = "grey90")) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
   labs(fill = 'Anomaly (°C)',
        title = paste(start, "to", end,"SST Anomaly"),
@@ -101,7 +107,7 @@ curr_clim %>%
     guides(fill = guide_colorbar(barheight = 12, 
                                  ticks.colour = "black", ticks.linewidth = 1.5,
                                  frame.colour = "black", frame.linewidth = 1.5)) +
-    theme(legend.position = "right",panel.background = element_rect(fill = "grey80")) +
+    theme(legend.position = "right",panel.background = element_rect(fill = "grey90")) +
     coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
     labs(fill = 'Total \nObservations',
          title = paste(start, "to", end,"Day SST, Number of Observations"),
