@@ -6,7 +6,9 @@
 
 These maps show the mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly from the latest 7 days of data.
 Two datasets are shown here for comparison - MODIS-Aqua daytime SST provided by NASA, and NCDC Optimal Interpolation gap-filled data. Data is accessed via the NOAA CoastWatch ERDDAP server.
+
 **These figures are provisional and correctness is not guaranteed. :)**
+
 This will be updated on Mondays and Thursdays. Prior images can be found [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures).
 
 ## MODIS-Aqua:
