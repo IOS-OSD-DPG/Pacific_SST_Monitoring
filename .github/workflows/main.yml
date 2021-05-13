@@ -4,9 +4,7 @@ name: SST_Update
  
 on:
   schedule:
-    - cron: "0 15 * * 1,4"
-
-  # Allows you to run this workflow manually from the Actions tab
+    - cron: '13 15 * * 1,4'
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -56,5 +54,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add *.png
-          git commit -m "`date +'%Y-%m-%d'`"
+          git commit -m "generated"
           git push 
