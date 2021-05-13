@@ -102,19 +102,20 @@ ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_anom.png"),
 
 # Number of pixels: #### 
 # (Only do for MODISA, as OI is same everywhere)
+curr_clim$sst_7dayn[is.na(curr_clim$sst_7day)] <- 0
 curr_clim %>% 
     filter(!is.na(sst_7dayn)) %>% 
     ggplot() +
     geom_tile(aes(x = lon, y = lat, fill = sst_7dayn)) +
-    scale_fill_gradientn(colours = jet(50)) +
+    scale_fill_gradientn(colours = c("grey90", pals::jet(7)), breaks = seq(0,7,1)) +
     # geom_contour(aes(x = lon, y = lat, z = sst_7dayn), size = 0.5,
     #              breaks = c(5,10, 15, 20), colour = "black") +
-    guides(fill = guide_colorbar(barheight = 12, 
-                                 ticks.colour = "black", ticks.linewidth = 1.5,
-                                 frame.colour = "black", frame.linewidth = 1.5)) +
+    guides(fill = guide_colorbar(barheight = 12, ticks.linewidth = 1.5,
+                                 frame.colour = "black", frame.linewidth = 1.5,
+                                 nbin = 8, raster=F, ticks.colour = NA)) +
     theme(legend.position = "right",panel.background = element_rect(fill = "grey90")) +
     coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
-    labs(fill = 'Total \nObservations',
+    labs(fill = 'Weekly \nObservations',
          title = paste(start, "to", end,"Day SST, Number of Observations"),
          subtitle = paste(datavar,"NRT Sea Surface Temperature"),
          caption = datasource) +
