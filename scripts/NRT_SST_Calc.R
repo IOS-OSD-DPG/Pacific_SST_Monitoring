@@ -35,7 +35,9 @@ sstdata <- griddap(sstInfo, latitude = latlim, longitude = lonlim,
 print(paste(length(unique(sstdata$data$time)),"DAYS FOUND"))
 
 sstdata_7day <- sstdata$data %>% 
-  filter(!is.na(sstMasked)) %>%
+  filter(!is.na(sstMasked),
+         time >= start_date,
+         time <= end_date) %>%
   group_by(lat, lon) %>% 
   summarise(sst_7day = mean(sstMasked, na.rm=T),
             sst_7daysd = sd(sstMasked, na.rm=T),
@@ -57,14 +59,19 @@ for (i in 2003:2020) {
   sstyr <- griddap(sstvar, latitude = latlim, longitude = lonlim, 
                       time = timesub)
   print(paste(length(unique(sstyr$data$time)), "DAYS FOUND"))
+  
   roll7 = sstyr$data %>%
-    filter(!is.na(sstMasked)) %>%
+    filter(!is.na(sstMasked),
+           yday(time) >= yday(start_date), 
+           yday(time) <= yday(end_date)) %>% 
     group_by(lat, lon) %>%
     summarise(sst_7day = mean(sstMasked, na.rm=T),
               sst_7dayn = sum(!is.na(sstMasked))) %>%
     ungroup()
-  yr7days[[ct]] <- roll7
-  ct=ct+1
+  if (nrow(roll7) > 0) {
+    yr7days[[ct]] <- roll7
+    ct=ct+1
+  }
 }
 yr7days <- do.call(rbind, yr7days)
 
