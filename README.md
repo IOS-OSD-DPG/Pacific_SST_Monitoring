@@ -3,16 +3,16 @@
 #### Andrea Hilborn
 ---
 
-These maps show the mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly for the Northeast Pacific from the latest 7 days of data.
-Two datasets are shown for comparison - MODIS-Aqua daytime SST provided by NASA, and NOAA Optimal Interpolation gap-filled SST (OISST). MODIS-Aqua anomalies were calculated from the corresponding week of data from the 18-year period 2003-2020, and for OI the 30-year period 1991-2020. The anomaly maps delineate SST exceeding a threshold used for tracking marine heatwaves (>1.29 standard deviations compared to normal, labelled as **1.29 SD**). Data is accessed via the NOAA CoastWatch ERDDAP server.
+These maps show the 7-day mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly for the Northeast Pacific from the full week of data most recently available. 
+Two datasets are shown for comparison - MODIS-Aqua daily SST provided by NASA, and NOAA Optimal Interpolation gap-filled SST (OISST). MODIS-Aqua anomalies were calculated from the corresponding week of data from the 18-year period 2003-2020, and for OISST the 30-year period 1991-2020. Delineated on the anomaly maps is SST exceeding a threshold used for tracking marine heatwaves (>1.29 standard deviations compared to normal, labelled as **1.29 SD**). Data is accessed from the [NOAA CoastWatch ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html).
 
 **These figures are provisional and correctness is not guaranteed. :)**
 
-This will update on Mondays and Thursdays. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures).
+These maps will update on Mondays and Thursdays. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures).
 
 ## MODIS-Aqua NRT SST:
 
-The first plot shows 7-day mean day-time MODIS-Aqua SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, using the climatology of mean SST from **2003-2020** during the same week. The third map shows the number of times a given pixel had data in the most recent week. 
+The first plot shows 7-day mean daily MODIS-Aqua SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, using the climatology of daily mean SST from **2003-2020** during the same week. The third map shows the number of times each pixel had data in the 7-day time period. 
 The spatial resolution is 0.04166 degrees with low quality pixels masked out.
 
 <img src="SST_MODISA_7-day_rollingavg.png" width="445" /> <img src="SST_MODISA_7-day_rollingavg_anom.png" width="460" /> 
