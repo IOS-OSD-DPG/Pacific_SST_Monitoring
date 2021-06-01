@@ -12,6 +12,8 @@ reg$long = (360 - reg$long)*-1
 datavar = "OI"
 #######
 datasource = "Data source: https://doi.org/10.25921/RE9P-PT57"
+#######
+# buoys = source()
 
 # Region limits:
 latlim = c(30,61.5)
@@ -49,9 +51,13 @@ curr_clim %>%
   geom_contour(aes(x = lon, y = lat, z = sst_7day), size = 0.5,
                breaks = c(0,5,10, 15,20,25,30), colour = "black") +
   guides(fill = guide_colorbar(barheight = 12, 
-                               ticks.colour = "black", ticks.linewidth = 1.5,
-                               frame.colour = "black", frame.linewidth = 1.5)) +
+                               ticks.colour = "black", ticks.linewidth = 1.5, 
+                               frame.colour = "black", frame.linewidth = 1.5, order = 1),
+         colour = guide_legend(override.aes = list(linetype = NA, shape = 15), order = 2)) +
   theme(legend.position = "right") +
+  geom_point(aes(x = -145.0, y = 50, colour = "Station P"), size = 1.2, shape = 15) +
+  scale_colour_manual(name = NULL, guide = "legend", 
+                      values = c("Station P" = "black")) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
   labs(fill = expression("SST " ( degree*C)),
        title = paste(start, "to", end,"Mean Day SST"),
@@ -59,7 +65,8 @@ curr_clim %>%
        caption = datasource) + xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) +
-  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5)
+  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) 
+  # geom_point(data = buoys, aes(x = long, y = lat), size = 0.1, colour = "black")
 
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
@@ -80,13 +87,15 @@ curr_clim %>%
   geom_contour(aes(x = lon, y = lat, z = sd_above, colour = "1.29 SD"), 
                size = 0.5, breaks = 0) +
   scale_colour_manual(name = NULL, guide = "legend", 
-                      values = c("1.29 SD" = "black")) +
+                      values = c("1.29 SD" = "black",
+                                 "Station P" = "black")) +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "black", ticks.linewidth = 1.5, 
                                frame.colour = "black", frame.linewidth = 1.5),
-         colour = guide_legend(override.aes = list(linetype = 1, shape = NA))) +
+         colour = guide_legend(override.aes = list(linetype = c(1, NA), shape = c(NA,15)))) +
   theme(legend.position = "right",panel.background = element_rect(fill = "grey80")) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
+  geom_point(aes(x = -145.0, y = 50, colour = "Station P"), size = 1.2, shape = 15) +
   labs(fill = expression("Anomaly " ( degree*C)),
        title = paste(start, "to", end,"SST Anomaly"),
        subtitle = paste(datavar,"NRT Sea Surface Temperature Anomaly"),
