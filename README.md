@@ -4,11 +4,18 @@
 ---
 
 These maps show the 7-day mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly for the Northeast Pacific from the full week of data most recently available. 
-Two datasets are shown for comparison - MODIS-Aqua daily SST provided by NASA, and NOAA Optimal Interpolation gap-filled SST (OISST). MODIS-Aqua anomalies were calculated from the corresponding week of data from the 18-year period 2003-2020, and for OISST the 30-year period 1991-2020. Delineated on the anomaly maps is SST exceeding a threshold used for tracking marine heatwaves (>1.29 standard deviations compared to normal, labelled as **1.29 SD**). Data is accessed from the [NOAA CoastWatch ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html).
+Two datasets are shown for comparison - NOAA Optimal Interpolation gap-filled SST (OISST), and MODIS-Aqua daily SST provided by NASA. MODIS-Aqua anomalies were calculated from the corresponding week of data from the 18-year period 2003-2020, and for OISST the 30-year period 1991-2020. Delineated on the anomaly maps is SST exceeding a threshold used for tracking marine heatwaves (>1.29 standard deviations compared to normal, labelled as **1.29 SD**). Data is accessed from the [NOAA CoastWatch ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html).
 
 **These figures are provisional and correctness is not guaranteed. :)**
 
-These maps will update on Mondays and Thursdays. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures).
+These maps will update on Mondays and Thursdays, sometimes more often. The images lag 2 days from the current date. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures).
+
+## OISST:
+
+The first plot is 7-day mean daily OI interpolated SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, calculated by subtracting the mean SST from **1991-2020** during the same week. The spatial resolution is 0.25 degrees.
+
+<img src="SST_OI_7-day_rollingavg.png" width="500" /> <img src="SST_OI_7-day_rollingavg_anom.png" width="505" />
+
 
 ## MODIS-Aqua NRT SST:
 
@@ -20,12 +27,6 @@ The spatial resolution is 0.04166 degrees with low quality pixels masked out.
 ##### Number of observations in current week:
 
 <img src="SST_MODISA_7-day_rollingavg_n.png" width="400" /> 
-
-## OISST:
-
-The first plot is 7-day mean daily OI interpolated SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, calculated by subtracting the mean SST from **1991-2020** during the same week. The spatial resolution is 0.25 degrees.
-
-<img src="SST_OI_7-day_rollingavg.png" width="500" /> <img src="SST_OI_7-day_rollingavg_anom.png" width="505" />
 
   
 ## Other data sources, maps and links of interest:
