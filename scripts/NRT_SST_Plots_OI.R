@@ -13,10 +13,7 @@ datavar = "OI"
 #######
 datasource = "Data source: https://doi.org/10.25921/RE9P-PT57"
 #######
-# buoys = source()
-line_p <- data.frame(stn = c("P4", "P12", "P16", "P20", "P26"),
-                     lat = c(48.65, 48.97, 49.283, 49.567, 50.),
-                     lon = c(-126.67,-130.67,-134.67,-138.67,-145.))
+source("./scripts/POI_latlon.R")
 
 # Region limits:
 latlim = c(30,61.5)
@@ -27,6 +24,10 @@ lonlim = c(-160,-120)
 # Re: Charles - Similar to pals::brewer.rdylbu 
 death_cauldron = rev(c("#A50026", "#EA5839", "#F67B49", "#FB9F5A", "#FDBE70","#FDDA8A", "#FFFFBF","#EDF8DE", #reds
                        "#DAF0F6", "#BCE1EE", "#9ECFE3", "#80B6D6", "#649AC7", "#4A7BB7", "#3C59A6", "#313695"))
+gmt_jet <- c("#000080", "#0000bf", "#0000FF", "#007fff", "#00FFFF", "#7fffff", 
+             "#FFFFFF", 
+             "#FFFF7F", "#FFFF00", "#ff7f00", "#FF0000", "#bf0000", "#820000")
+
 # Plot rolling 7-day composite for datavar 
 # 7-day mean, sd, N
 curr7days <- readRDS(paste0("data/",datavar,"_SST7day_rollingavgbackup_current.rds"))
@@ -52,21 +53,22 @@ curr_clim %>%
   geom_tile(aes(x = lon, y = lat, fill = sst_7day)) +
   scale_fill_gradientn(colours = jet(50), limits=c(0,30), breaks = c(0,5,10, 15, 20,25,30)) +
   geom_contour(aes(x = lon, y = lat, z = sst_7day), size = 0.5,
-               breaks = c(0,5,10, 15,20,25,30), colour = "black") +
+               breaks = c(0,5,10, 15,20,25,30), colour = "grey30") +
   guides(fill = guide_colorbar(barheight = 12, 
-                               ticks.colour = "black", ticks.linewidth = 1.5, 
+                               ticks.colour = "grey30", ticks.linewidth = 1.5, 
                                frame.colour = "black", frame.linewidth = 1.5, order = 1),
          colour = guide_legend(override.aes = list(linetype = NA), order = 2)) +
   theme(legend.position = "right") +
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
   geom_text(data = line_p, aes(x = lon, y = lat, label = stn), nudge_y = -0.5, size = 3) +
+  # geom_point(data = buoys, aes(x = lon, y = lat), size = 1.2, shape = 3, colour = "white") +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
   labs(fill = expression("SST " ( degree*C)),
        title = paste(start, "to", end,"Mean Day SST"),
        subtitle = paste(datavar,"NRT Sea Surface Temperature"),
        caption = datasource) + xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
-  scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) +
+  scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) + 
   geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) 
   # geom_point(data = buoys, aes(x = long, y = lat), size = 0.1, colour = "black")
 
@@ -82,7 +84,7 @@ curr_clim %>%
   filter(!is.na(diff_7day_deg)) %>% 
   ggplot() +
   geom_tile(aes(x = lon, y = lat, fill = diff_7day_deg)) +
-  scale_fill_gradientn(colours = death_cauldron, 
+  scale_fill_gradientn(colours = gmt_jet, 
                        limits = c(-3,3), breaks = seq(-3,3,1)) +
   # geom_contour(aes(x = lon, y = lat, z = perc90_above), size = 0.5,
   #              breaks = c(0), colour = "green") +
@@ -92,9 +94,9 @@ curr_clim %>%
                       values = c("1.29 SD" = "grey30")) +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "black", ticks.linewidth = 1.5, 
-                               frame.colour = "black", frame.linewidth = 1.5),
+                               frame.colour = "black", frame.linewidth = 1.5, order = 1),
          colour = guide_legend(override.aes = list(linetype = c(1), shape = c(NA)))) +
-  theme(legend.position = "right",panel.background = element_rect(fill = "grey80")) +
+  theme(legend.position = "right", panel.background = element_rect(fill = "grey80")) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
   geom_text(data = line_p, aes(x = lon, y = lat, label = stn), nudge_y = -0.5, size = 3) +
