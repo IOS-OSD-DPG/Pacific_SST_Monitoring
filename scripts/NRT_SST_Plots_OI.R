@@ -13,7 +13,7 @@ datavar = "OI"
 #######
 datasource = "Data source: https://doi.org/10.25921/RE9P-PT57"
 #######
-source("./scripts/POI_latlon.R")
+source("scripts/POI_latlon.R")
 
 # Region limits:
 latlim = c(30,61.5)

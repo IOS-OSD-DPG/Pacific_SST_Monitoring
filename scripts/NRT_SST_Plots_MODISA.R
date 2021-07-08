@@ -13,7 +13,7 @@ datavar = "MODISA" # "MODISA" or "OI"
 #######
 datasource = ""
 #######
-source("./scripts/POI_latlon.R")
+source("scripts/POI_latlon.R")
 
 # Region limits:
 latlim = c(30,61.5)
