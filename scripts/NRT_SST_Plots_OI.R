@@ -13,7 +13,9 @@ datavar = "OI"
 #######
 datasource = "Data source: https://doi.org/10.25921/RE9P-PT57"
 #######
-source("scripts/POI_latlon.R")
+line_p <- data.frame(stn = c("P4", "P12", "P16", "P20", "P26"),
+                     lat = c(48.65, 48.97, 49.283, 49.567, 50.),
+                     lon = c(-126.67,-130.67,-134.67,-138.67,-145.))
 
 # Region limits:
 latlim = c(30,61.5)
