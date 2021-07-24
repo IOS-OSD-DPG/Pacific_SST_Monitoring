@@ -29,6 +29,13 @@ The spatial resolution is 0.04166 degrees with low quality pixels masked out.
 <img src="SST_MODISA_7-day_rollingavg_n.png" width="400" /> 
 
   
+## Current Conditions at MEDS Buoys
+
+The daily mean sea surface temperature of 2021 is shown (coloured line) against the climatological mean (grey line) and 10th and 90th percentiles (grey shading). The start of the 2021 "Heat Dome" heatwave is delineated by a dashed vertical line placed at 2021-06-26. 
+
+<img src="Daily_mean_buoy_overview.png" width="1000" />
+
+
 ## Other data sources, maps and links of interest:
 
 * [California Current Marine Heatwave Tracker](https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-projects-blobtracker)
