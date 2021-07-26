@@ -20,8 +20,8 @@ The first plot is 7-day mean daily OI interpolated SST, with contours at 5-degre
 
 ## MODIS-Aqua NRT SST:
 
-The first plot shows 7-day mean daily MODIS-Aqua SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, using the climatology of daily mean SST from **2003-2020** during the same week. The third map shows the number of times each pixel had data in the 7-day time period. 
-The spatial resolution is 0.04166 degrees with low quality pixels masked out.
+The first plot shows 7-day mean daily MODIS-Aqua SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, using the climatology of daily mean SST from **2003-2020** during the same week. The third map shows the number of times each pixel had data in the 7-day time period. **Note** that pixels with fewer than 2 observations from the week are masked out. 
+The spatial resolution is 0.04166 degrees with low quality pixels removed.
 
 <img src="SST_MODISA_7-day_rollingavg.png" width="500" /> <img src="SST_MODISA_7-day_rollingavg_anom.png" width="505" /> 
 
@@ -30,7 +30,7 @@ The spatial resolution is 0.04166 degrees with low quality pixels masked out.
 <img src="SST_MODISA_7-day_rollingavg_n.png" width="400" /> 
 
   
-## MEDS Buoys 2021 SST:
+## MEDS Buoy data:
 
 The plots below show sea surface temperature measured at Canadian MEDS buoys (left), with a map of available data (right). The 2021 daily mean sea surface temeprature at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) and 10th and 90th percentiles (grey shading). All buoys have a data record longer than 25 years. The beginning of the 2021 "Heat Dome" heatwave is delineated by a dashed vertical line on 2021-06-26. 
 
