@@ -9,7 +9,7 @@ Also shown below is the 2021 sea surface temperature measured at [Canadian Pacif
 
 **These figures are provisional and correctness is not guaranteed. :)**
 
-These maps will update on Mondays and Thursdays, sometimes more often. The images lag 2 days from the current date. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures).
+These maps update on **Monday and Thursday** using the most recent week of data (lag 2 days from the current date). A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures).
 
 ## OISST:
 
