@@ -35,7 +35,7 @@ jobs:
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          install.packages(c("rerddap","dplyr","ggplot2","mapdata","pals","lubridate"))
+          install.packages(c("rerddap","dplyr","ggplot2","mapdata","pals","lubridate","sf"))
         shell: Rscript {0}
           
       - name: Updating SST data 

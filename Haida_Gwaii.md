@@ -8,12 +8,12 @@ The data shown here can be downloaded in .rds format [here](https://github.com/B
 
 ### OISST:
 
-<img src="SST_OI_7-day_rollingavg_HG.png" width="400" /> <img src="SST_OI_7-day_rollingavg_anom_HG.png" width="545" />
+<img src="SST_OI_7-day_rollingavg_HG.png" width="450" /> <img src="SST_OI_7-day_rollingavg_anom_HG.png" width="455" />
 
 ### MODIS-Aqua NRT SST:
 
-<img src="SST_MODISA_7-day_rollingavg_HG.png" width="400" /> <img src="SST_MODISA_7-day_rollingavg_anom_HG.png" width="405" /> 
+<img src="SST_MODISA_7-day_rollingavg_HG.png" width="450" /> <img src="SST_MODISA_7-day_rollingavg_anom_HG.png" width="455" /> 
 
 ##### Number of observations in current week:
 
-<img src="SST_MODISA_7-day_rollingavg_n_HG.png" width="300" /> 
+<img src="SST_MODISA_7-day_rollingavg_n_HG.png" width="400" /> 
