@@ -11,7 +11,7 @@ reg$long = (360 - reg$long)*-1
 #######
 datavar = "MODISA" # "MODISA" or "OI"
 #######
-datasource = ""
+datasource = "https://oceandata.sci.gsfc.nasa.gov"
 #######
 line_p <- data.frame(stn = c("P4", "P12", "P16", "P20", "P26"),
                      lat = c(48.65, 48.97, 49.283, 49.567, 50.),
@@ -136,7 +136,7 @@ curr_clim %>%
            lon <= lonlim[2]) %>% 
     ggplot() +
     geom_tile(aes(x = lon, y = lat, fill = sst_7dayn)) +
-    scale_fill_gradientn(colours = c("grey90", "grey80", pals::jet(6)), breaks = seq(0,7,1)) +
+    scale_fill_gradientn(colours = c("grey90", "grey80", pals::jet(6)), breaks = seq(0,7,1), limits = c(0,7)) +
     # geom_contour(aes(x = lon, y = lat, z = sst_7dayn), size = 0.5,
     #              breaks = c(5,10, 15, 20), colour = "black") +
     guides(fill = guide_colorbar(barheight = 12, ticks.linewidth = 1.5,
