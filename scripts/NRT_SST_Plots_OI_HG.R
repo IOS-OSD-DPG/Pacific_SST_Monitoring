@@ -1,25 +1,24 @@
 library(dplyr)
 library(ggplot2)
-library(mapdata)
 library(pals)
 theme_set(theme_bw())
-reg = map_data("world2Hires")
-reg = subset(reg, region %in% c('Canada', 'USA'))
-reg$long = (360 - reg$long)*-1
-
+library(sf)
+bc = readRDS("./data/BC_bound_hres_bcmaps.rds")
+usa = readRDS("./data/USA_bound_naturalearth.rds")
 
 #######
 datavar = "OI"
 #######
-datasource = "Data source: https://doi.org/10.25921/RE9P-PT57"
+# datasource = "Data source: https://doi.org/10.25921/RE9P-PT57"
+datasource = ""
 #######
 line_p <- data.frame(stn = c("P4", "P12", "P16", "P20", "P26"),
                      lat = c(48.65, 48.97, 49.283, 49.567, 50.),
                      lon = c(-126.67,-130.67,-134.67,-138.67,-145.))
 
 # Region limits:
-latlim = c(30,61.5)
-lonlim = c(-160,-120)
+latlim = c(49.5,55.5)
+lonlim = c(-136,-126)
 
 # Aesthetics:
 # "Boiling cauldron of death" palette 
@@ -32,9 +31,13 @@ gmt_jet <- c("#000080", "#0000bf", "#0000FF", "#007fff", "#00FFFF", "#7fffff",
 
 # Plot rolling 7-day composite for datavar 
 # 7-day mean, sd, N
-curr7days <- readRDS(paste0("data/",datavar,"_SST7day_rollingavgbackup_current.rds"))
+curr7days <- readRDS(paste0("data/",datavar,"_SST7day_rollingavgbackup_current.rds")) %>% 
+  filter(lat < latlim[2], lat > latlim[1],
+         lon < lonlim[2], lon > lonlim[1])
 # Climatological mean, sd, N
-clim7days <- readRDS(paste0("data/",datavar,"_SST7day_rollingavgbackup_climatology.rds"))
+clim7days <- readRDS(paste0("data/",datavar,"_SST7day_rollingavgbackup_climatology.rds")) %>% 
+  filter(lat < latlim[2], lat > latlim[1],
+         lon < lonlim[2], lon > lonlim[1])
 
 curr_clim <- full_join(curr7days, clim7days, by = c("lon","lat"))
 curr_clim$diff_7day_deg <- curr_clim$sst_7day-curr_clim$sst_7day_clim
@@ -64,19 +67,19 @@ curr_clim %>%
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
   geom_text(data = line_p, aes(x = lon, y = lat, label = stn), nudge_y = -0.5, size = 3) +
   # geom_point(data = buoys, aes(x = lon, y = lat), size = 1.2, shape = 3, colour = "white") +
-  coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
   labs(fill = expression("SST " ( degree*C)),
-       title = paste(start, "to", end,"Mean Day SST"),
+       title = paste(start, "to", end,"Mean Daily SST"),
        subtitle = paste(datavar,"NRT Sea Surface Temperature"),
        caption = datasource) + xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) + 
-  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) 
-  # geom_point(data = buoys, aes(x = long, y = lat), size = 0.1, colour = "black")
+  geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
+  geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
+  coord_sf(xlim = lonlim, ylim = latlim, expand = F)# geom_point(data = buoys, aes(x = long, y = lat), size = 0.1, colour = "black")
 
-ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_",end,".png"), 
+ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_",end,"_HG.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg.png"), 
+ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_HG.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
 
 # 7-day climatology anomaly ####
@@ -99,7 +102,6 @@ curr_clim %>%
                                frame.colour = "black", frame.linewidth = 1.5, order = 1),
          colour = guide_legend(override.aes = list(linetype = c(1), shape = c(NA)))) +
   theme(legend.position = "right", panel.background = element_rect(fill = "grey80")) +
-  coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
   geom_text(data = line_p, aes(x = lon, y = lat, label = stn), nudge_y = -0.5, size = 3) +
   labs(fill = expression("Anomaly " ( degree*C)),
@@ -108,10 +110,12 @@ curr_clim %>%
        caption = datasource) +
   xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
-  scale_x_continuous(breaks = seq(min(lonlim),max(lonlim),5)) +
-  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5)
+  scale_x_continuous(breaks = seq(min(lonlim),max(lonlim),5)) + 
+  geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
+  geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
+  coord_sf(xlim = lonlim, ylim = latlim, expand = F)
 
-ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_anom_",end,".png"), 
+ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_anom_",end,"_HG.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_anom.png"), 
+ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_anom_HG.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)

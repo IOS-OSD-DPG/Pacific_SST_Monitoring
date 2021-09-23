@@ -1,20 +1,19 @@
 library(dplyr)
 library(ggplot2)
 library(pals)
-library(mapdata)
 theme_set(theme_bw())
-# reg = map_data("world2Hires")
-# reg = subset(reg, region %in% c('Canada', 'USA'))
-# reg$long = (360 - reg$long)*-1
 # library(rnaturalearth)
 # library(rnaturalearthdata)
 # usa <- ne_countries(scale = 10, returnclass = "sf") %>% filter(sovereignt %in% c("United States of America"))
 library(sf)
-library(bcmaps)
-bc <- bc_bound_hres()
-crsuse <- "+proj=longlat +ellps=GRS80 +datum=NAD83 +no_defs"
-bc <- st_transform(bc, crsuse)
-
+# library(bcmaps)
+# bc <- bc_bound_hres()
+# crsuse <- "+proj=longlat +ellps=GRS80 +datum=NAD83 +no_defs"
+# bc <- st_transform(bc, crsuse)
+# saveRDS(object = bc, file = "./data/BC_bound_hres_bcmaps.rds")
+# saveRDS(object = usa, file = "./data/USA_bound_naturalearth.rds")
+bc = readRDS("./data/BC_bound_hres_bcmaps.rds")
+usa = readRDS("./data/USA_bound_naturalearth.rds")
 #######
 datavar = "MODISA" # "MODISA" or "OI"
 #######
@@ -75,12 +74,12 @@ curr_clim %>%
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
   geom_text(data = line_p, aes(x = lon, y = lat, label = stn), nudge_y = -0.5, size = 3) +
   labs(fill = expression("SST " ( degree*C)),
-       title = paste(start, "to", end,"Mean Day SST"),
+       title = paste(start, "to", end,"Mean Daily SST"),
        subtitle = paste(datavar,"NRT Sea Surface Temperature"),
        caption = datasource) + xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) +
-  geom_sf(data = neigh, fill = "grey80", colour = "grey40", size = 0.5) +
+  geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
   geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
   coord_sf(xlim = lonlim, ylim = latlim, expand = F)
 
@@ -117,7 +116,7 @@ curr_clim %>%
   xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim),max(lonlim),5)) +
-  geom_sf(data = neigh, fill = "grey80", colour = "grey40", size = 0.5) +
+  geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
   geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
   coord_sf(xlim = lonlim, ylim = latlim, expand = F)
 
@@ -135,13 +134,10 @@ curr_clim %>%
   ggplot() +
   geom_tile(aes(x = lon, y = lat, fill = sst_7dayn)) +
   scale_fill_gradientn(colours = c("grey90", "grey80", pals::jet(6)), breaks = seq(0,7,1), limits = c(0,7)) +
-  # geom_contour(aes(x = lon, y = lat, z = sst_7dayn), size = 0.5,
-  #              breaks = c(5,10, 15, 20), colour = "black") +
   guides(fill = guide_colorbar(barheight = 12, ticks.linewidth = 1.5,
                                frame.colour = "black", frame.linewidth = 1.5,
                                nbin = 8, raster=F, ticks.colour = NA)) +
   theme(legend.position = "right",panel.background = element_rect(fill = "grey90")) +
-  coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
   labs(fill = 'Weekly \nObservations',
        title = paste(start, "to", end,"Day SST, Number of Observations"),
        subtitle = paste(datavar,"NRT Sea Surface Temperature"),
@@ -149,7 +145,7 @@ curr_clim %>%
   xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) +
-  geom_sf(data = neigh, fill = "grey80", colour = "grey40", size = 0.5) +
+  geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
   geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
   coord_sf(xlim = lonlim, ylim = latlim, expand = F)
   
