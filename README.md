@@ -5,11 +5,13 @@
 
 These maps show the 7-day mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly for the Northeast Pacific for the latest week of data available. Two satellite SST datasets are shown for comparison - NOAA Optimal Interpolation gap-filled SST (OISST), and NASA MODIS-Aqua NRT SST. Anomaly maps of OISST were calculated using the current week and subtracting the 30-year mean (1991-2020) from the same week, and MODIS-Aqua anomalies were calculated using the current week and the 18-year mean (2003-2020). Delineated on the anomaly maps is SST exceeding 1.29 standard deviations from normal, a threshold used for tracking marine heatwaves (labelled as **1.29 SD**). Data is accessed from the NOAA CoastWatch [ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html).
 
-Shown at the bottom is 2021 sea surface temperature measured at [Canadian Pacific MEDS buoys](https://meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/index-eng.htm). Data, including detailed quality control information, is accessed from the Canadian Integrated Ocean Observing System (CIOOS) Pacific [ERDDAP server](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html).  
+Shown at the bottom is 2021 sea surface temperature measured at [Canadian Pacific MEDS buoys](https://meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/index-eng.htm). Data, including detailed quality control information, is accessed from the Canadian Integrated Ocean Observing System (CIOOS) Pacific [ERDDAP server](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html). 
 
 **These figures are provisional and correctness is not guaranteed. :)**
 
 These maps update on **Monday and Thursday** using the most recent week of data (lag 2 days from the current date). A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown below can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (.rds format).
+
+:arrow_right: To view map insets near Haida Gwaii click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/Haida_Gwaii.md). :arrow_left:
 
 ## OISST:
 
