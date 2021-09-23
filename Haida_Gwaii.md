@@ -11,10 +11,12 @@ These maps will update on **Mondays and Thursdays**. The map data can be downloa
 
 <img src="SST_OI_7-day_rollingavg_HG.png" width="450" /> <img src="SST_OI_7-day_rollingavg_anom_HG.png" width="455" />
 
-### MODIS-Aqua NRT SST:
+### MODIS-Aqua Near Real-time SST:
+
+Pixels with few observations are more likely to show erroneous values, so be careful when interpreting the MODIS-Aqua anomaly maps. They are mainly provided as a separate comparison to the OI SST maps. A map with the number of observations at each MODIS-Aqua pixel from the current week is shown at the bottom.
 
 <img src="SST_MODISA_7-day_rollingavg_HG.png" width="450" /> <img src="SST_MODISA_7-day_rollingavg_anom_HG.png" width="455" /> 
 
-##### Number of observations in current week:
+##### Number of observations in current week of MODISA data:
 
 <img src="SST_MODISA_7-day_rollingavg_n_HG.png" width="400" /> 
