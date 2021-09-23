@@ -86,8 +86,6 @@ saveRDS(object = yr7days, file = "data/MODISA_SST7day_rollingavgbackup_climatolo
 rm(roll7,sstyr, sstInfo)
 gc()
 
-
-
 # OI Data - Current and 30 year climatology (1990-2020) ####
 # Datasets: 
 # ncdcOisst21NrtAgg_LonPM180 (2020-present, 4-day lag)
