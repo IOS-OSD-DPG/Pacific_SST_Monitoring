@@ -6,7 +6,7 @@
 .RData
 
 # Data files
-#*.rds
+OI*.rds
 
 # User-specific files
 .Ruserdata
@@ -40,3 +40,8 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+*.pdf
+MHW*.png
+Blob*.png
+figures/Backup_Older/

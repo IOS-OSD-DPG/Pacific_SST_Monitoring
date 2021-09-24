@@ -19,10 +19,7 @@ datavar = "MODISA" # "MODISA" or "OI"
 #######
 datasource = ""
 #######
-line_p <- data.frame(stn = c("P4", "P12", "P16", "P20", "P26"),
-                     lat = c(48.65, 48.97, 49.283, 49.567, 50.),
-                     lon = c(-126.67,-130.67,-134.67,-138.67,-145.))
-
+source("./scripts/POI_latlon.R")
 # Region limits:
 latlim = c(49.5,55.5)
 lonlim = c(-136,-126)
@@ -79,6 +76,16 @@ curr_clim %>%
        caption = datasource) + xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) +
+  # Add regions
+  geom_polygon(data = GH_E, aes(x = lon, y = lat), colour = "black", fill = NA) +
+  geom_polygon(data = GH_W, aes(x = lon, y = lat), colour = "black", fill = NA) +
+  geom_polygon(data = GH_S, aes(x = lon, y = lat), colour = "black", fill = NA) +
+  geom_polygon(data = GH_O, aes(x = lon, y = lat), colour = "black", fill = NA) +
+  geom_text(aes(x = -130.6, y = 52.482, label = "GHE"), colour = "black", size = 3.5) +
+  geom_text(aes(x = -132.4, y = 52.475, label = "GHW"), colour = "black", size = 3.5) +
+  geom_text(aes(x = -131.0, y = 51.7, label = "GHS"), colour = "black", size = 3.5) +
+  geom_text(aes(x = -132.2, y = 51.9, label = "GHO"), colour = "black", size = 3.5) +
+  #
   geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
   geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
   coord_sf(xlim = lonlim, ylim = latlim, expand = F)
@@ -116,6 +123,16 @@ curr_clim %>%
   xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim),max(lonlim),5)) +
+  # Add regions
+  geom_polygon(data = GH_E, aes(x = lon, y = lat), colour = "black", fill = NA) +
+  geom_polygon(data = GH_W, aes(x = lon, y = lat), colour = "black", fill = NA) +
+  geom_polygon(data = GH_S, aes(x = lon, y = lat), colour = "black", fill = NA) +
+  geom_polygon(data = GH_O, aes(x = lon, y = lat), colour = "black", fill = NA) +
+  geom_text(aes(x = -130.6, y = 52.482, label = "GHE"), colour = "black", size = 3.5) +
+  geom_text(aes(x = -132.4, y = 52.475, label = "GHW"), colour = "black", size = 3.5) +
+  geom_text(aes(x = -131.0, y = 51.7, label = "GHS"), colour = "black", size = 3.5) +
+  geom_text(aes(x = -132.2, y = 51.9, label = "GHO"), colour = "black", size = 3.5) +
+  #
   geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
   geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
   coord_sf(xlim = lonlim, ylim = latlim, expand = F)
@@ -145,6 +162,16 @@ curr_clim %>%
   xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) +
+  # Add regions
+  geom_polygon(data = GH_E, aes(x = lon, y = lat), colour = "white", fill = NA) +
+  geom_polygon(data = GH_W, aes(x = lon, y = lat), colour = "white", fill = NA) +
+  geom_polygon(data = GH_S, aes(x = lon, y = lat), colour = "white", fill = NA) +
+  geom_polygon(data = GH_O, aes(x = lon, y = lat), colour = "white", fill = NA) +
+  geom_text(aes(x = -130.6, y = 52.482, label = "GHE"), colour = "white", size = 3.5) +
+  geom_text(aes(x = -132.4, y = 52.475, label = "GHW"), colour = "white", size = 3.5) +
+  geom_text(aes(x = -131.0, y = 51.7, label = "GHS"), colour = "white", size = 3.5) +
+  geom_text(aes(x = -132.2, y = 51.9, label = "GHO"), colour = "white", size = 3.5) +
+  #
   geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
   geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
   coord_sf(xlim = lonlim, ylim = latlim, expand = F)
