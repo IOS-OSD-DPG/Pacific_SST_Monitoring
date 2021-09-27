@@ -47,8 +47,8 @@ jobs:
         run: |
           source('scripts/NRT_SST_Plots_MODISA.R')
           source('scripts/NRT_SST_Plots_OI.R')
-          source('scripts/NRT_SST_Plots_OI_HG.R)
-          source('scripts/NRT_SST_Plots_MODISA_HG.R)
+          source('scripts/NRT_SST_Plots_OI_HG.R')
+          source('scripts/NRT_SST_Plots_MODISA_HG.R')
         shell: Rscript {0}
         
       - name: Commit files
