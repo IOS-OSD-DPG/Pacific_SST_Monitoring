@@ -24,14 +24,16 @@ jobs:
           r-version: ${{ matrix.r-version }}
           
       - name: Cache R packages
-        id: cache
+        id: mapping
         uses: actions/cache@v2
         with:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-shinydoc
+          restore-keys: |
+            ${{ runner.os }}-
           
       - name: Install dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
+        if: steps.mapping.outputs.cache-hit != 'true'
         run: |
           install.packages(c("rerddap","dplyr","ggplot2","mapdata","pals","lubridate","sf"))
         shell: Rscript {0}
