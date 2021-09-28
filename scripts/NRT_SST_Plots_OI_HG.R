@@ -5,7 +5,7 @@ theme_set(theme_bw())
 library(sf)
 bc = readRDS("./data/BC_bound_hres_bcmaps.rds")
 usa = readRDS("./data/USA_bound_naturalearth.rds")
-
+bc_test <- fortify(bc)
 #######
 datavar = "OI"
 #######
@@ -82,9 +82,9 @@ curr_clim %>%
   geom_text(aes(x = -132.2, y = 51.9, label = "GHO"), colour = "black", size = 3.5) +
   # Add buoys
   # geom_point(data = buoys, aes(x = lon, y = lat), shape = 21, size = 3) +
-  geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
-  geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
-  coord_sf(xlim = lonlim, ylim = latlim, expand = F)# geom_point(data = buoys, aes(x = long, y = lat), size = 0.1, colour = "black")
+  geom_polygon(data = usa, aes(x = long, y = lat, group = group), fill = "grey60", colour = "grey40", size = 0.5) +
+  geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) +
+  coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) # geom_point(data = buoys, aes(x = long, y = lat), size = 0.1, colour = "black")
 
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_",end,"_HG.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
@@ -130,9 +130,9 @@ curr_clim %>%
   geom_text(aes(x = -131.0, y = 51.7, label = "GHS"), colour = "black", size = 3.5) +
   geom_text(aes(x = -132.2, y = 51.9, label = "GHO"), colour = "black", size = 3.5) +
   #
-  geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
-  geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
-  coord_sf(xlim = lonlim, ylim = latlim, expand = F)
+  geom_polygon(data = usa, aes(x = long, y = lat, group = group), fill = "grey60", colour = "grey40", size = 0.5) +
+  geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) +
+  coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) 
 
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_anom_",end,"_HG.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")

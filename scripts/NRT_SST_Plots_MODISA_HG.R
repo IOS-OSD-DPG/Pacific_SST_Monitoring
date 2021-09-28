@@ -5,13 +5,19 @@ theme_set(theme_bw())
 # library(rnaturalearth)
 # library(rnaturalearthdata)
 # usa <- ne_countries(scale = 10, returnclass = "sf") %>% filter(sovereignt %in% c("United States of America"))
-library(sf)
+# library(sf)
 # library(bcmaps)
 # bc <- bc_bound_hres()
 # crsuse <- "+proj=longlat +ellps=GRS80 +datum=NAD83 +no_defs"
 # bc <- st_transform(bc, crsuse)
+# Convert to data.frame so not to load sf (not working in gh actions)
+# bc = as_Spatial(bc)
+# bc = fortify(bc)
+# usa = as_Spatial(usa)
+# usa = fortify(usa)
 # saveRDS(object = bc, file = "./data/BC_bound_hres_bcmaps.rds")
 # saveRDS(object = usa, file = "./data/USA_bound_naturalearth.rds")
+
 bc = readRDS("./data/BC_bound_hres_bcmaps.rds")
 usa = readRDS("./data/USA_bound_naturalearth.rds")
 #######
@@ -85,11 +91,11 @@ curr_clim %>%
   geom_text(aes(x = -132.4, y = 52.475, label = "GHW"), colour = "black", size = 3.5) +
   geom_text(aes(x = -131.0, y = 51.7, label = "GHS"), colour = "black", size = 3.5) +
   geom_text(aes(x = -132.2, y = 51.9, label = "GHO"), colour = "black", size = 3.5) +
+  geom_polygon(data = usa, aes(x = long, y = lat, group = group), fill = "grey60", colour = "grey40", size = 0.5) +
+  geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) +
+  coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) 
   #
-  geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
-  geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
-  coord_sf(xlim = lonlim, ylim = latlim, expand = F)
-
+  
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_",end,"_HG.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
 ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_HG.png"), 
@@ -133,9 +139,9 @@ curr_clim %>%
   geom_text(aes(x = -131.0, y = 51.7, label = "GHS"), colour = "black", size = 3.5) +
   geom_text(aes(x = -132.2, y = 51.9, label = "GHO"), colour = "black", size = 3.5) +
   #
-  geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
-  geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
-  coord_sf(xlim = lonlim, ylim = latlim, expand = F)
+  geom_polygon(data = usa, aes(x = long, y = lat, group = group), fill = "grey60", colour = "grey40", size = 0.5) +
+  geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) +
+  coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) 
 
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_anom_",end,"_HG.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
@@ -172,9 +178,9 @@ curr_clim %>%
   geom_text(aes(x = -131.0, y = 51.7, label = "GHS"), colour = "white", size = 3.5) +
   geom_text(aes(x = -132.2, y = 51.9, label = "GHO"), colour = "white", size = 3.5) +
   #
-  geom_sf(data = usa, fill = "grey60", colour = "grey40", size = 0.5) +
-  geom_sf(data = bc, fill = "grey70", colour = "grey40", size = 0.5) +
-  coord_sf(xlim = lonlim, ylim = latlim, expand = F)
+  geom_polygon(data = usa, aes(x = long, y = lat, group = group), fill = "grey60", colour = "grey40", size = 0.5) +
+  geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) +
+  coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) 
   
   ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_n_",end,"_HG.png"), 
          device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")

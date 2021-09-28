@@ -24,24 +24,29 @@ jobs:
           r-version: ${{ matrix.r-version }}
           
       - name: Cache R packages
-        id: mapping
+        id: cache
         uses: actions/cache@v2
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-mapdoc
+          key: ${{ runner.os }}-shinydoc
           restore-keys: |
-            ${{ runner.os }}-mapdoc
+            ${{ runner.os }}-
           
       - name: Install dependencies
-        if: steps.mapping.outputs.cache-hit != 'true'
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           install.packages(c("rerddap","dplyr","ggplot2","mapdata","pals","lubridate","sf"))
         shell: Rscript {0}
           
-
+      - name: Updating SST data 
+        run: |
+          source('scripts/NRT_SST_Calc.R')
+        shell: Rscript {0}
         
       - name: Running plots
         run: |
+          source('scripts/NRT_SST_Plots_MODISA.R')
+          source('scripts/NRT_SST_Plots_OI.R')
           source('scripts/NRT_SST_Plots_OI_HG.R')
           source('scripts/NRT_SST_Plots_MODISA_HG.R')
         shell: Rscript {0}
