@@ -29,8 +29,6 @@ jobs:
         with:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-shinydoc
-          restore-keys: |
-            ${{ runner.os }}-
           
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
