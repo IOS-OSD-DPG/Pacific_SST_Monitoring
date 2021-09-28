@@ -38,15 +38,10 @@ jobs:
           install.packages(c("rerddap","dplyr","ggplot2","mapdata","pals","lubridate","sf"))
         shell: Rscript {0}
           
-      - name: Updating SST data 
-        run: |
-          source('scripts/NRT_SST_Calc.R')
-        shell: Rscript {0}
+
         
       - name: Running plots
         run: |
-          source('scripts/NRT_SST_Plots_MODISA.R')
-          source('scripts/NRT_SST_Plots_OI.R')
           source('scripts/NRT_SST_Plots_OI_HG.R')
           source('scripts/NRT_SST_Plots_MODISA_HG.R')
         shell: Rscript {0}
