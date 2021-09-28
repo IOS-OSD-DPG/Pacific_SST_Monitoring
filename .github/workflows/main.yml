@@ -28,9 +28,9 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-shinydoc
+          key: ${{ runner.os }}-mapdoc
           restore-keys: |
-            ${{ runner.os }}-
+            ${{ runner.os }}-mapdoc
           
       - name: Install dependencies
         if: steps.mapping.outputs.cache-hit != 'true'
