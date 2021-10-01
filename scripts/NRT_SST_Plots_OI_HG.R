@@ -2,10 +2,8 @@ library(dplyr)
 library(ggplot2)
 library(pals)
 theme_set(theme_bw())
-library(sf)
 bc = readRDS("./data/BC_bound_hres_bcmaps.rds")
 usa = readRDS("./data/USA_bound_naturalearth.rds")
-bc_test <- fortify(bc)
 #######
 datavar = "OI"
 #######

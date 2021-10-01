@@ -17,7 +17,6 @@ theme_set(theme_bw())
 # usa = fortify(usa)
 # saveRDS(object = bc, file = "./data/BC_bound_hres_bcmaps.rds")
 # saveRDS(object = usa, file = "./data/USA_bound_naturalearth.rds")
-
 bc = readRDS("./data/BC_bound_hres_bcmaps.rds")
 usa = readRDS("./data/USA_bound_naturalearth.rds")
 #######
