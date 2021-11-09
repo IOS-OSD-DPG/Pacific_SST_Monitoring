@@ -39,7 +39,12 @@ buoys <- data.frame(wmo_id = c("46004","46036","46131","46132",
                                    "1999-01-01","1991-04-11","1992-03-16","1992-05-11",
                                    "1990-05-22","1991-04-09","1987-09-20","1990-06-08",
                                    "1989-09-07","1988-11-22","1988-11-22","1989-10-18","1991-07-01",
-                                   NA, NA))
+                                   NA, NA),
+                    col_key = c("#0000FF", "#FF0000", "#00FF00", "#000033", 
+                                "#000033","#FF00B6", "#005300", "#FFD300",
+                                "#009FFF","#9A4D42", "#00FFBE", "#783FC1", 
+                                "#1F9698", "#FFACFD", "#FE8F42", "#DD00FF", "#02AD24", 
+                                "#C8FF00","#886C00"))
 
 # Buoy comments:
 # ECOBUOY_1: This buoy has been specially modified to serve as a platform for additional sensors, including solar radiation, salinity, temperature and chlorophyll fluorescence. This buoy is located in Saanich Inlet, near the Institute of Ocean Sciences and serves as a temporary "test bed" for new sensors and telemetry tests. This is NOT a permanent monitoring station. 
