@@ -84,7 +84,7 @@ curr_clim %>%
   geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) # geom_point(data = buoys, aes(x = long, y = lat), size = 0.1, colour = "black")
 
-ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_",end,"_HG.png"), 
+ggsave(filename = paste0("figures/Haida_Gwaii/SST_",datavar,"_7-day_rollingavg_",end,"_HG.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
 ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_HG.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
@@ -132,7 +132,7 @@ curr_clim %>%
   geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) 
 
-ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_anom_",end,"_HG.png"), 
+ggsave(filename = paste0("figures/Haida_Gwaii/SST_",datavar,"_7-day_rollingavg_anom_",end,"_HG.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
 ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_anom_HG.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
