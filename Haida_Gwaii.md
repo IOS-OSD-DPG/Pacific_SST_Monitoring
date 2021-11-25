@@ -5,7 +5,7 @@
 
 Maps focused on the Pacific near Haida Gwaii, B.C. The data shown on these maps are identical to the [Pacific SST Monitoring page](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/) (see link for data description and references).
 
-These maps will update on **Mondays and Thursdays**. The map data can be downloaded in .rds format [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data). (*Let me know if you want .csv or other format instead :)*) Some prior images will be stored [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures) (images with with extension "HG").
+These maps will update on **Mondays and Thursdays**. The map data can be downloaded in .rds format [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data). (*Let me know if you want .csv or other format instead :)*) Some prior images will be stored [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures/Haida_Gwaii) (images with with extension "HG").
 
 ### OISST:
 
