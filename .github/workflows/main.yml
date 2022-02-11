@@ -14,8 +14,8 @@ jobs:
     strategy:
       matrix:
         r-version: ['4.0.2']
-
     steps:
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Set up R ${{ matrix.r-version }}
