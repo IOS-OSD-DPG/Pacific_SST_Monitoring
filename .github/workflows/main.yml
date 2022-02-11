@@ -14,17 +14,8 @@ jobs:
     strategy:
       matrix:
         r-version: ['4.0.2']
-# Added to figure out IP ####
     steps:
-      - name: Public IP
-        id: ip
-        uses: haythem/public-ip@v1.2
-        
-      - name: Print Public IP
-        run: |
-            echo ${{ steps.ip.outputs.ipv4 }}
-            echo ${{ steps.ip.outputs.ipv6 }}
- #######
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Set up R ${{ matrix.r-version }}
