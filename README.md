@@ -1,15 +1,20 @@
 ---
-# Pacific SST Monitoring
+# Current Sea Surface Temperature in the Northeast Pacific
 #### Andrea Hilborn
 ---
 
-These maps show the 7-day mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly for the Northeast Pacific for the latest week of data available. Two satellite SST datasets are shown for comparison - NOAA Optimal Interpolation gap-filled SST (OISST), and NASA MODIS-Aqua NRT SST. Anomaly maps of OISST were calculated using the current week and subtracting the 30-year mean (1991-2020) from the same week, and MODIS-Aqua anomalies were calculated using the current week and the 18-year mean (2003-2020). Delineated on the anomaly maps is SST exceeding 1.29 standard deviations from normal, a threshold used for tracking marine heatwaves (labelled as **1.29 SD**). Data is accessed from the NOAA CoastWatch [ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html).
+These maps show the 7-day mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly for the Northeast Pacific (NEP) for the latest week of data available. Two satellite SST datasets are shown for comparison:
 
-Shown at the bottom is 2021 sea surface temperature measured at [Canadian Pacific MEDS buoys](https://meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/index-eng.htm). Data, including detailed quality control information, is accessed from the Canadian Integrated Ocean Observing System (CIOOS) Pacific [ERDDAP server](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html). 
+* NOAA Optimal Interpolation gap-filled SST (OISST). Anomaly maps were calculated using the current week and subtracting the 30-year mean (1991-2020) from the same week.
+* NASA MODIS-Aqua NRT SST. Anomaly maps were calculated using the current week and subtracting the 18-year mean (2003-2020). 
+ 
+Delineated on the anomaly maps are SST pixels exceeding 1.29 standard deviations above the climatology, a threshold used for tracking marine heatwaves (labelled as **1.29 SD**). Data is accessed from the NOAA CoastWatch [ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html).
+
+Shown at the bottom are 2021 and 2022 sea surface temperature observations from [Canadian Pacific MEDS buoys](https://meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/index-eng.htm). Data, including detailed quality control information, is accessed from the Canadian Integrated Ocean Observing System (CIOOS) Pacific [ERDDAP server](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html). 
 
 **These figures are provisional and correctness is not guaranteed. :)**
 
-These maps update on **Monday and Thursday** using the most recent week of data (lag 2 days from the current date). A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown below can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (.rds format).
+These maps update on **Monday and Thursday** using the most recent week of data (lag 2 days from the current date). A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (.rds format).
 
 :arrow_right: To view map insets near Haida Gwaii click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/Haida_Gwaii.md). :arrow_left:
 
@@ -34,7 +39,7 @@ The spatial resolution is 0.04166 degrees with low quality pixels removed.
   
 ## MEDS Buoy data:
 
-The plots below show sea surface temperature measured at Canadian MEDS buoys (left) (accessed from the [CIOOS ERDDAP server](https://data.cioospacific.ca/erddap/)), with a map of available data (right). The 2021 daily mean SST at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) and 10th and 90th percentiles (grey shading). The beginning of the 2021 "Heat Dome" heatwave is delineated by a dashed vertical line on 2021-06-26. 
+The plots below show sea surface temperature measured at Canadian MEDS buoys (left) (accessed from the [CIOOS ERDDAP server](https://data.cioospacific.ca/erddap/)), and map of these buoys with available data (right). The 2021 daily mean SST at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading). The beginning of the 2021 "Heat Dome" heatwave is delineated by a dashed vertical line on 2021-06-26. The white line outlined in black are observations from 2022.
 
 <img src="Daily_mean_buoy_overview.png" width="1000" />
 
