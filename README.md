@@ -43,7 +43,7 @@ The 2021 daily mean SST at each buoy are shown as coloured lines, plotted over t
 <img src="Daily_mean_buoy_overview.png" width="1000" />
 
 
-## Other data sources, maps and links of interest:
+## Other MHW data sources, maps and links of interest:
 
 * [California Current Marine Heatwave Tracker](https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-projects-blobtracker)
 * [California Current Marine Heatwave Tracker: Regional EEZ MHW](https://oceanview.pfeg.noaa.gov/projects/mhw/regional)
@@ -60,8 +60,8 @@ The 2021 daily mean SST at each buoy are shown as coloured lines, plotted over t
 * CoastWatch ERDDAP Server: https://coastwatch.pfeg.noaa.gov/erddap/index.html
 * CIOOS Pacific ERDDAP Server: https://data.cioospacific.ca/erddap/index.html
 * DFO (2021). Marine Environmental Data Section Archive, https://meds-sdmm.dfo-mpo.gc.ca, Ecosystem and Oceans Science, Department of Fisheries and Oceans Canada.
-* [Peter S. Galbraith, Pierre Larouche & Carla Caverhill (2021): A Sea-Surface
+* Peter S. Galbraith, Pierre Larouche & Carla Caverhill (2021): A Sea-Surface
 Temperature Homogenization Blend for the Northwest Atlantic, Canadian Journal of Remote
-Sensing, DOI: 10.1080/07038992.2021.1924645](https://www.tandfonline.com/doi/full/10.1080/07038992.2021.1924645)
-* Huang, Boyin; Liu, Chunying; Banzon, Viva F.; Freeman, Eric; Graham, Garrett; Hankins, Bill; Smith, Thomas M.; Zhang, Huai-Min. (2020): NOAA 0.25-degree Daily Optimum Interpolation Sea Surface Temperature (OISST), Version 2.1. NOAA National Centers for Environmental Information. https://doi.org/10.25921/RE9P-PT57.
+Sensing, [doi:10.1080/07038992.2021.1924645](https://www.tandfonline.com/doi/full/10.1080/07038992.2021.1924645)
+* Huang, Boyin; Liu, Chunying; Banzon, Viva F.; Freeman, Eric; Graham, Garrett; Hankins, Bill; Smith, Thomas M.; Zhang, Huai-Min. (2020): NOAA 0.25-degree Daily Optimum Interpolation Sea Surface Temperature (OISST), Version 2.1. NOAA National Centers for Environmental Information. [doi:10.25921/RE9P-PT57](https://doi.org/10.25921/RE9P-PT57)
 * NASA Goddard Space Flight Center, Ocean Ecology Laboratory, Ocean Biology Processing Group. Moderate-resolution Imaging Spectroradiometer (MODIS) Aqua NRT SST data; NASA OB.DAAC, Greenbelt, MD, USA.
