@@ -30,6 +30,8 @@ print(paste(yday(end_date)-yday(start_date)+1,"days"))
 
 # MODISA rolling 7-day average ####
 sstInfo <- info("erdMH1sstd1dayR20190", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
+sstInfo <- info("erdMH1sstd1dayR20190SQ", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
+
 sstdata <- griddap(sstInfo, latitude = latlim, longitude = lonlim, 
                     time = timelim)
 print(paste(length(unique(sstdata$data$time)),"DAYS FOUND"))
