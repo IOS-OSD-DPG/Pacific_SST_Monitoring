@@ -5,12 +5,12 @@
 
 These maps show the 7-day mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly for the Northeast Pacific (NEP) for the latest week of data available. Two satellite SST datasets are shown for comparison:
 
-* NOAA Optimal Interpolation gap-filled SST (OISST). Anomaly maps were calculated using the current week and subtracting the 30-year mean (1991-2020) from the same week.
-* NASA MODIS-Aqua NRT SST. Anomaly maps were calculated using the current week and subtracting the 18-year mean (2003-2020). 
+* NOAA Optimal Interpolation gap-filled SST (OISST). Anomaly maps were calculated using the current week and subtracting the 30-year mean (1991-2020). The spatial resolution is 0.25 degrees.
+* NASA MODIS-Aqua NRT SST. Anomaly maps were calculated using the current week and subtracting the 18-year mean (2003-2020). The spatial resolution is 0.04166 degrees with low quality pixels removed. **Out of date**
  
-Delineated on the anomaly maps are SST pixels exceeding 1.29 standard deviations above the climatology, a threshold used for tracking marine heatwaves (labelled as **1.29 SD**). Data is accessed from the NOAA CoastWatch [ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html).
+Data is accessed from the NOAA CoastWatch [ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html). SST pixels exceeding 1.29 standard deviations above the climatology are delineated on the anomaly maps (labelled as **1.29 SD**), a threshold for tracking marine heatwaves.
 
-Shown at the bottom are 2021 and 2022 sea surface temperature observations from [Canadian Pacific MEDS buoys](https://meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/index-eng.htm). Data, including detailed quality control information, is accessed from the Canadian Integrated Ocean Observing System (CIOOS) Pacific [ERDDAP server](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html). 
+Shown at the [bottom](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/#meds-buoy-data) are 2021 and 2022 sea surface temperature observations from [Canadian Pacific MEDS buoys](https://meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/index-eng.htm). Data, including detailed quality control information, is accessed from the Canadian Integrated Ocean Observing System (CIOOS) Pacific [ERDDAP server](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html). 
 
 **These figures are provisional and correctness is not guaranteed. :)**
 
@@ -20,15 +20,14 @@ These maps update on **Monday and Thursday** using the most recent week of data 
 
 ## OISST:
 
-The first plot is 7-day mean daily OI interpolated SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, calculated by subtracting the mean SST from **1991-2020** during the same week. The spatial resolution is 0.25 degrees.
+The first plot is 7-day mean daily OI interpolated SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly.
 
 <img src="SST_OI_7-day_rollingavg.png" width="500" /> <img src="SST_OI_7-day_rollingavg_anom.png" width="505" />
 
 
 ## MODIS-Aqua NRT SST:
 
-The first plot shows 7-day mean daily MODIS-Aqua SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly, using the climatology of daily mean SST from **2003-2020** during the same week. The third map shows the number of times each pixel had data in the 7-day time period. **Note** that pixels with fewer than 2 observations from the week are masked out. 
-The spatial resolution is 0.04166 degrees with low quality pixels removed.
+The first plot shows 7-day mean daily MODIS-Aqua SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly. The third map shows the number of times each pixel had data in the 7-day time period. **Note** that pixels with fewer than 2 observations from the week are masked out.
 
 <img src="SST_MODISA_7-day_rollingavg.png" width="500" /> <img src="SST_MODISA_7-day_rollingavg_anom.png" width="505" /> 
 
@@ -39,12 +38,12 @@ The spatial resolution is 0.04166 degrees with low quality pixels removed.
   
 ## MEDS Buoy data:
 
-The plots below show sea surface temperature measured at Canadian MEDS buoys (left) (accessed from the [CIOOS ERDDAP server](https://data.cioospacific.ca/erddap/)), and map of these buoys with available data (right). The 2021 daily mean SST at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading). The beginning of the 2021 "Heat Dome" heatwave is delineated by a dashed vertical line on 2021-06-26. The white line outlined in black are observations from 2022.
+The 2021 daily mean SST at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading). The white line outlined in black are daily mean observations from 2022. The beginning of the 2021 "Heat Dome" heatwave is delineated by a dashed vertical line on 2021-06-26. 
 
 <img src="Daily_mean_buoy_overview.png" width="1000" />
 
 
-## Other data sources, maps and links of interest:
+## Other MHW data sources, maps and links of interest:
 
 * [California Current Marine Heatwave Tracker](https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-projects-blobtracker)
 * [California Current Marine Heatwave Tracker: Regional EEZ MHW](https://oceanview.pfeg.noaa.gov/projects/mhw/regional)
@@ -61,8 +60,8 @@ The plots below show sea surface temperature measured at Canadian MEDS buoys (le
 * CoastWatch ERDDAP Server: https://coastwatch.pfeg.noaa.gov/erddap/index.html
 * CIOOS Pacific ERDDAP Server: https://data.cioospacific.ca/erddap/index.html
 * DFO (2021). Marine Environmental Data Section Archive, https://meds-sdmm.dfo-mpo.gc.ca, Ecosystem and Oceans Science, Department of Fisheries and Oceans Canada.
-* [Peter S. Galbraith, Pierre Larouche & Carla Caverhill (2021): A Sea-Surface
+* Peter S. Galbraith, Pierre Larouche & Carla Caverhill (2021): A Sea-Surface
 Temperature Homogenization Blend for the Northwest Atlantic, Canadian Journal of Remote
-Sensing, DOI: 10.1080/07038992.2021.1924645](https://www.tandfonline.com/doi/full/10.1080/07038992.2021.1924645)
-* Huang, Boyin; Liu, Chunying; Banzon, Viva F.; Freeman, Eric; Graham, Garrett; Hankins, Bill; Smith, Thomas M.; Zhang, Huai-Min. (2020): NOAA 0.25-degree Daily Optimum Interpolation Sea Surface Temperature (OISST), Version 2.1. NOAA National Centers for Environmental Information. https://doi.org/10.25921/RE9P-PT57.
+Sensing, [doi:10.1080/07038992.2021.1924645](https://www.tandfonline.com/doi/full/10.1080/07038992.2021.1924645)
+* Huang, Boyin; Liu, Chunying; Banzon, Viva F.; Freeman, Eric; Graham, Garrett; Hankins, Bill; Smith, Thomas M.; Zhang, Huai-Min. (2020): NOAA 0.25-degree Daily Optimum Interpolation Sea Surface Temperature (OISST), Version 2.1. NOAA National Centers for Environmental Information. [doi:10.25921/RE9P-PT57](https://doi.org/10.25921/RE9P-PT57)
 * NASA Goddard Space Flight Center, Ocean Ecology Laboratory, Ocean Biology Processing Group. Moderate-resolution Imaging Spectroradiometer (MODIS) Aqua NRT SST data; NASA OB.DAAC, Greenbelt, MD, USA.
