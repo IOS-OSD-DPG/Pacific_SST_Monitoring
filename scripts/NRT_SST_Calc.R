@@ -6,6 +6,7 @@ library(ggplot2)
 library(lubridate)
 theme_set(theme_bw())
 
+
 # Area
 latlim = c(30,61.5) #c(10,60)
 lonlim = c(-160,-120)
@@ -30,7 +31,7 @@ print(paste(yday(end_date)-yday(start_date)+1,"days"))
 
 # MODISA rolling 7-day average ####
 sstInfo <- info("erdMH1sstd1dayR20190", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
-sstInfo <- info("erdMH1sstd1dayR20190SQ", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
+# sstInfo <- info("erdMH1sstd1dayR20190SQ", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
 
 sstdata <- griddap(sstInfo, latitude = latlim, longitude = lonlim, 
                     time = timelim)
