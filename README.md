@@ -45,7 +45,7 @@ The 2021 daily mean SST at each buoy are shown as coloured lines, plotted over t
 
 ## Other MHW data sources, maps and links of interest:
 
-* [California Current Marine Heatwave Tracker](https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-projects-blobtracker)
+* [California Current Marine Heatwave Tracker]([https://www.integratedecosystemassessment.noaa.gov/regions/california-current/mhw](https://oceanview.pfeg.noaa.gov/projects/mhw/latest))
 * [California Current Marine Heatwave Tracker: Regional EEZ MHW](https://oceanview.pfeg.noaa.gov/projects/mhw/regional)
 * [Pacific Islands Ocean Observing System](https://www.pacioos.hawaii.edu/voyager/): Near-Real Time data viewer including Coral Reef Watch SST and SST anomaly
 * [Global daily SST, 7-day trend and anomaly (NOAA CoralReefWatch)](https://www.ospo.noaa.gov/Products/ocean/cb/sst5km/)
