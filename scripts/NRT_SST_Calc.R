@@ -6,7 +6,6 @@ library(ggplot2)
 library(lubridate)
 theme_set(theme_bw())
 
-
 # Area
 latlim = c(30,61.5) #c(10,60)
 lonlim = c(-160,-120)
@@ -145,3 +144,9 @@ yr7days <- yr7days %>%
 saveRDS(object = yr7days, file = "data/OI_SST7day_rollingavgbackup_climatology.rds")
 rm(roll7,sstyr)
 gc()
+
+
+yr7days %>% ggplot(aes(x = lon, y = lat, fill = sst_7day_climsd)) +
+geom_tile() + scale_fill_gradientn(colours = pals::jet(20), limits = c(0,3)) +
+  ylab("test")
+
