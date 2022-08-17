@@ -1,6 +1,6 @@
 ---
 # Current Sea Surface Temperature in the Northeast Pacific
-#### Andrea Hilborn
+#### Andrea Hilborn and Charles Hannah
 ---
 
 These maps show the 7-day mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly for the Northeast Pacific (NEP) for the latest week of data available. Two satellite SST datasets are shown for comparison:
