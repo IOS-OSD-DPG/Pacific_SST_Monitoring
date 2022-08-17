@@ -8,7 +8,7 @@ These maps show the 7-day mean Sea Surface Temperature (SST, degrees Celsius) an
 * NOAA Optimal Interpolation gap-filled SST (OISST). Anomaly maps were calculated using the current week and subtracting the 30-year mean (1991-2020). The spatial resolution is 0.25 degrees.
 * NASA MODIS-Aqua NRT SST. Anomaly maps were calculated using the current week and subtracting the 18-year mean (2003-2020). The spatial resolution is 0.04166 degrees with low quality pixels removed. **Out of date**
  
-Data is accessed from the NOAA CoastWatch [ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html). SST pixels exceeding 1.29 standard deviations above the climatology are delineated on the anomaly maps (labelled as **1.29 SD**), a threshold for tracking marine heatwaves.
+Data is accessed from the NOAA CoastWatch [ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html). SST pixels exceeding 1.29 standard deviations above the climatology are delineated on the anomaly maps (labelled as **1.29 SD**, approximately the 90th percentile), a threshold for tracking marine heatwaves.
 
 Shown at the [bottom](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/#meds-buoy-data) are 2021 and 2022 sea surface temperature observations from [Canadian Pacific MEDS buoys](https://meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/index-eng.htm). Data, including detailed quality control information, is accessed from the Canadian Integrated Ocean Observing System (CIOOS) Pacific [ERDDAP server](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html). 
 
