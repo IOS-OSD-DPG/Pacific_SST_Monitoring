@@ -1,6 +1,9 @@
 ---
-# Current Sea Surface Temperature in the Northeast Pacific
+
+# Sea Surface Temperature in the Northeast Pacific:
+### Experimental maps and data of current conditions
 #### Andrea Hilborn and Charles Hannah
+
 ---
 
 These maps show the 7-day mean Sea Surface Temperature (SST, degrees Celsius) and SST anomaly for the Northeast Pacific (NEP) for the latest week of data available. Two satellite SST datasets are shown for comparison:
@@ -46,7 +49,7 @@ The 2021 daily mean SST at each buoy are shown as coloured lines, plotted over t
 ## Other MHW data sources, maps and links of interest:
 
 * [Multi-Scale Ultra-High resolution SST Anomaly, Daily](https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.graph?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CsstAnom&amp;.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
-<img src="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.png?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CsstAnom&amp;.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff" alt="Multi-Scale Ultra-High Resolution SST Anomaly, Daily">
+<img src="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.png?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CsstAnom&amp;.trim=0&amp;.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff" alt="Multi-Scale Ultra-High Resolution SST Anomaly, Daily">
 
 * [California Current Marine Heatwave Tracker](https://oceanview.pfeg.noaa.gov/projects/mhw/latest)
 * [California Current Marine Heatwave Tracker: Regional EEZ MHW](https://oceanview.pfeg.noaa.gov/projects/mhw/regional)
