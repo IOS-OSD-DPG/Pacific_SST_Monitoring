@@ -146,7 +146,7 @@ rm(roll7,sstyr)
 gc()
 
 
-yr7days %>% ggplot(aes(x = lon, y = lat, fill = sst_7day_climsd)) +
-geom_tile() + scale_fill_gradientn(colours = pals::jet(20), limits = c(0,3)) +
-  ylab("test")
+# yr7days %>% ggplot(aes(x = lon, y = lat, fill = sst_7day_climsd)) +
+# geom_tile() + scale_fill_gradientn(colours = pals::jet(20), limits = c(0,3)) +
+  # ylab("test")
 

@@ -40,7 +40,9 @@ curr_clim <- full_join(curr7days, clim7days, by = c("lon","lat"))
 curr_clim$diff_7day_deg <- curr_clim$sst_7day-curr_clim$sst_7day_clim
 # Calculate data outside 90th percentile / 1.3 times the SD
 curr_clim$sd_1.3_pos <- (curr_clim$sst_7day_clim+(curr_clim$sst_7day_climsd*1.29))
+curr_clim$sd_2.3_pos <- (curr_clim$sst_7day_clim+(curr_clim$sst_7day_climsd*2.326))
 curr_clim$sd_above <- curr_clim$sd_1.3_pos-curr_clim$sst_7day
+curr_clim$sd_above2 <- curr_clim$sd_2.3_pos-curr_clim$sst_7day
 curr_clim$perc90_above <- curr_clim$sst_7day_90-curr_clim$sst_7day
   
 start = unique(curr_clim$start_date)
@@ -92,8 +94,11 @@ curr_clim %>%
   #              breaks = c(0), colour = "green") +
   geom_contour(aes(x = lon, y = lat, z = sd_above, colour = "1.29 SD"), 
                size = 0.5, breaks = 0) +
+  geom_contour(aes(x = lon, y = lat, z = sd_above2, colour = "2.33 SD"), 
+               size = 0.5, breaks = 0) +
   scale_colour_manual(name = NULL, guide = "legend", 
-                      values = c("1.29 SD" = "grey30")) +
+                      values = c("1.29 SD" = "grey30",
+                                 "2.33 SD" = "black")) +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "black", ticks.linewidth = 1.5, 
                                frame.colour = "black", frame.linewidth = 1.5, order = 1),
