@@ -14,6 +14,7 @@ MODISPROCESS = TRUE
 
 # Time limit:
 end_date <- Sys.Date() - 2
+# end_date <- Sys.Date() - 5
 start_date = end_date-6 #-6 for 7 days, -13 for 2 weeks 
 timelim = c(start_date, end_date)
 print(timelim)
@@ -161,4 +162,4 @@ gc()
 # yr7days %>% ggplot(aes(x = lon, y = lat, fill = sst_7day_climsd)) +
 # geom_tile() + scale_fill_gradientn(colours = pals::jet(20), limits = c(0,3)) +
   # ylab("test")
-
+beepr::beep()
