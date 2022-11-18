@@ -67,11 +67,12 @@ curr_clim %>%
   ggplot() +
   geom_tile(aes(x = lon, y = lat, fill = sst_7day)) +
   scale_fill_gradientn(colours = jet(50), limits=c(0,30), breaks = c(0,5,10, 15, 20,25,30)) +
-  geom_contour(aes(x = lon, y = lat, z = sst_7day), size = 0.5,
+  geom_contour(aes(x = lon, y = lat, z = sst_7day), linewidth = 0.5,
                breaks = c(0,5,10, 15, 20,25,30), colour = "grey30") +
   guides(fill = guide_colorbar(barheight = 12, 
-                               ticks.colour = "grey30", ticks.linewidth = 1.5,
-                               frame.colour = "black", frame.linewidth = 1.5)) +
+                               ticks.colour = "grey30", ticks.linewidth = 0.5, 
+                               frame.colour = "black", frame.linewidth = 0.5,
+                               order = 1)) +
   theme(legend.position = "right",panel.background = element_rect(fill = "grey90")) +
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
   geom_text(data = line_p, aes(x = lon, y = lat, label = stn), nudge_y = -0.5, size = 3) +
@@ -90,8 +91,8 @@ curr_clim %>%
   geom_text(aes(x = -132.4, y = 52.475, label = "GHW"), colour = "black", size = 3.5) +
   geom_text(aes(x = -131.0, y = 51.7, label = "GHS"), colour = "black", size = 3.5) +
   geom_text(aes(x = -132.2, y = 51.9, label = "GHO"), colour = "black", size = 3.5) +
-  geom_polygon(data = usa, aes(x = long, y = lat, group = group), fill = "grey60", colour = "grey40", size = 0.5) +
-  geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) +
+  geom_polygon(data = usa, aes(x = long, y = lat, group = group), fill = "grey60", colour = "grey40", linewidth = 0.5) +
+  geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) 
   #
   
@@ -111,11 +112,12 @@ curr_clim %>%
   scale_fill_gradientn(colours = gmt_jet, 
                        limits = c(-3,3), breaks = seq(-3,3,1)) +
   geom_contour(aes(x = lon, y = lat, z = sd_above, colour = "1.29 SD"), 
-               size = 0.3, breaks = 0) +
+               linewidth = 0.3, breaks = 0) +
   scale_colour_manual(name = NULL, guide = "legend", values = c("1.29 SD" = "grey30")) +
   guides(fill = guide_colorbar(barheight = 12, 
-                               ticks.colour = "black", ticks.linewidth = 1.5, 
-                               frame.colour = "black", frame.linewidth = 1.5),
+                               ticks.colour = "grey30", ticks.linewidth = 0.5, 
+                               frame.colour = "black", frame.linewidth = 0.5,
+                               order = 1),
          colour = guide_legend(override.aes = list(linetype = 1, shape = NA))) +
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
   geom_text(data = line_p, aes(x = lon, y = lat, label = stn), nudge_y = -0.5, size = 3) +
@@ -138,8 +140,8 @@ curr_clim %>%
   geom_text(aes(x = -131.0, y = 51.7, label = "GHS"), colour = "black", size = 3.5) +
   geom_text(aes(x = -132.2, y = 51.9, label = "GHO"), colour = "black", size = 3.5) +
   #
-  geom_polygon(data = usa, aes(x = long, y = lat, group = group), fill = "grey60", colour = "grey40", size = 0.5) +
-  geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) +
+  geom_polygon(data = usa, aes(x = long, y = lat, group = group), fill = "grey60", colour = "grey40", linewidth = 0.5) +
+  geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) 
 
 ggsave(filename = paste0("figures/Haida_Gwaii/SST_",datavar,"_7-day_rollingavg_anom_",end,"_HG.png"), 
@@ -156,8 +158,9 @@ curr_clim %>%
   ggplot() +
   geom_tile(aes(x = lon, y = lat, fill = sst_7dayn)) +
   scale_fill_gradientn(colours = c("grey90", "grey80", pals::jet(6)), breaks = seq(0,7,1), limits = c(0,7)) +
-  guides(fill = guide_colorbar(barheight = 12, ticks.linewidth = 1.5,
-                               frame.colour = "black", frame.linewidth = 1.5,
+  guides(fill = guide_colorbar(barheight = 12, ticks.linewidth = 0.5, 
+                               frame.colour = "black", frame.linewidth = 0.5,
+                               order = 1,
                                nbin = 8, raster=F, ticks.colour = NA)) +
   theme(legend.position = "right",panel.background = element_rect(fill = "grey90")) +
   labs(fill = 'Weekly \nObservations',
@@ -177,8 +180,8 @@ curr_clim %>%
   geom_text(aes(x = -131.0, y = 51.7, label = "GHS"), colour = "white", size = 3.5) +
   geom_text(aes(x = -132.2, y = 51.9, label = "GHO"), colour = "white", size = 3.5) +
   #
-  geom_polygon(data = usa, aes(x = long, y = lat, group = group), fill = "grey60", colour = "grey40", size = 0.5) +
-  geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) +
+  geom_polygon(data = usa, aes(x = long, y = lat, group = group), fill = "grey60", colour = "grey40", linewidth = 0.5) +
+  geom_polygon(data = bc, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) 
   
   ggsave(filename = paste0("figures/Haida_Gwaii/SST_",datavar,"_7-day_rollingavg_n_",end,"_HG.png"), 

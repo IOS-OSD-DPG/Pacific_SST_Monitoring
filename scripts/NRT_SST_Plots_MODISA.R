@@ -61,7 +61,7 @@ curr_clim %>%
   ggplot() +
   geom_tile(aes(x = lon, y = lat, fill = sst_7day)) +
   scale_fill_gradientn(colours = jet(50), limits=c(0,30), breaks = c(0,5,10, 15, 20,25,30)) +
-  geom_contour(aes(x = lon, y = lat, z = sst_7day), size = 0.5,
+  geom_contour(aes(x = lon, y = lat, z = sst_7day), linewidth = 0.5,
                breaks = c(0,5,10, 15, 20,25,30), colour = "grey30") +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "grey30", ticks.linewidth = 1.5,
@@ -76,7 +76,7 @@ curr_clim %>%
        caption = datasource) + xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) +
-  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5)
+  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5)
 
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
@@ -98,7 +98,7 @@ curr_clim %>%
   scale_fill_gradientn(colours = gmt_jet, 
                        limits = c(-3,3), breaks = seq(-3,3,1)) +
   geom_contour(aes(x = lon, y = lat, z = sd_above, colour = "1.29 SD"), 
-               size = 0.3, breaks = 0) +
+               linewidth = 0.3, breaks = 0) +
   scale_colour_manual(name = NULL, guide = "legend", values = c("1.29 SD" = "grey30")) +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "black", ticks.linewidth = 1.5, 
@@ -117,7 +117,7 @@ curr_clim %>%
   xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim),max(lonlim),5)) +
-  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5)
+  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5)
 
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_anom_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
@@ -137,7 +137,7 @@ curr_clim %>%
     ggplot() +
     geom_tile(aes(x = lon, y = lat, fill = sst_7dayn)) +
     scale_fill_gradientn(colours = c("grey90", "grey80", pals::jet(6)), breaks = seq(0,7,1), limits = c(0,7)) +
-    # geom_contour(aes(x = lon, y = lat, z = sst_7dayn), size = 0.5,
+    # geom_contour(aes(x = lon, y = lat, z = sst_7dayn), linewidth = 0.5,
     #              breaks = c(5,10, 15, 20), colour = "black") +
     guides(fill = guide_colorbar(barheight = 12, ticks.linewidth = 1.5,
                                  frame.colour = "black", frame.linewidth = 1.5,
@@ -151,7 +151,7 @@ curr_clim %>%
     xlab(NULL) + ylab(NULL) +
     scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
     scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) +
-    geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5)
+    geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5)
   
   ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_n_",end,".png"), 
          device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")

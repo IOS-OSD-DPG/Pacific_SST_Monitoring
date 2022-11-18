@@ -56,11 +56,12 @@ curr_clim %>%
   ggplot() +
   geom_tile(aes(x = lon, y = lat, fill = sst_7day)) +
   scale_fill_gradientn(colours = jet(50), limits=c(0,30), breaks = c(0,5,10, 15, 20,25,30)) +
-  geom_contour(aes(x = lon, y = lat, z = sst_7day), size = 0.5,
+  geom_contour(aes(x = lon, y = lat, z = sst_7day), linewidth = 0.5,
                breaks = c(0,5,10, 15,20,25,30), colour = "grey30") +
   guides(fill = guide_colorbar(barheight = 12, 
-                               ticks.colour = "grey30", ticks.linewidth = 1.5, 
-                               frame.colour = "black", frame.linewidth = 1.5, order = 1),
+                               ticks.colour = "grey30", ticks.linewidth = 0.5, 
+                               frame.colour = "black", frame.linewidth = 0.5,
+                               order = 1),
          colour = guide_legend(override.aes = list(linetype = NA), order = 2)) +
   theme(legend.position = "right") +
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
@@ -73,7 +74,7 @@ curr_clim %>%
        caption = datasource) + xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) + 
-  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5) 
+  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5) 
   # geom_point(data = buoys, aes(x = long, y = lat), size = 0.1, colour = "black")
 
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_",end,".png"), 
@@ -93,15 +94,16 @@ curr_clim %>%
   # geom_contour(aes(x = lon, y = lat, z = perc90_above), size = 0.5,
   #              breaks = c(0), colour = "green") +
   geom_contour(aes(x = lon, y = lat, z = sd_above, colour = "1.29 SD"), 
-               size = 0.5, breaks = 0) +
+               linewidth = 0.5, breaks = 0) +
   geom_contour(aes(x = lon, y = lat, z = sd_above2, colour = "2.33 SD"), 
-               size = 0.5, breaks = 0) +
+               linewidth = 0.5, breaks = 0) +
   scale_colour_manual(name = NULL, guide = "legend", 
                       values = c("1.29 SD" = "grey30",
                                  "2.33 SD" = "black")) +
   guides(fill = guide_colorbar(barheight = 12, 
-                               ticks.colour = "black", ticks.linewidth = 1.5, 
-                               frame.colour = "black", frame.linewidth = 1.5, order = 1),
+                               ticks.colour = "grey30", ticks.linewidth = 0.5, 
+                               frame.colour = "black", frame.linewidth = 0.5,
+                               order = 1),
          colour = guide_legend(override.aes = list(linetype = c(1), shape = c(NA)))) +
   theme(legend.position = "right", panel.background = element_rect(fill = "grey80")) +
   coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
@@ -114,9 +116,13 @@ curr_clim %>%
   xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim),max(lonlim),5)) +
-  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", size = 0.5)
+  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5)
 
 ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_anom_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
 ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_anom.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
+
+# Write out data as geotiff
+
+
