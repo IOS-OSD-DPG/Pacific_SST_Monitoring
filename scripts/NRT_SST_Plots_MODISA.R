@@ -64,8 +64,9 @@ curr_clim %>%
   geom_contour(aes(x = lon, y = lat, z = sst_7day), linewidth = 0.5,
                breaks = c(0,5,10, 15, 20,25,30), colour = "grey30") +
   guides(fill = guide_colorbar(barheight = 12, 
-                               ticks.colour = "grey30", ticks.linewidth = 1.5,
-                               frame.colour = "black", frame.linewidth = 1.5)) +
+                               ticks.colour = "grey30", ticks.linewidth = 0.5, 
+                               frame.colour = "black", frame.linewidth = 0.5,
+                               order = 1)) +
   theme(legend.position = "right",panel.background = element_rect(fill = "grey90")) +
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
   geom_text(data = line_p, aes(x = lon, y = lat, label = stn), nudge_y = -0.5, size = 3) +
@@ -101,8 +102,9 @@ curr_clim %>%
                linewidth = 0.3, breaks = 0) +
   scale_colour_manual(name = NULL, guide = "legend", values = c("1.29 SD" = "grey30")) +
   guides(fill = guide_colorbar(barheight = 12, 
-                               ticks.colour = "black", ticks.linewidth = 1.5, 
-                               frame.colour = "black", frame.linewidth = 1.5),
+                               ticks.colour = "grey30", ticks.linewidth = 0.5, 
+                               frame.colour = "black", frame.linewidth = 0.5,
+                               order = 1),
          colour = guide_legend(override.aes = list(linetype = 1, shape = NA))) +
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
   geom_text(data = line_p, aes(x = lon, y = lat, label = stn), nudge_y = -0.5, size = 3) +
@@ -139,8 +141,9 @@ curr_clim %>%
     scale_fill_gradientn(colours = c("grey90", "grey80", pals::jet(6)), breaks = seq(0,7,1), limits = c(0,7)) +
     # geom_contour(aes(x = lon, y = lat, z = sst_7dayn), linewidth = 0.5,
     #              breaks = c(5,10, 15, 20), colour = "black") +
-    guides(fill = guide_colorbar(barheight = 12, ticks.linewidth = 1.5,
-                                 frame.colour = "black", frame.linewidth = 1.5,
+    guides(fill = guide_colorbar(barheight = 12, ticks.linewidth = 0.5, 
+                                 frame.colour = "black", frame.linewidth = 0.5,
+                                 order = 1,
                                  nbin = 8, raster=F, ticks.colour = NA)) +
     theme(legend.position = "right",panel.background = element_rect(fill = "grey90")) +
     coord_quickmap(xlim = lonlim, ylim = latlim, expand = F) +
