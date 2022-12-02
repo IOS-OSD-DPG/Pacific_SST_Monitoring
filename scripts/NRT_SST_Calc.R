@@ -14,7 +14,16 @@ MODISPROCESS = TRUE
 OIPROCESS = TRUE
 
 # Time limit:
-end_date <- Sys.Date() - 2
+all_args <- commandArgs(trailingOnly=TRUE)
+if (length(all_args) ==1) {
+  end_date <- as.Date(all_args[1])
+  message(str(end_date))
+} else {
+  break
+}
+
+# end_date <- Sys.Date() - 2
+# end_date <- as.Date("2022-07-16")
 # end_date <- Sys.Date() - 3
 start_date = end_date-6 #-6 for 7 days, -13 for 2 weeks 
 timelim = c(start_date, end_date)
