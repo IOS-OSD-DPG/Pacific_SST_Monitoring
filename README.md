@@ -2,9 +2,9 @@
 
 # Sea Surface Temperature in the Northeast Pacific:
 ### Experimental maps and data of current conditions
-#### Andrea Hilborn and Charles Hannah
-
+#### Andrea Hilborn[:email:](mailto:andrea.hilborn@dfo-mpo.gc.ca?subject=[MHW_Github_Page]%20Source%20Han%20Sans) and Charles Hannah
 ---
+
 
 This page has maps of 7-day mean Sea Surface Temperature (SST, degrees Celsius) and SST anomalies for the Northeast Pacific (NEP) for the latest week of data available, and water temperatures and climatologies from buoys maintained by ECCC.
 Info on this page:
@@ -20,7 +20,7 @@ Data is accessed from the NOAA CoastWatch [ERDDAP server](https://coastwatch.pfe
 
 **These figures are provisional and correctness is not guaranteed. :)**
 
-These maps update on **Monday and Thursday** using the most recent week of data (lag 2 days from the current date). A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (.rds format).
+These maps update on **Monday** using the most recent week of data. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (.rds format).
 
 ## OISST:
 
