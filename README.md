@@ -2,7 +2,7 @@
 
 # Sea Surface Temperature in the Northeast Pacific:
 ### Experimental maps and data of current conditions
-#### Andrea Hilborn[:email:](mailto:andrea.hilborn@dfo-mpo.gc.ca?subject=MHW_Github_Page) and Charles Hannah
+#### Andrea Hilborn and Charles Hannah
 ---
 
 
