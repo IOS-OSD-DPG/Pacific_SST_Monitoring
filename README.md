@@ -31,9 +31,11 @@ The first plot is 7-day mean daily OI interpolated SST, with contours at 5-degre
 <img src="SST_OI_7-day_rollingavg.png" width="500" /> <img src="SST_OI_7-day_rollingavg_anom.png" width="505" />
 
 
-## MEDS Buoy data:
+## MEDS and ECCC Buoy data:
 
 The 2022 daily mean SST at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading). The white line outlined in black are daily mean observations from 2023. The climatology spans 1991-2020, though some buoys began collecting data later: C46146 Halibut Bank and C46131 Sentry Shoal in 1992, C46147 South Moresby in 1993, and C46132 South Brooks in 1994. 
+
+Data sources are [DFO MEDS](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC-MSC](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html) buoys, acquired via CIOOS Pacific.
 
 :arrow_right: To view 2021-2022 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/Buoy_temperature.md). :arrow_left:
 
