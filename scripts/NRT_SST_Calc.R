@@ -10,7 +10,7 @@ theme_set(theme_bw())
 latlim = c(30,61.5) #c(10,60)
 lonlim = c(-160,-120)
 
-MODISPROCESS = TRUE
+MODISPROCESS = FALSE
 OIPROCESS = TRUE
 
 # Time limit:
