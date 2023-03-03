@@ -14,6 +14,7 @@ This page has maps of 7-day mean satellite Sea Surface Temperature (SST, degrees
 * [ECCC Buoy Data](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#eccc-buoy-data)
 * [NASA MODIS-Aqua NRT SST](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#modis-aqua-nrt-sst)
 * [Other MHW data sources and links](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#other-mhw-data-sources-maps-and-links-of-interest)
+* [References](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#references)
 
 <details>
 <summary> 
