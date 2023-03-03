@@ -1,28 +1,41 @@
 ---
 
-# Sea Surface Temperature in the Northeast Pacific:
+# Sea Surface Temperature in the Northeast Pacific
 ### Experimental maps and data of current conditions
 #### Andrea Hilborn and Charles Hannah
 ---
 
 
-This page has maps of 7-day mean Sea Surface Temperature (SST, degrees Celsius) and SST anomalies for the Northeast Pacific (NEP) for the latest week of data available, and water temperatures and climatologies from buoys maintained by ECCC.
-Info on this page:
+This page has maps of 7-day mean satellite Sea Surface Temperature (SST, degrees Celsius) and anomalies for the Northeast Pacific, and recent water temperatures from buoys maintained by Environment and Climate Change Canada (ECCC).
 
-* [NOAA Optimal Interpolation gap-filled SST (OISST).](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#oisst) Anomaly maps were calculated using the current week and subtracting the 30-year mean (1991-2020). The spatial resolution is 0.25 degrees.
-* [MEDS Buoy Data](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#meds-buoy-data)
-* [NASA MODIS-Aqua NRT SST.](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#modis-aqua-nrt-sst) Anomaly maps were calculated using the current week and subtracting the 18-year mean (2003-2020). The spatial resolution is 0.04166 degrees with low quality pixels removed. 
-* [Other MHW data sources and links](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#other-mhw-data-sources-maps-and-links-of-interest) (embedded from NOAA Coastwatch), Daily
+#### Contents:
+
+* [NOAA Optimal Interpolation gap-filled SST (OISST).](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#oisst)
+* [ECCC Buoy Data](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#eccc-buoy-data)
+* [NASA MODIS-Aqua NRT SST](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#modis-aqua-nrt-sst)
+* [Other MHW data sources and links](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#other-mhw-data-sources-maps-and-links-of-interest)
+
+<details>
+<summary> 
+Click here to read background details
+</summary>
+
+### Background:
  
-Data is accessed from the NOAA CoastWatch [ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html). SST pixels exceeding 1.29 standard deviations above the climatology are delineated on the anomaly maps (labelled as **1.29 SD**, approximately the 90th percentile), a threshold for tracking marine heatwaves.
+Satellite SST data is accessed from the NOAA CoastWatch [ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html). SST pixels exceeding 1.29 standard deviations above the climatology are delineated on the anomaly maps (labelled as **1.29 SD**, approximately the 90th percentile), a threshold for tracking marine heatwaves.
 
-2021 and 2022 sea surface temperature observations from [Canadian Pacific MEDS buoys](https://meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/index-eng.htm) are shown for comparison. Data, including detailed quality control information, is accessed from the Canadian Integrated Ocean Observing System (CIOOS) Pacific [ERDDAP server](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html). 
+* NOAA Optimal Interpolation gap-filled SST (OISST): Anomaly maps were calculated using the current week and subtracting the 30-year mean (1991-2020). The spatial resolution is 0.25 degrees.
+* NASA MODIS-Aqua NRT SST: Anomaly maps were calculated using the current week and subtracting the 18-year mean (2003-2020). The spatial resolution is 0.04166 degrees with low quality pixels removed. 
+
+Surface temperature observations from Canadian Pacific buoys, including detailed quality control information, is accessed from the Canadian Integrated Ocean Observing System (CIOOS) Pacific [ERDDAP server](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html). The quality control methods are outlined in [Kellogg et al., 2021: "Quality Control of Weather/Wave Buoy Temperature Data Provided by Environment and Climate Change Canada"](https://drive.google.com/file/d/1J6I8PFuDN0Ca-8wdjfmAWRmeylPGn_s4/view)
+
+</details>
 
 **These figures are provisional and correctness is not guaranteed. :)**
 
 These maps update on **Monday** using the most recent week of data. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (.rds format).
 
-## OISST:
+## OISST
 
 The first plot is 7-day mean daily OI interpolated SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly.
 
@@ -31,7 +44,7 @@ The first plot is 7-day mean daily OI interpolated SST, with contours at 5-degre
 <img src="SST_OI_7-day_rollingavg.png" width="500" /> <img src="SST_OI_7-day_rollingavg_anom.png" width="505" />
 
 
-## MEDS and ECCC Buoy data:
+## ECCC Buoy data
 
 The 2022 daily mean SST at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading). The white line outlined in black are daily mean observations from 2023. The climatology spans 1991-2020, though some buoys began collecting data later: C46146 Halibut Bank and C46131 Sentry Shoal in 1992, C46147 South Moresby in 1993, and C46132 South Brooks in 1994. 
 
@@ -42,7 +55,11 @@ The data sources are Environment and Climate Change Canada (ECCC) buoys, acquire
 <img src="Daily_mean_buoy_overview_2023.png" width="1000" />
 
 
-## MODIS-Aqua NRT SST:
+<details>
+<summary> 
+
+## MODIS-Aqua NRT SST
+</summary>
 
 The first plot shows 7-day mean daily MODIS-Aqua SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly. The third map shows the number of times each pixel had data in the 7-day time period. **Note** that pixels with fewer than 2 observations from the week are masked out.
 
@@ -52,8 +69,9 @@ The first plot shows 7-day mean daily MODIS-Aqua SST, with contours at 5-degree 
 
 <img src="SST_MODISA_7-day_rollingavg_n.png" width="400" /> 
 
+</details>
  
-## Other MHW data sources, maps and links of interest:
+## Other MHW data sources, maps and links of interest
 
 * [Multi-Scale Ultra-High resolution SST Anomaly, Daily](https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.graph?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CsstAnom&amp;.trim=0&amp;.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff) ***click to view latest image**
 <img src="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.png?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CsstAnom&amp;.trim=0&amp;.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff" alt="Multi-Scale Ultra-High Resolution SST Anomaly, Daily">
@@ -67,14 +85,17 @@ The first plot shows 7-day mean daily MODIS-Aqua SST, with contours at 5-degree 
 * [NOAA CoastWatch Data Viewer](https://coastwatch.noaa.gov/cw_html/cwViewer.html) and [CoastWatch commonly used SST data sources](https://coastwatch.pfeg.noaa.gov/data.html)
 * [NOAA Blob article](https://www.fisheries.noaa.gov/feature-story/new-marine-heatwave-emerges-west-coast-resembles-blob) and [more recent one](https://www.fisheries.noaa.gov/feature-story/looking-back-blob-record-warming-drives-unprecedented-ocean-change)
 
-## References:
+<details>
+<summary> 
+
+## References
+</summary>
 
 * California Current Marine Heatwave Tracker: https://oceanview.pfeg.noaa.gov/projects/mhw/latest
 * CoastWatch ERDDAP Server: https://coastwatch.pfeg.noaa.gov/erddap/index.html
 * CIOOS Pacific ERDDAP Server: https://data.cioospacific.ca/erddap/index.html
-* DFO (2021). Marine Environmental Data Section Archive, https://meds-sdmm.dfo-mpo.gc.ca, Ecosystem and Oceans Science, Department of Fisheries and Oceans Canada.
-* Peter S. Galbraith, Pierre Larouche & Carla Caverhill (2021): A Sea-Surface
+* Galbraith, P.S., Larouche, P. & Caverhill, C. (2021): A Sea-Surface
 Temperature Homogenization Blend for the Northwest Atlantic, Canadian Journal of Remote
 Sensing, [doi:10.1080/07038992.2021.1924645](https://www.tandfonline.com/doi/full/10.1080/07038992.2021.1924645)
-* Huang, Boyin; Liu, Chunying; Banzon, Viva F.; Freeman, Eric; Graham, Garrett; Hankins, Bill; Smith, Thomas M.; Zhang, Huai-Min. (2020): NOAA 0.25-degree Daily Optimum Interpolation Sea Surface Temperature (OISST), Version 2.1. NOAA National Centers for Environmental Information. [doi:10.25921/RE9P-PT57](https://doi.org/10.25921/RE9P-PT57)
-* NASA Goddard Space Flight Center, Ocean Ecology Laboratory, Ocean Biology Processing Group. Moderate-resolution Imaging Spectroradiometer (MODIS) Aqua NRT SST data; NASA OB.DAAC, Greenbelt, MD, USA.
+* Hobday, A., Alexander, L., Perkins, S., Smale, D., Straub, S., Oliver, E., Benthuysen, J., Burrows, M., Donat, M., Feng, M., Holbrook, N., Moore, P., Scannell, H., Sen Gupta, A. and Wernberg, T. (2016): A hierarchical approach to defining marine heatwaves. Progress in Oceanography. 141, 227-238, [doi:10.1016/j.pocean.2015.12.014](https://doi.org/10.1016/j.pocean.2015.12.014)
+</details>
