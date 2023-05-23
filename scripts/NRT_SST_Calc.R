@@ -23,7 +23,9 @@ OIPROCESS = TRUE
 # }
 
 end_date <- Sys.Date() - 2
-# end_date <- as.Date("2022-07-16")
+
+end_date <- as.Date("2023-05-20")
+# end_date = as.Date("2023-03-04")
 # end_date <- Sys.Date() - 3
 start_date = end_date-6 #-6 for 7 days, -13 for 2 weeks 
 timelim = c(start_date, end_date)
