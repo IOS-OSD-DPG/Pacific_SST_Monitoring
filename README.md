@@ -38,8 +38,6 @@ These maps update on **Monday** using the most recent week of data. A limited nu
 
 ## OISST
 
-The first plot is 7-day mean daily OI interpolated SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly.
-
 :arrow_right: To view map insets near Haida Gwaii click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/Haida_Gwaii.md). :arrow_left:
 
 <img src="SST_OI_7-day_rollingavg.png" width="500" /> <img src="SST_OI_7-day_rollingavg_anom.png" width="505" />
@@ -86,7 +84,7 @@ C46184 N. NOMAD | 1987-09-20 | 2022-04-09 | -138.85 | 53.92 | 34.6
 C46185 S. Hecate Strait | 1991-09-12 | 2023-03-26 | -129.79 | 52.42 | 31.6
 C46204 W. Sea Otter | 1989-09-07 | 2023-03-19 | -128.77 | 51.38 | 33.6
 C46205 W. Dixon Entrance | 1988-11-22 | 2023-03-26 | -134.32 | 54.19 | 34.4
-C46206 W. Dixon Entrance | 1988-11-22 | 2022-04-17 | -126.00 | 48.83 | 33.4
+C46206 La Perouse Bank | 1988-11-22 | 2022-04-17 | -126.00 | 48.83 | 33.4
 C46207 E. Dellwood | 1989-10-18 | 2022-09-08 | -129.91 | 50.88 | 33
 C46208 W. Moresby | 1990-07-12 | 2023-03-22 | -132.69 | 52.51 | 32.8
 
@@ -131,14 +129,14 @@ C46304 Entrance English Bay | 2019-10-01 | 2023-03-30 | -123.3570 | 49.30167 | 3
 ## MODIS-Aqua NRT SST
 </summary>
 
-The first plot shows 7-day mean daily MODIS-Aqua SST, with contours at 5-degree increments noted on the legend. The second plot is the 7-day anomaly. The third map shows the number of times each pixel had data in the 7-day time period. **Note** that pixels with fewer than 2 observations from the week are masked out.
-
 <img src="SST_MODISA_7-day_rollingavg.png" width="500" /> <img src="SST_MODISA_7-day_rollingavg_anom.png" width="505" /> 
 
 ##### Number of observations in current week:
-
+ 
 <img src="SST_MODISA_7-day_rollingavg_n.png" width="400" /> 
 
+**Note** that pixels with fewer than 2 observations from the week are masked out.
+ 
 </details>
  
 ## Other MHW data sources, maps and links of interest
