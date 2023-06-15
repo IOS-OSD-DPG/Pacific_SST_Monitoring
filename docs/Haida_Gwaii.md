@@ -17,7 +17,7 @@ This is an SST product interpolated using the "optimal interpolation" (OI) metho
 The MODIS-Aqua NRT SST is not science quality, but used for rapid monitoring. The spatial resolution is approximately 4 km per pixel.
 Pixels with few observations are more likely to show erroneous values, so be careful when interpreting the MODIS-Aqua anomaly maps (they are mainly provided as a separate comparison to the OI SST). A map with the number of observations at each MODIS-Aqua pixel from the current week is shown at the bottom.
 
-<img src="../../figures/Haida_Gwaii/SST_MODISA_7-day_rollingavg_HG.png" width="450" /> <img src="../figures/Haida_Gwaii/SST_MODISA_7-day_rollingavg_anom_HG.png" width="455" /> 
+<img src="../figures/Haida_Gwaii/SST_MODISA_7-day_rollingavg_HG.png" width="450" /> <img src="../figures/Haida_Gwaii/SST_MODISA_7-day_rollingavg_anom_HG.png" width="455" /> 
 
 ##### Number of observations in current week of MODISA data:
 
