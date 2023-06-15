@@ -40,7 +40,7 @@ These maps update on **Monday** using the most recent week of data. A limited nu
 
 :arrow_right: To view map insets near Haida Gwaii click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Haida_Gwaii.md). :arrow_left:
 
-<img src="SST_OI_7-day_rollingavg.png" width="500" /> <img src="SST_OI_7-day_rollingavg_anom.png" width="505" />
+<img src="./figures/current/SST_OI_7-day_rollingavg.png" width="500" /> <img src="./figures/current/SST_OI_7-day_rollingavg_anom.png" width="505" />
 
 
 ## ECCC Buoy data
@@ -51,7 +51,7 @@ The data sources are Environment and Climate Change Canada (ECCC) buoys, acquire
 
 :arrow_right: To view 2021-2022 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/Buoy_temperature.md). :arrow_left:
 
-<img src="Daily_mean_buoy_overview_2023.png" width="1000" />
+<img src="./figures/current/Daily_mean_buoy_overview_2023.png" width="1000" />
 
 
 <details>
@@ -129,11 +129,11 @@ C46304 Entrance English Bay | 2019-10-01 | 2023-03-30 | -123.3570 | 49.30167 | 3
 ## MODIS-Aqua NRT SST
 </summary>
 
-<img src="SST_MODISA_7-day_rollingavg.png" width="500" /> <img src="SST_MODISA_7-day_rollingavg_anom.png" width="505" /> 
+<img src="./figures/current/SST_MODISA_7-day_rollingavg.png" width="500" /> <img src="./figures/current/SST_MODISA_7-day_rollingavg_anom.png" width="505" /> 
 
 ##### Number of observations in current week:
  
-<img src="SST_MODISA_7-day_rollingavg_n.png" width="400" /> 
+<img src="./figures/current/SST_MODISA_7-day_rollingavg_n.png" width="400" /> 
 
 **Note** that pixels with fewer than 2 observations from the week are masked out.
  

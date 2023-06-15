@@ -79,9 +79,9 @@ curr_clim %>%
   scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) +
   geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5)
 
-ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_",end,".png"), 
+ggsave(filename = paste0("figures/historical/SST_",datavar,"_7-day_rollingavg_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg.png"), 
+ggsave(filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
 
 # 7-day climatology anomaly ####
@@ -121,9 +121,9 @@ curr_clim %>%
   scale_x_continuous(breaks = seq(min(lonlim),max(lonlim),5)) +
   geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5)
 
-ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_anom_",end,".png"), 
+ggsave(filename = paste0("figures/historical/SST_",datavar,"_7-day_rollingavg_anom_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_anom.png"), 
+ggsave(filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg_anom.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
 
 
@@ -156,7 +156,7 @@ curr_clim %>%
     scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) +
     geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5)
   
-  ggsave(filename = paste0("figures/SST_",datavar,"_7-day_rollingavg_n_",end,".png"), 
+  ggsave(filename = paste0("figures/historical/SST_",datavar,"_7-day_rollingavg_n_",end,".png"), 
          device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-  ggsave(filename = paste0("SST_",datavar,"_7-day_rollingavg_n.png"), 
+  ggsave(filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg_n.png"), 
          device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")

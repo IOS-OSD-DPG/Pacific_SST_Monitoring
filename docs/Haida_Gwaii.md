@@ -10,15 +10,15 @@ Some prior images will be stored [here](https://github.com/BIO-RSG/Pacific_SST_N
 
 This is an SST product interpolated using the "optimal interpolation" (OI) method. The spatial resolution is 0.25 degrees (~25 km per pixel).
 
-<img src="../SST_OI_7-day_rollingavg_HG.png" width="450" /> <img src="SST_OI_7-day_rollingavg_anom_HG.png" width="455" />
+<img src="../figures/current/SST_OI_7-day_rollingavg_HG.png" width="450" /> <img src="../figures/current/SST_OI_7-day_rollingavg_anom_HG.png" width="455" />
 
 ### MODIS-Aqua Near Real-time SST:
 
 The MODIS-Aqua NRT SST is not science quality, but used for rapid monitoring. The spatial resolution is approximately 4 km per pixel.
 Pixels with few observations are more likely to show erroneous values, so be careful when interpreting the MODIS-Aqua anomaly maps (they are mainly provided as a separate comparison to the OI SST). A map with the number of observations at each MODIS-Aqua pixel from the current week is shown at the bottom.
 
-<img src="SST_MODISA_7-day_rollingavg_HG.png" width="450" /> <img src="SST_MODISA_7-day_rollingavg_anom_HG.png" width="455" /> 
+<img src="../figures/current/SST_MODISA_7-day_rollingavg_HG.png" width="450" /> <img src="../figures/current/SST_MODISA_7-day_rollingavg_anom_HG.png" width="455" /> 
 
 ##### Number of observations in current week of MODISA data:
 
-<img src="SST_MODISA_7-day_rollingavg_n_HG.png" width="400" /> 
+<img src="../figures/current/SST_MODISA_7-day_rollingavg_n_HG.png" width="400" /> 
