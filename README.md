@@ -176,6 +176,8 @@ C46304 Entrance English Bay | 2019-10-01 | 2023-03-30 | -123.3570 | 49.30167 | 3
 ## References
 </summary>
 
+For other reading on Marine Heatwaves, check out the reference list [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/MHW_Literature.md)
+
 * California Current Marine Heatwave Tracker: https://oceanview.pfeg.noaa.gov/projects/mhw/latest
 * CoastWatch ERDDAP Server: https://coastwatch.pfeg.noaa.gov/erddap/index.html
 * CIOOS Pacific ERDDAP Server: https://data.cioospacific.ca/erddap/index.html
