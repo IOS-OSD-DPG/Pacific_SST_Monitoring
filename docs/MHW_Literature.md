@@ -7,18 +7,26 @@
 
 ### 2023:
 
+Amaya, D. J., Jacox, M. G., Alexander, M. A., Scott, J. D., Deser, C., Capotondi, A., & Phillips, A. S. (2023). **Bottom marine heatwaves along the continental shelves of North America**. *Nature Communications, 14*(1). [https://doi.org/10.1038/s41467-023-36567-0](https://doi.org/10.1038/s41467-023-36567-0)
+
 Smith, K. E., Burrows, M. T., Hobday, A. J., King, N. G., Moore, P. J., Gupta, A. S., Thomsen, M. S., Wernberg, T., & Smale, D. A. (2023). **Biological Impacts of Marine Heatwaves**. *Annual Review of Marine Science, 15*(1), 119–145. [https://doi.org/10.1146/annurev-marine-032122-121437](https://doi.org/10.1146/annurev-marine-032122-121437)
 
 White, R. H., Anderson, S., Booth, J. F., Braich, G., Draeger, C., Fei, C., Harley, C. D. G., Henderson, S. B., Jakob, M., Lau, C.-A., Admasu, L. M., Narinesingh, V., Rodell, C., Roocroft, E., Weinberger, K. R., & West, G. (2023). **The unprecedented Pacific Northwest heatwave of June 2021**. *Nature Communications, 14*(1). [https://doi.org/10.1038/s41467-023-36289-3](https://doi.org/10.1038/s41467-023-36289-3)
 
 Zhang, X., Zhou, T., Zhang, W., Ren, L., Jiang, J., Hu, S., Zuo, M., Zhang, L., & Man, W. (2023). **Increased impact of heat domes on 2021-like heat extremes in North America under global warming**. *Nature Communications, 14*(1). [https://doi.org/10.1038/s41467-023-37309-y](https://doi.org/10.1038/s41467-023-37309-y)
 
+Ziegler, S. L., Johnson, J. M., Brooks, R. O., Johnston, E. M., Mohay, J. L., Ruttenberg, B. I., Starr, R. M., Waltz, G. T., Wendt, D. E., & Hamilton, S. L. (2023). **Marine protected areas, marine heatwaves, and the resilience of nearshore fish communities**. *Scientific Reports, 13*(1). [https://doi.org/10.1038/s41598-023-28507-1](https://doi.org/10.1038/s41598-023-28507-1)
+
 
 ### 2022:
+
+Barkhordarian, A., Nielsen, D. M., & Baehr, J. (2022). **Recent marine heatwaves in the North Pacific warming pool can be attributed to rising atmospheric levels of greenhouse gases**. *Communications Earth & Environment, 3*(1). [https://doi.org/10.1038/s43247-022-00461-2](https://doi.org/10.1038/s43247-022-00461-2)
 
 Bartusek, S., Kornhuber, K., & Ting, M. (2022). **2021 North American heatwave amplified by climate change-driven nonlinear interactions**. *Nature Climate Change, 12*(12), 1143–1150. [https://doi.org/10.1038/s41558-022-01520-4](https://doi.org/10.1038/s41558-022-01520-4)
 
 Capotondi, A., Newman, M., Xu, T., & Lorenzo, E. D. (2022). **An Optimal Precursor of Northeast Pacific Marine Heatwaves and Central Pacific El Niño Events**. *Geophysical Research Letters, 49*(5). [https://doi.org/10.1029/2021gl097350](https://doi.org/10.1029/2021gl097350)
+
+Garrabou, J., Gómez-Gras, D., Medrano, A., Cerrano, C., Ponti, M., Schlegel, R., Bensoussan, N., Turicchia, E., Sini, M., Gerovasileiou, V., Teixido, N., Mirasole, A., Tamburello, L., Cebrian, E., Rilov, G., Ledoux, J.-B., Souissi, J. B., Khamassi, F., Ghanem, R., et al. (2022). **Marine heatwaves drive recurrent mass mortalities in the Mediterranean Sea**. *Global Change Biology, 28*(19), 5708–5725. [https://doi.org/10.1111/gcb.16301](https://doi.org/10.1111/gcb.16301)
 
 Michaud, K. M., Reed, D. C., & Miller, R. J. (2022). **The Blob marine heatwave transforms California kelp forest ecosystems**. *Communications Biology, 5*(1). [https://doi.org/10.1038/s42003-022-04107-z](https://doi.org/10.1038/s42003-022-04107-z)
 
