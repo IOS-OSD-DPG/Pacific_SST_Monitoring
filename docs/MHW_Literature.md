@@ -96,5 +96,5 @@ Bond, N. A., Cronin, M. F., Freeland, H., & Mantua, N. (2015). **Causes and impa
 
 ### 2011: 
 
-Burrows, M. T., Schoeman, D. S., Buckley, L. B., Moore, P., Poloczanska, E. S., Brander, K. M., Brown, C., Bruno, J. F., Duarte, C. M., Halpern, B. S., Holding, J., Kappel, C. V., Kiessling, W., O’Connor, M. I., Pandolfi, J. M., Parmesan, C., Schwing, F. B., Sydeman, W. J., & Richardson, A. J. (2011). The Pace of Shifting Climate in Marine and Terrestrial Ecosystems. Science, 334(6056), 652–655. https://doi.org/10.1126/science.1210288
+Burrows, M. T., Schoeman, D. S., Buckley, L. B., Moore, P., Poloczanska, E. S., Brander, K. M., Brown, C., Bruno, J. F., Duarte, C. M., Halpern, B. S., Holding, J., Kappel, C. V., Kiessling, W., O’Connor, M. I., Pandolfi, J. M., Parmesan, C., Schwing, F. B., Sydeman, W. J., & Richardson, A. J. (2011). **The Pace of Shifting Climate in Marine and Terrestrial Ecosystems**. *Science, 334*(6056), 652–655. [https://doi.org/10.1126/science.1210288](https://doi.org/10.1126/science.1210288)
 
