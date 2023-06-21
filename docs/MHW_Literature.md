@@ -34,6 +34,7 @@ Mo, R., Lin, H., & Vitart, F. (2022). **An anomalous warm-season trans-Pacific a
 
 Mogen, S. C., Lovenduski, N. S., Dallmann, A. R., Gregor, L., Sutton, A. J., Bograd, S. J., Quiros, N. C., Lorenzo, E. D., Hazen, E. L., Jacox, M. G., Buil, M. P., & Yeager, S. (2022). **Ocean Biogeochemical Signatures of the North Pacific Blob**. *Geophysical Research Letters, 49*(9). [https://doi.org/10.1029/2021gl096938](https://doi.org/10.1029/2021gl096938)
 
+Wang, Y., Kajtar, J. B., Alexander, L. V., Pilo, G. S., & Holbrook, N. J. (2022). **Understanding the Changing Nature of Marine Cold-Spells**. *Geophysical Research Letters, 49*(6). [https://doi.org/10.1029/2021gl097002](https://doi.org/10.1029/2021gl097002)
 
 Wyatt, A. M., Resplandy, L., & Marchetti, A. (2022). **Ecosystem impacts of marine heat waves in the northeast Pacific**. *Biogeosciences, 19*(24), 5689–5705. [https://doi.org/10.5194/bg-19-5689-2022](https://doi.org/10.5194/bg-19-5689-2022)
 
