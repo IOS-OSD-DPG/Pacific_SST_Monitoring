@@ -84,6 +84,8 @@ Oliver, E. C. J., Donat, M. G., Burrows, M. T., Moore, P. J., Smale, D. A., Alex
 
 ### 2017:
 
+DeCarlo, T. M., Cohen, A. L., Wong, G. T. F., Davis, K. A., Lohmann, P., & Soong, K. (2017). **Mass coral mortality under local amplification of 2 degree C ocean warming**. *Scientific Reports, 7*(1). [https://doi.org/10.1038/srep44586](https://doi.org/10.1038/srep44586)
+
 Peterson, W. T., Fisher, J. L., Strub, P. T., Du, X., Risien, C., Peterson, J., & Shaw, C. T. (2017). **The pelagic ecosystem in the Northern California Current off Oregon during the 2014–2016 warm anomalies within the context of the past 20 years**. *Journal of Geophysical Research: Oceans, 122*(9), 7267–7290. [https://doi.org/10.1002/2017jc012952](https://doi.org/10.1002/2017jc012952)
 
 
