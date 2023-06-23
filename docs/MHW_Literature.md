@@ -66,6 +66,8 @@ Jacox, M. G., Alexander, M. A., Bograd, S. J., & Scott, J. D. (2020). **Thermal 
 
 ### 2019:
 
+Freund, M. B., Henley, B. J., Karoly, D. J., McGregor, H. V., Abram, N. J., & Dommenget, D. (2019). **Higher frequency of Central Pacific El Niño events in recent decades relative to past centuries**. *Nature Geoscience, 12*(6), 450–455. [https://doi.org/10.1038/s41561-019-0353-3](https://doi.org/10.1038/s41561-019-0353-3)
+
 Smale, D. A., Wernberg, T., Oliver, E. C. J., Thomsen, M., Harvey, B. P., Straub, S. C., Burrows, M. T., Alexander, L. V., Benthuysen, J. A., Donat, M. G., Feng, M., Hobday, A. J., Holbrook, N. J., Perkins-Kirkpatrick, S. E., Scannell, H. A., Gupta, A. S., Payne, B. L., & Moore, P. J. (2019). **Marine heatwaves threaten global biodiversity and the provision of ecosystem services**. *Nature Climate Change, 9*(4), 306–312. [https://doi.org/10.1038/s41558-019-0412-1](https://doi.org/10.1038/s41558-019-0412-1)
 
 
