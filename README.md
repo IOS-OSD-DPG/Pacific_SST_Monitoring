@@ -1,20 +1,20 @@
----
+------------------------------------------------------------------------
 
 # Sea Surface Temperature in the Northeast Pacific
-### Experimental maps and data of current conditions
-#### Andrea Hilborn and Charles Hannah
----
 
+### Experimental maps and data of current conditions
+
+##### Andrea Hilborn, Charles Hannah and Lu Guan
 
 This page has maps of 7-day mean satellite Sea Surface Temperature (SST, degrees Celsius) and anomalies for the Northeast Pacific, and recent water temperatures from buoys maintained by Environment and Climate Change Canada (ECCC).
 
 #### Contents:
 
-* [NOAA Optimal Interpolation gap-filled SST (OISST).](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#oisst)
-* [ECCC Buoy Data](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#eccc-buoy-data)
-* [NASA MODIS-Aqua NRT SST](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#modis-aqua-nrt-sst)
-* [Other MHW data sources and links](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#other-mhw-data-sources-maps-and-links-of-interest)
-* [References](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#references)
+-   [NOAA Optimal Interpolation gap-filled SST (OISST).](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#oisst)
+-   [ECCC Buoy Data](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#eccc-buoy-data)
+-   [NASA MODIS-Aqua NRT SST](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#modis-aqua-nrt-sst)
+-   [Other MHW data sources and links](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#other-mhw-data-sources-maps-and-links-of-interest)
+-   [References](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#references)
 
 <details>
 <summary> 
@@ -40,19 +40,27 @@ These maps update on **Monday** using the most recent week of data. A limited nu
 
 :arrow_right: To view map insets near Haida Gwaii click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Haida_Gwaii.md). :arrow_left:
 
-<img src="./figures/current/SST_OI_7-day_rollingavg.png" width="500" /> <img src="./figures/current/SST_OI_7-day_rollingavg_anom.png" width="505" />
+### Latest week of data:
 
+<img src="./figures/current/SST_OI_7-day_rollingavg.png" width="500"/> <img src="./figures/current/SST_OI_7-day_rollingavg_anom.png" width="505"/>
+
+### MHW Conditions in the EEZ:
+
+The Northern Shelf Bioregion (NSB, orange) and Southern Shelf Bioregion (SSB, purple) are indicated in the Exclusive Economic Zone (EEZ) on the left.
+
+The percent of this area in MHW status over the last year is shown on the right.
+
+<img src="./figures/BC_MHW_Regions.png" width="300"/> <img src="./figures/MHW_EEZ_perc_hovmoller_curyear.png" width="605"/>
 
 ## ECCC Buoy data
 
-The 2022 daily mean SST at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading). The white line outlined in black are daily mean observations from 2023. The climatology spans 1991-2020, though some buoys began collecting data later: C46146 Halibut Bank and C46131 Sentry Shoal in 1992, C46147 South Moresby in 1993, and C46132 South Brooks in 1994. 
+The 2022 daily mean SST at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading). The white line outlined in black are daily mean observations from 2023. The climatology spans 1991-2020, though some buoys began collecting data later: C46146 Halibut Bank and C46131 Sentry Shoal in 1992, C46147 South Moresby in 1993, and C46132 South Brooks in 1994.
 
 The data sources are Environment and Climate Change Canada (ECCC) buoys, acquired via CIOOS Pacific (dataset IDs [DFO_MEDS_BUOYs](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC_MSC_BUOYS](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html)).
 
 :arrow_right: To view 2021-2022 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
-<img src="./figures/current/Daily_mean_buoy_overview_2023.png" width="1000" />
-
+<img src="./figures/current/Daily_mean_buoy_overview_2023.png" width="1000"/>
 
 <details>
 <summary> 
@@ -122,7 +130,6 @@ C46304 Entrance English Bay | 2019-10-01 | 2023-03-30 | -123.3570 | 49.30167 | 3
 
 </details>
 
-
 <details>
 <summary> 
 
@@ -138,7 +145,7 @@ C46304 Entrance English Bay | 2019-10-01 | 2023-03-30 | -123.3570 | 49.30167 | 3
 **Note** that pixels with fewer than 2 observations from the week are masked out.
  
 </details>
- 
+
 <details>
 <summary> 
  
@@ -171,7 +178,7 @@ C46304 Entrance English Bay | 2019-10-01 | 2023-03-30 | -123.3570 | 49.30167 | 3
 * [Copernicus Climate Indicators](https://climate.copernicus.eu/climate-indicators)
 
 </details>
- 
+
 <details>
 <summary> 
 
