@@ -50,9 +50,19 @@ The Canadian Exclusive Economic Zone is indicated with a dashed line.
 
 ### MHW Conditions in the EEZ:
 
-The Northern Shelf Bioregion (NSB, orange) and Southern Shelf Bioregion (SSB, purple) are indicated in the Exclusive Economic Zone (EEZ) on the map. The area of these regions in MHW status over the last year are shown on the time series plot.
+The Exclusive Economic Zone (EEZ, red), Northern Shelf Bioregion (NSB, orange) and Southern Shelf Bioregion (SSB, purple) are indicated in the time series below. The area of these regions categorized to be in MHW status over the last year are shown beginning in 2022.
 
-<img src="./figures/BC_MHW_Regions.png" width="300"/> <img src="./figures/MHW_EEZ_perc_hovmoller_curyear.png" width="575"/>
+<details>
+<summary> 
+
+###### Click here to view map
+</summary>
+
+<img src="./figures/BC_MHW_Regions.png" width="500"/> 
+
+</details>
+
+<img src="./figures/MHW_EEZ_perc_hovmoller_curyear.png" width="800"/>
 
 ## ECCC Buoy data
 
