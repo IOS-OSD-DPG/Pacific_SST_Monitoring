@@ -38,6 +38,10 @@ These maps update on **Monday** using the most recent week of data. A limited nu
 
 ## OISST
 
+5-degree intervals are marked on the SST plot in grey.
+On the anomaly plots the lines indicate 1.29 and 2.33 standard deviations above normal (approximately the upper 90th and 99th percentiles relative to the climatology).
+The Canadian Exclusive Economic Zone is indicated with a dashed line.
+
 :arrow_right: To view map insets near Haida Gwaii click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Haida_Gwaii.md). :arrow_left:
 
 ### Latest week of data:
