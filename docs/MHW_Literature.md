@@ -58,6 +58,8 @@ Woolway, R. I., Jennings, E., Shatwell, T., Golub, M., Pierson, D. C., & Maberly
 
 ### 2020:
 
+Amaya, D. J., Miller, A. J., Xie, S.-P., & Kosaka, Y. (2020). **Physical drivers of the summer 2019 North Pacific marine heatwave**. *Nature Communications, 11*(1). [https://doi.org/10.1038/s41467-020-15820-w](https://doi.org/10.1038/s41467-020-15820-w)
+
 Barbeaux, S. J., Holsman, K., & Zador, S. (2020). **Marine Heatwave Stress Test of Ecosystem-Based Fisheries Management in the Gulf of Alaska Pacific Cod Fishery**. *Frontiers in Marine Science, 7*. [https://doi.org/10.3389/fmars.2020.00703](https://doi.org/10.3389/fmars.2020.00703)
 
 
