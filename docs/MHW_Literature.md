@@ -43,6 +43,7 @@ Wyatt, A. M., Resplandy, L., & Marchetti, A. (2022). **Ecosystem impacts of mari
 
 Amaya, D. J., Alexander, M. A., Capotondi, A., Deser, C., Karnauskas, K. B., Miller, A. J., & Mantua, N. J. (2021). **Are Long-Term Changes in Mixed Layer Depth Influencing North Pacific Marine Heatwaves?** *Bulletin of the American Meteorological Society, 102*(1), S59–S66. [https://doi.org/10.1175/bams-d-20-0144.1](https://doi.org/10.1175/bams-d-20-0144.1)
 
+Chen, Z., Shi, J., Liu, Q., Chen, H., & Li, C. (2021). **A Persistent and Intense Marine Heatwave in the Northeast Pacific During 2019–2020**. *Geophysical Research Letters, 48*(13). [https://doi.org/10.1029/2021gl093239](https://doi.org/10.1029/2021gl093239)
 
 Oliver, E. C. J., Benthuysen, J. A., Darmaraki, S., Donat, M. G., Hobday, A. J., Holbrook, N. J., Schlegel, R. W., & Gupta, A. S. (2021). **Marine Heatwaves**. *Annual Review of Marine Science, 13*(1), 313–342. [https://doi.org/10.1146/annurev-marine-032720-095144](https://doi.org/10.1146/annurev-marine-032720-095144)
 
