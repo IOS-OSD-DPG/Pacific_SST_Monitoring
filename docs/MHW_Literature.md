@@ -9,6 +9,9 @@
 
 Amaya, D. J., Jacox, M. G., Alexander, M. A., Scott, J. D., Deser, C., Capotondi, A., & Phillips, A. S. (2023). **Bottom marine heatwaves along the continental shelves of North America**. *Nature Communications, 14*(1). [https://doi.org/10.1038/s41467-023-36567-0](https://doi.org/10.1038/s41467-023-36567-0)
 
+Cheng, Y., Zhang, M., Song, Z., Wang, G., Zhao, C., Shu, Q., Zhang, Y., & Qiao, F. (2023). *A quantitative analysis of marine heatwaves in response to rising sea surface temperature*. *Science of the Total Environment, 881*, 163396. [https://doi.org/10.1016/j.scitotenv.2023.163396](https://doi.org/10.1016/j.scitotenv.2023.163396
+)
+
 Smith, K. E., Burrows, M. T., Hobday, A. J., King, N. G., Moore, P. J., Gupta, A. S., Thomsen, M. S., Wernberg, T., & Smale, D. A. (2023). **Biological Impacts of Marine Heatwaves**. *Annual Review of Marine Science, 15*(1), 119–145. [https://doi.org/10.1146/annurev-marine-032122-121437](https://doi.org/10.1146/annurev-marine-032122-121437)
 
 White, R. H., Anderson, S., Booth, J. F., Braich, G., Draeger, C., Fei, C., Harley, C. D. G., Henderson, S. B., Jakob, M., Lau, C.-A., Admasu, L. M., Narinesingh, V., Rodell, C., Roocroft, E., Weinberger, K. R., & West, G. (2023). **The unprecedented Pacific Northwest heatwave of June 2021**. *Nature Communications, 14*(1). [https://doi.org/10.1038/s41467-023-36289-3](https://doi.org/10.1038/s41467-023-36289-3)
