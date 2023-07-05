@@ -35,6 +35,7 @@ Surface temperature observations from Canadian Pacific buoys, including detailed
 **These figures are provisional and correctness is not guaranteed. :)**
 
 These maps update on **Monday** using the most recent week of data. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (GeoTIFF and .rds format).
+The climatologies for satellite and buoy data are calculated from the [Canadian Climate Normals](https://climate.weather.gc.ca/climate_normals/) period of **1991-2020**.
 
 ## OISST
 
