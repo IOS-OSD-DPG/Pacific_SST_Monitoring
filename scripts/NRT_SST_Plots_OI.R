@@ -8,7 +8,7 @@ reg = map_data("world2Hires")
 reg = subset(reg, region %in% c('Canada', 'USA'))
 reg$long = (360 - reg$long)*-1
 
-WRITE_GEOTIFF = FALSE
+WRITE_GEOTIFF = TRUE
 #######
 datavar = "OI"
 #######
@@ -55,7 +55,7 @@ start = start[!is.na(start)]
 end = end[!is.na(end)]
 
 # Most recent rolling 7-day average ####
-curr_clim %>% 
+s = curr_clim %>% 
   filter(!is.na(sst_7day)) %>% 
   ggplot() +
   geom_tile(aes(x = lon, y = lat, fill = sst_7day)) +
@@ -82,9 +82,9 @@ curr_clim %>%
   geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5) 
   # geom_point(data = buoys, aes(x = long, y = lat), size = 0.1, colour = "black")
 
-ggsave(filename = paste0("figures/historical/SST_",datavar,"_7-day_rollingavg_",end,".png"), 
+ggsave(plot = s, filename = paste0("figures/historical/SST_",datavar,"_7-day_rollingavg_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-ggsave(filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg.png"), 
+ggsave(plot = s, filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
 
 # 7-day climatology anomaly ####

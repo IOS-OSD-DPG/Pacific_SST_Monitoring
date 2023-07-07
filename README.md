@@ -51,7 +51,7 @@ The Canadian Exclusive Economic Zone is indicated with a dashed line.
 
 ### MHW Conditions in the EEZ:
 
-The Exclusive Economic Zone (EEZ, red), Northern Shelf Bioregion (NSB, orange) and Southern Shelf Bioregion (SSB, purple) are indicated in the time series below. The area of these regions categorized to be in MHW status over the last year are shown beginning in 2022.
+The Exclusive Economic Zone (EEZ, red), Northern Shelf Bioregion (NSB, orange) and Southern Shelf Bioregion (SSB, purple) are indicated in the time series below. The spatial and percent area of these regions categorized to be in MHW status are shown beginning in 2022. 
 
 <details>
 <summary> 
