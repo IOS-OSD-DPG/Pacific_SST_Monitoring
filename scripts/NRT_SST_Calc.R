@@ -1,10 +1,12 @@
 # Near real-time plots of SST and anomalies using CoastWatch Data
+rm(list=ls())
 library(rerddap)
 library(dplyr)
 options(dplyr.summarise.inform = FALSE)
 library(ggplot2)
 library(lubridate)
 theme_set(theme_bw())
+library(lubridate)
 
 # Area
 latlim = c(30,61.5) #c(10,60)
@@ -22,14 +24,18 @@ OIPROCESS = TRUE
 #   break
 # }
 
-end_date <- Sys.Date() - 2
-
-end_date <- as.Date("2023-05-20")
-# end_date = as.Date("2023-03-04")
+# end_date <- Sys.Date() - 2
+# Change so that it ends on nearest saturday
+d = Sys.Date()-2 # Give 2 day buffer so that OI data can update!
+lastweek = seq.Date(d, d-6, -1)
+end_date = lastweek[which(wday(lastweek,label = T, abbr =T) == "Sat")]
+if (wday(end_date, label = T) != "Sat") {
+  break
+}
 # end_date <- Sys.Date() - 3
 start_date = end_date-6 #-6 for 7 days, -13 for 2 weeks 
 timelim = c(start_date, end_date)
-print(timelim)
+message(timelim)
 print(paste(yday(end_date)-yday(start_date)+1,"days"))
 
 if (MODISPROCESS == TRUE) {
@@ -54,10 +60,10 @@ if (MODISPROCESS == TRUE) {
   
   
   sstdata <- griddap(sstInfo, latitude = latlim, longitude = lonlim, 
-                     time = timelim)
-  print(paste(length(unique(sstdata$data$time)),"DAYS FOUND"))
+                     time = timelim)$data
+  print(paste(length(unique(sstdata$time)),"DAYS FOUND"))
   
-  sstdata_7day <- sstdata$data %>% 
+  sstdata_7day <- sstdata %>% 
     filter(!is.na(sstMasked),
            time >= start_date,
            time <= end_date) %>%
@@ -81,10 +87,10 @@ if (MODISPROCESS == TRUE) {
     timesub = c(start, end)
     print(timesub)
     sstyr <- griddap(sstvar, latitude = latlim, longitude = lonlim, 
-                     time = timesub)
-    print(paste(length(unique(sstyr$data$time)), "DAYS FOUND"))
+                     time = timesub)$data
+    print(paste(length(unique(sstyr$time)), "DAYS FOUND"))
     
-    roll7 = sstyr$data %>%
+    roll7 = sstyr %>%
       filter(!is.na(sstMasked),
              yday(time) >= yday(start_date), 
              yday(time) <= yday(end_date)) %>% 
@@ -119,18 +125,23 @@ if (OIPROCESS == TRUE) {
   # OI Rolling 7-day average ####
   sstInfo = info("ncdcOisst21NrtAgg_LonPM180", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
   sstdata <- griddap(sstInfo, latitude = latlim, longitude = lonlim, 
-                     time = timelim)
+                     time = timelim,
+                     fields = c("err","ice","sst"))$data
   print(paste(length(unique(sstdata$data$time)),"DAYS FOUND"))
   
-  sstdata_7day <- sstdata$data %>% 
-    filter(!is.na(sst)) %>%
+  sstdata_7day <- sstdata %>% 
+    filter(!is.na(sst),
+           is.na(ice)) %>%
     group_by(lat, lon) %>% 
     summarise(sst_7day = mean(sst, na.rm=T),
               sst_7daysd = sd(sst, na.rm=T),
-              sst_7dayn = sum(!is.na(sst))) %>%
+              sst_7dayn = sum(!is.na(sst))) %>% 
+              # sumerror = sum(err, na.rm=T),
+              # avgerr = mean(err,na.rm=T)) %>%
     ungroup() %>% 
     mutate(start_date = start_date,
            end_date = end_date)
+  
   saveRDS(sstdata_7day, "data/OI_SST7day_rollingavgbackup_current.rds")
   
   # OI 7-day climatology ####
@@ -143,14 +154,17 @@ if (OIPROCESS == TRUE) {
     timesub = c(start, end)
     print(timesub)
     sstyr <- griddap(sstvar, latitude = latlim, longitude = lonlim, 
-                     time = timesub)
-    print(paste(length(unique(sstyr$data$time)), "days"))
-    roll7 = sstyr$data %>%
-      filter(!is.na(sst)) %>%
+                     time = timesub,
+                     fields = c("err","ice","sst"))$data
+    print(paste(length(unique(sstyr$time)), "days"))
+    roll7 = sstyr %>%
+      filter(!is.na(sst),
+             is.na(ice)) %>%
       group_by(lat, lon) %>%
       summarise(sst_7day = mean(sst, na.rm=T),
                 sst_7dayn = sum(!is.na(sst))) %>%
       ungroup()
+    
     yr7days[[ct]] <- roll7
     ct=ct+1
   }
