@@ -71,7 +71,7 @@ The Exclusive Economic Zone (EEZ, red), Northern Shelf Bioregion (NSB, orange) a
 
 The 2022 daily mean SST at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading). The white line outlined in black are daily mean observations from 2023. The climatology spans 1991-2020, though some buoys began collecting data later: C46146 Halibut Bank and C46131 Sentry Shoal in 1992, C46147 South Moresby in 1993, and C46132 South Brooks in 1994.
 
-The data sources are Environment and Climate Change Canada (ECCC) buoys, acquired via CIOOS Pacific (dataset IDs [DFO_MEDS_BUOYs](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC_MSC_BUOYS](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html)).
+The data sources are Environment and Climate Change Canada (ECCC) buoys, acquired via CIOOS Pacific (dataset IDs [`DFO_MEDS_BUOYS`](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [`ECCC_MSC_BUOYS`](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html)). The `DFO_MEDS_BUOYS` record has a detailed quality control layer outlined in [Kellogg et al., 2021](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736/resource/12786acf-a634-4a5b-9867-2b39c6c11aae).
 
 :arrow_right: To view 2021-2022 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
@@ -186,6 +186,7 @@ Temperature Homogenization Blend for the Northwest Atlantic, Canadian Journal of
 Sensing, [doi:10.1080/07038992.2021.1924645](https://www.tandfonline.com/doi/full/10.1080/07038992.2021.1924645)
 * Hobday, A.J., Alexander, L., Perkins, S., Smale, D.A., Straub, S., Oliver, E., Benthuysen, J.A., Burrows, M., Donat, M.G., Feng, M., Holbrook, N.J., Moore, P.J., Scannell, H., Sen Gupta, A. & Wernberg, T. (2016): A hierarchical approach to defining marine heatwaves. Progress in Oceanography. 141, 227-238, [doi:10.1016/j.pocean.2015.12.014](https://doi.org/10.1016/j.pocean.2015.12.014)
 * Hobday, A.J., Oliver, E.C.J., Sen Gupta, A., Benthuysen, J.A., Burrows, M.T., Donat, M.G., Holbrook, N.J., Moore, P.J., Thomsen, M.S., Wernberg, T., & Smale, D.A. (2018): Categorizing and naming marine heatwaves. Oceanography 31(2):162–173, [doi:10.5670/oceanog.2018.205](https://doi.org/10.5670/oceanog.2018.205)
+* Kellogg, J., Rosenstock, N., Page, S., Hourston, R., Devred, E. and Hannah, C. (2021): Quality Control of Weather/Wave Buoy Temperature Data Provided by Environment and Climate Change Canada. CIOOS Pacific. [https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736/resource/12786acf-a634-4a5b-9867-2b39c6c11aae)
 
 For other reading on Marine Heatwaves, check out the [reference list here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/MHW_Literature.md)!
 </details>
