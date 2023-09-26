@@ -16,6 +16,8 @@ Fredston, A.L., Cheung, W.W.L., Frölicher, T.L. et al. (2023). **Marine heatwav
 
 Hartog, J. R., Spillman, C. M., Smith, G., & Hobday, A. J. (2023). **Forecasts of marine heatwaves for marine industries: Reducing risk, building resilience and enhancing management responses**. *Deep Sea Research Part II: Topical Studies in Oceanography, 209*, 105276. [https://doi.org/10.1016/j.dsr2.2023.105276](https://doi.org/10.1016/j.dsr2.2023.105276)
 
+Hobday, A. J., Burrows, M. T., Filbee-Dexter, K., Holbrook, N. J., Sen Gupta, A., Smale, D. A., Smith, K. E., Mads S. Thomsen, M. S. & Wernberg, T. (2023). **With the arrival of El Niño, prepare for stronger marine heatwaves**. *Nature, 621*, 38-41. [https://doi.org/10.1038/d41586-023-02730-2](https://doi.org/10.1038/d41586-023-02730-2)
+
 Smith, K. E., Burrows, M. T., Hobday, A. J., King, N. G., Moore, P. J., Gupta, A. S., Thomsen, M. S., Wernberg, T., & Smale, D. A. (2023). **Biological Impacts of Marine Heatwaves**. *Annual Review of Marine Science, 15*(1), 119–145. [https://doi.org/10.1146/annurev-marine-032122-121437](https://doi.org/10.1146/annurev-marine-032122-121437)
 
 White, R. H., Anderson, S., Booth, J. F., Braich, G., Draeger, C., Fei, C., Harley, C. D. G., Henderson, S. B., Jakob, M., Lau, C.-A., Admasu, L. M., Narinesingh, V., Rodell, C., Roocroft, E., Weinberger, K. R., & West, G. (2023). **The unprecedented Pacific Northwest heatwave of June 2021**. *Nature Communications, 14*(1). [https://doi.org/10.1038/s41467-023-36289-3](https://doi.org/10.1038/s41467-023-36289-3)
