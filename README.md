@@ -169,6 +169,7 @@ C46304 Entrance English Bay | 2019-10-01 |-123.3570 | 49.30167
 ### Other:
 * [B.C. River Forecast Centre Map of 7-Day Average Streamflow](http://bcrfc.env.gov.bc.ca/lowflow/map_7dayflow.html)
 * [Copernicus Climate Indicators](https://climate.copernicus.eu/climate-indicators)
+* [Mapped: Attributing extreme weather to climate change](https://www.carbonbrief.org/mapped-how-climate-change-affects-extreme-weather-around-the-world/)
 
 </details>
 
