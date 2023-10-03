@@ -51,7 +51,7 @@ The Canadian Exclusive Economic Zone is indicated with a dashed line.
 
 ### MHW Conditions in the EEZ:
 
-The Exclusive Economic Zone (EEZ, red), Northern Shelf Bioregion (NSB, orange) and Southern Shelf Bioregion (SSB, purple) are indicated in the time series below. The spatial and percent area of these regions categorized to be in MHW status are shown beginning in 2022. 
+The 2023 MHW spatial coverage of the Exclusive Economic Zone (EEZ, red) is below, with 2022 coverage shown in grey. The percent area of the EEZ, Northern Shelf Bioregion (NSB) and Southern Shelf Bioregion (SSB) in MHW status are shown for 2023 . 
 
 *You can download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2022-2023.csv).*
 
@@ -65,7 +65,7 @@ The Exclusive Economic Zone (EEZ, red), Northern Shelf Bioregion (NSB, orange) a
 
 </details>
 
-<img src="./figures/MHW_EEZ_perc_hovmoller_curyear.png" width="800"/>
+<img src="./figures/MHW_EEZ_perc_hovmoller_2023.png" width="800"/>
 
 ## ECCC Buoy data
 
