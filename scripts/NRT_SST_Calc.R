@@ -13,7 +13,8 @@ latlim = c(30,61.5) #c(10,60)
 lonlim = c(-160,-120)
 
 MODISPROCESS = TRUE
-OIPROCESS = TRUE
+OIPROCESS = FALSE
+MURPROCESS=FALSE
 
 # Time limit:
 # all_args <- commandArgs(trailingOnly=TRUE)
@@ -32,11 +33,78 @@ end_date = lastweek[which(wday(lastweek,label = T, abbr =T) == "Sat")]
 if (wday(end_date, label = T) != "Sat") {
   break
 }
+
+# # MANUALLY ENTERING END DATE
+# end_date = as.Date("2023-08-26")
+
 # end_date <- Sys.Date() - 3
 start_date = end_date-6 #-6 for 7 days, -13 for 2 weeks 
 timelim = c(start_date, end_date)
 message(timelim)
 print(paste(yday(end_date)-yday(start_date)+1,"days"))
+
+# Adding MUR data!
+
+if (MURPROCESS == TRUE) {
+  
+  latlim = c(53.,55)
+  lonlim = c(-133,-128)
+  sstInfo = info("jplMURSST41anom1day", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
+  sstdata <- griddap(sstInfo, latitude = latlim, longitude = lonlim, 
+                     time = timelim,
+                     fields = c("sstAnom","mask"))$data
+  # SST
+  sstInfo = info("jplMURSST41", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
+  sstdata = griddap(sstInfo, latitude = latlim, longitude = lonlim, 
+                    time = c(as.Date("2023-01-01"), as.Date("2023-08-22-31")),
+                    fields = c("analysed_sst","mask","sea_ice_fraction","analysis_error"))$data
+  # (2002-06-01T09:00:00Z, 2023-08-22T09:00:00Z)
+  # 2003-2014 climatology: https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41clim.graph
+  # Daily temp data https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41.graph
+  
+  sstdata = sstdata %>% filter(mask == 1) # Remove land (value of 2)
+  print(paste(length(unique(sstdata$time)),"DAYS FOUND"))
+  sstdata$time = as.POSIXct(sstdata$time)
+  sstdata %>% 
+    group_by(lon, lat) %>% 
+    summarise(sst = mean(analysed_sst,na.rm=T)) %>% ungroup() %>% 
+    # filter(dayOfYear == 225) %>% 
+    ggplot(aes(x = lon, y = lat)) +
+    # geom_tile(aes(fill = sstAnom)) +
+    geom_tile(aes(fill = sst)) +
+    scale_fill_gradientn(colours = pals::jet(20), limits = c(0,30)) +
+    coord_quickmap(xlim = c(-132,-129.5),
+                   ylim = c(53.25,54.5))
+  
+  # Make a north hecate plot
+  lo=-131.14
+  la=53.57
+  lonlim=c(lo-0.02,lo+0.02)
+  latlim = c(la-0.02,la+0.02)
+  
+  sstdata = sstdata %>% filter(lat > la-0.02,
+                     lat < la+0.02,
+                     lon < lo+0.02,
+                     lon > lo-0.02)
+  
+  sstdata = griddap(sstInfo, latitude = latlim, longitude = lonlim, 
+                    time = c(as.Date("2023-01-01"), as.Date("2023-08-22-31")),
+                    fields = c("analysed_sst","mask","sea_ice_fraction","analysis_error"))$data
+  
+  str(sstdata)
+  sst = sstdata
+  sst %>% group_by(time) %>% summarise(mean_sst = mean(analysed_sst,na.rm=T)) %>% 
+    ungroup() %>% 
+    ggplot(aes(x = time, y = mean_sst)) +
+    geom_point(data = t, aes(x = date, y = SSTP_mean_day), colour = "red") +
+    geom_point() +
+    ylim(0,25)
+  
+  t = sstmean %>% filter(STN_ID == "C46183", year(date) == 2023)
+  t$date = as.POSIXct(t$date)
+  
+}
+
 
 if (MODISPROCESS == TRUE) {
   
@@ -127,7 +195,7 @@ if (OIPROCESS == TRUE) {
   sstdata <- griddap(sstInfo, latitude = latlim, longitude = lonlim, 
                      time = timelim,
                      fields = c("err","ice","sst"))$data
-  print(paste(length(unique(sstdata$data$time)),"DAYS FOUND"))
+  print(paste(length(unique(sstdata$time)),"DAYS FOUND"))
   
   sstdata_7day <- sstdata %>% 
     filter(!is.na(sst),
