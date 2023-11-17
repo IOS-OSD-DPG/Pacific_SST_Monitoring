@@ -144,6 +144,7 @@ C46304 Entrance English Bay | 2019-10-01 |-123.3570 | 49.30167
 </summary>
  
 ### SST & Marine Heatwaves:
+* [**NOAA Slide Deck, November 2023** Global Ocean Monitoring: Recent Evolution, Current Status, and Predictions](https://origin.cpc.ncep.noaa.gov/products/GODAS/ocean_briefing_gif/global_ocean_monitoring_current.pdf)
 * [NOAA Marine Heatwave Forecast Monthly Report](https://psl.noaa.gov/marine-heatwaves/#report)
 * [California Current Marine Heatwave Tracker](https://oceanview.pfeg.noaa.gov/projects/mhw/latest)
 * [California Current Marine Heatwave Tracker: Regional EEZ MHW](https://oceanview.pfeg.noaa.gov/projects/mhw/regional)
