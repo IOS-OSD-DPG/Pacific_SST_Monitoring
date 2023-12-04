@@ -57,7 +57,7 @@ curr_clim %>%
                breaks = c(0,5,10, 15,20,25,30), colour = "grey30") +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "grey30", ticks.linewidth = 0.5, 
-                               frame.colour = "black", frame.linewidth = 0.5,
+                               frame.colour = "black", frame.linewidth = 0.3,
                                order = 1),
          colour = guide_legend(override.aes = list(linetype = NA), order = 2)) +
   theme(legend.position = "right") +
@@ -107,7 +107,7 @@ curr_clim %>%
                       values = c("1.29 SD" = "grey30")) +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "grey30", ticks.linewidth = 0.5, 
-                               frame.colour = "black", frame.linewidth = 0.5,
+                               frame.colour = "black", frame.linewidth = 0.3,
                                order = 1),
          colour = guide_legend(override.aes = list(linetype = c(1), shape = c(NA)))) +
   theme(legend.position = "right", panel.background = element_rect(fill = "grey80")) +

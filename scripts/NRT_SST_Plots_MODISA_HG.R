@@ -71,7 +71,7 @@ curr_clim %>%
                breaks = c(0,5,10, 15, 20,25,30), colour = "grey30") +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "grey30", ticks.linewidth = 0.5, 
-                               frame.colour = "black", frame.linewidth = 0.5,
+                               frame.colour = "black", frame.linewidth = 0.3,
                                order = 1)) +
   theme(legend.position = "right",panel.background = element_rect(fill = "grey90")) +
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
@@ -116,7 +116,7 @@ curr_clim %>%
   scale_colour_manual(name = NULL, guide = "legend", values = c("1.29 SD" = "grey30")) +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "grey30", ticks.linewidth = 0.5, 
-                               frame.colour = "black", frame.linewidth = 0.5,
+                               frame.colour = "black", frame.linewidth = 0.3,
                                order = 1),
          colour = guide_legend(override.aes = list(linetype = 1, shape = NA))) +
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
