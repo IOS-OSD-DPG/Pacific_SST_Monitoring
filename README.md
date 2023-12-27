@@ -163,6 +163,7 @@ C46304 Entrance English Bay | 2019-10-01 |-123.3570 | 49.30167
 * [NOAA Blob article](https://www.fisheries.noaa.gov/feature-story/new-marine-heatwave-emerges-west-coast-resembles-blob) and [more recent one](https://www.fisheries.noaa.gov/feature-story/looking-back-blob-record-warming-drives-unprecedented-ocean-change)
 
 ### El Niño:
+* [NOAA El Niño Index Dashboard](https://psl.noaa.gov/enso/dashboard.html)
 * [NOAA ENSO Blog](https://www.climate.gov/news-features/blogs/enso)
 * [Sea Level Key Indicators: El Niño-Southern Oscillation](https://sealevel.jpl.nasa.gov/data/vital-signs/el-nino/)
 * [Australian Government Bureau of Meteorology El Niño Watch](http://www.bom.gov.au/climate/enso/index.shtml#tabs=Overview&overview-section=Sea-surface)
