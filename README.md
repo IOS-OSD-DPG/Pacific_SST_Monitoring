@@ -47,7 +47,7 @@ The Canadian Exclusive Economic Zone is indicated with a dashed line.
 
 ### Latest week of data:
 
-<img src="./figures/current/SST_OI_7-day_rollingavg.png" width="500"/> <img src="./figures/current/SST_OI_7-day_rollingavg_anom.png" width="505"/>
+<img src="./figures/current/SST_OI_7-day_rollingavg.png" width="400"/> <img src="./figures/current/SST_OI_7-day_rollingavg_anom.png" width="405"/>
 
 ### MHW Conditions in the EEZ:
 
@@ -61,11 +61,11 @@ The 2023 MHW spatial coverage of the Exclusive Economic Zone (EEZ, red) is below
 ###### Click here to view map
 </summary>
 
-<img src="./figures/BC_MHW_Regions.png" width="500"/> 
+<img src="./figures/BC_MHW_Regions.png" width="400"/> 
 
 </details>
 
-<img src="./figures/MHW_EEZ_perc_hovmoller_2023.png" width="800"/>
+<img src="./figures/MHW_EEZ_perc_hovmoller_2023.png" width="750"/>
 
 ## ECCC Buoy data
 
@@ -75,7 +75,7 @@ The data sources are Environment and Climate Change Canada (ECCC) buoys, acquire
 
 :arrow_right: To view 2021-2022 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
-<img src="./figures/current/Daily_mean_buoy_overview_2023.png" width="1000"/>
+<img src="./figures/current/Daily_mean_buoy_overview_2023.png" width="900"/>
 
 <details>
 <summary> 
@@ -127,7 +127,7 @@ C46304 Entrance English Bay | 2019-10-01 |-123.3570 | 49.30167
 ## MODIS-Aqua NRT SST
 </summary>
 
-<img src="./figures/current/SST_MODISA_7-day_rollingavg.png" width="500" /> <img src="./figures/current/SST_MODISA_7-day_rollingavg_anom.png" width="505" /> 
+<img src="./figures/current/SST_MODISA_7-day_rollingavg.png" width="400" /> <img src="./figures/current/SST_MODISA_7-day_rollingavg_anom.png" width="405" /> 
 
 ##### Number of observations in current week:
  
