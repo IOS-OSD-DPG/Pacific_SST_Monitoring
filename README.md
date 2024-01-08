@@ -67,7 +67,7 @@ Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific
 
 </details>
 
-<img src="./figures/MHW_EEZ_perc_hovmoller_2023.png" width="750"/>
+<img src="./figures/current/MHW_EEZ_perc_hovmoller_2024.png" width="750"/>
 
 ## ECCC Buoy data
 
@@ -76,6 +76,16 @@ Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific
 :arrow_right: To view 2021-2023 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
 <img src="./figures/current/Daily_mean_buoy_overview_2024.png" width="900"/>
+
+<details>
+<summary> 
+
+###### Click here to view buoy surface temperature climatologies
+</summary>
+
+<img src="./figures/current/Daily_clim_buoy_overview_2024.png" width="800"/> 
+
+</details>
 
 <details>
 <summary> 
