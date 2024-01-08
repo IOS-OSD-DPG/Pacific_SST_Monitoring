@@ -9,6 +9,10 @@
 
 Amaya, D. J., Jacox, M. G., Alexander, M. A., Scott, J. D., Deser, C., Capotondi, A., & Phillips, A. S. (2023). **Bottom marine heatwaves along the continental shelves of North America**. *Nature Communications, 14*(1). [https://doi.org/10.1038/s41467-023-36567-0](https://doi.org/10.1038/s41467-023-36567-0)
 
+Bass, A. V., Smith, K. E., Smale, D. A. (2023). **Marine heatwaves and decreased light availability interact to erode the ecophysiological performance of habitat-forming kelp species**. *Journal of Phycology, 59*(3), 481-495. [https://doi.org/10.1111/jpy.13332](https://doi.org/10.1111/jpy.13332)
+
+Chen, H.-H., Wang, Y., Xiu, P., Yu, Y., Ma, W. and Chai, F (2023). **Combined oceanic and atmospheric forcing of the 2013/14 marine heatwave in the northeast Pacific**. *npj Clim Atmos Sci, 6*, 3. [https://doi.org/10.1038/s41612-023-00327-0](https://doi.org/10.1038/s41612-023-00327-0)
+
 Cheng, Y., Zhang, M., Song, Z., Wang, G., Zhao, C., Shu, Q., Zhang, Y., & Qiao, F. (2023). **A quantitative analysis of marine heatwaves in response to rising sea surface temperature**. *Science of the Total Environment, 881*, 163396. [https://doi.org/10.1016/j.scitotenv.2023.163396](https://doi.org/10.1016/j.scitotenv.2023.163396
 )
 
@@ -18,11 +22,21 @@ Hartog, J. R., Spillman, C. M., Smith, G., & Hobday, A. J. (2023). **Forecasts o
 
 Hobday, A. J., Burrows, M. T., Filbee-Dexter, K., Holbrook, N. J., Sen Gupta, A., Smale, D. A., Smith, K. E., Mads S. Thomsen, M. S. & Wernberg, T. (2023). **With the arrival of El Niño, prepare for stronger marine heatwaves**. *Nature, 621*, 38-41. [https://doi.org/10.1038/d41586-023-02730-2](https://doi.org/10.1038/d41586-023-02730-2)
 
+McAdam, R., Masina, S. and Gualdi, S. (2023). **Seasonal forecasting of subsurface marine heatwaves**. *Commun Earth Environ, 4*, 225. [https://doi.org/10.1038/s43247-023-00892-5](https://doi.org/10.1038/s43247-023-00892-5)
+
+Ren, X., Liu, W., Capotondi, A., Amaya, D. J. and Holbrook, N. J. (2023). **The Pacific Decadal Oscillation modulated marine heatwaves in the Northeast Pacific during past decades**. *Commun Earth Environ, 4*, 218. [https://doi.org/10.1038/s43247-023-00863-w](https://doi.org/10.1038/s43247-023-00863-w)
+
 Smith, K. E., Burrows, M. T., Hobday, A. J., King, N. G., Moore, P. J., Gupta, A. S., Thomsen, M. S., Wernberg, T., & Smale, D. A. (2023). **Biological Impacts of Marine Heatwaves**. *Annual Review of Marine Science, 15*(1), 119–145. [https://doi.org/10.1146/annurev-marine-032122-121437](https://doi.org/10.1146/annurev-marine-032122-121437)
+
+Song, S.-Y., Yeh, S.-W., Kim, H. and Holbrook, N.J. (2023). **Arctic warming contributes to increase in Northeast Pacific marine heatwave days over the past decades**. *Commun Earth Environ, 4*, 25. [https://doi.org/10.1038/s43247-023-00683-y](https://doi.org/10.1038/s43247-023-00683-y)
+
+Welch, H., Savoca, M.S., Brodie, S. et al. (2023) **Impacts of marine heatwaves on top predator distributions are variable but predictable**. *Nature Communications, 14*, 5188. [https://doi.org/10.1038/s41467-023-40849-y](https://doi.org/10.1038/s41467-023-40849-y)
 
 White, R. H., Anderson, S., Booth, J. F., Braich, G., Draeger, C., Fei, C., Harley, C. D. G., Henderson, S. B., Jakob, M., Lau, C.-A., Admasu, L. M., Narinesingh, V., Rodell, C., Roocroft, E., Weinberger, K. R., & West, G. (2023). **The unprecedented Pacific Northwest heatwave of June 2021**. *Nature Communications, 14*(1). [https://doi.org/10.1038/s41467-023-36289-3](https://doi.org/10.1038/s41467-023-36289-3)
 
 Zhang, X., Zhou, T., Zhang, W., Ren, L., Jiang, J., Hu, S., Zuo, M., Zhang, L., & Man, W. (2023). **Increased impact of heat domes on 2021-like heat extremes in North America under global warming**. *Nature Communications, 14*(1). [https://doi.org/10.1038/s41467-023-37309-y](https://doi.org/10.1038/s41467-023-37309-y)
+
+Zhang, Y., Du, Y., Feng, M. and Hobday, A. J. (2023). **Vertical structures of marine heatwaves**. *Nature Communications, 14*, 6483. [https://doi.org/10.1038/s41467-023-42219-0](https://doi.org/10.1038/s41467-023-42219-0)
 
 Ziegler, S. L., Johnson, J. M., Brooks, R. O., Johnston, E. M., Mohay, J. L., Ruttenberg, B. I., Starr, R. M., Waltz, G. T., Wendt, D. E., & Hamilton, S. L. (2023). **Marine protected areas, marine heatwaves, and the resilience of nearshore fish communities**. *Scientific Reports, 13*(1). [https://doi.org/10.1038/s41598-023-28507-1](https://doi.org/10.1038/s41598-023-28507-1)
 
