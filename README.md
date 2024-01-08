@@ -73,9 +73,9 @@ Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific
 
 *The white lines outlined in black are daily mean observations from the current year. The daily mean SST from the previous year at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading).  The climatology spans 1991-2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There is no climatology for `C46303 S. Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
 
-:arrow_right: To view 2021-2022 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
+:arrow_right: To view 2021-2023 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
-<img src="./figures/current/Daily_mean_buoy_overview_2023.png" width="900"/>
+<img src="./figures/current/Daily_mean_buoy_overview_2024.png" width="900"/>
 
 <details>
 <summary> 
