@@ -53,9 +53,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 ### MHW Conditions in the BCEEZ:
 
-*The 2024 MHW spatial coverage of the B.C. Exclusive Economic Zone (EEZ, red) is below, with 2023 coverage shown in grey. The stripes indicate percent area of the EEZ, Northern Shelf Bioregion (NSB) and Southern Shelf Bioregion (SSB) in MHW status for 2024.* 
-
-Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2022-2023.csv).
+*The 2024 MHW spatial coverage of the B.C. Exclusive Economic Zone (EEZ, red) is below, with 2023 coverage shown in grey. The stripes indicate percent area of the EEZ, Northern Shelf Bioregion (NSB) and Southern Shelf Bioregion (SSB) in MHW status for 2024. Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2023-2024.csv), and view similar plots for previous years [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md).*
 
 <details>
 <summary> 
