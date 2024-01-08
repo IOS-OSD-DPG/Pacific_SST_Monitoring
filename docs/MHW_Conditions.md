@@ -13,8 +13,8 @@
 ###### Click here to view map
 </summary>
 
-<img src="./figures/BC_MHW_Regions.png" width="400"/> 
+<img src="../figures/BC_MHW_Regions.png" width="400"/> 
 
 </details>
 
-<img src="./figures/historical/MHW_EEZ_perc_coverage_2023.png" width="750"/>
+<img src="../figures/historical/MHW_EEZ_perc_coverage_2023.png" width="750"/>
