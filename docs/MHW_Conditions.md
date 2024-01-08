@@ -17,4 +17,4 @@
 
 </details>
 
-<img src="./figures/historical/MHW_EEZ_perc_hovmoller_2023.png" width="750"/>
+<img src="./figures/historical/MHW_EEZ_perc_coverage_2023.png" width="750"/>
