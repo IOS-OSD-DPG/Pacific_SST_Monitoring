@@ -6,7 +6,7 @@
 
 ##### Andrea Hilborn, Charles Hannah and Lu Guan
 
-This page updates weekly with maps and figures for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Pacific Canada Exclusive Economic Zone (EEZ).
+This page updates weekly with maps and figures for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of British Columbia (BC).
 
 **These figures are provisional and correctness is not guaranteed. :)**
 These figures update on **Monday** using the most recent week of data. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown in the figures can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (GeoTIFF and .rds format).
@@ -15,7 +15,7 @@ The climatologies for satellite and buoy data are calculated from the [Canadian 
 #### Contents:
 
 -   [OISST: weekly mean and anomaly](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#oisst)
--   [OISST: MHW conditions in the BCEEZ](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/tree/main?tab=readme-ov-file#mhw-conditions-in-the-eez)
+-   [OISST: MHW conditions in the BC EEZ](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/tree/main?tab=readme-ov-file#mhw-conditions-in-the-eez)
 -   [ECCC Buoy Data: daily mean and climatologies](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#eccc-buoy-data)
 -   [MODIS-Aqua SST: weekly mean and anomaly](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#modis-aqua-nrt-sst)
 -   [Other MHW data and links](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#other-mhw-data-sources-and-links-of-interest)
@@ -30,7 +30,7 @@ The climatologies for satellite and buoy data are calculated from the [Canadian 
 
 *5-degree intervals are marked as lines on the SST plot (left). 
 On the anomaly plots (right) the lines indicate 1.29 and 2.33 standard deviations above normal (approximately the upper 90th and 99th percentiles relative to the climatology).
-The Canadian EEZ is indicated with a dashed line.
+The BC EEZ is indicated with a dashed line.
 Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/science/data-donnees/line-p/index-eng.html).*
 
 :arrow_right: To view map insets near Haida Gwaii click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Haida_Gwaii.md). :arrow_left:
@@ -41,7 +41,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 ### MHW Conditions in the BC:
 
-*The 2024 MHW spatial coverage of the B.C. EEZ (red) is below, with 2023 coverage shown in grey. The stripes indicate percent area of the EEZ, Northern Shelf Bioregion (NSB) and Southern Shelf Bioregion (SSB) in MHW status for 2024. Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2023-2024.csv), and view similar plots for previous years [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md).*
+*The 2024 MHW spatial coverage of the BC EEZ (red) is below, with 2023 coverage shown in grey. The stripes indicate percent area of the BC EEZ, Northern Shelf Bioregion (NSB) and Southern Shelf Bioregion (SSB) in MHW status for 2024. Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2023-2024.csv), and view similar plots for previous years [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md).*
 
 <details>
 <summary> 
