@@ -144,7 +144,7 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 <details>
 <summary> 
  
-## Other MHW data sources and links of interest
+## Other data sources and links of interest
 </summary>
  
 ### SST and Marine Heatwaves
