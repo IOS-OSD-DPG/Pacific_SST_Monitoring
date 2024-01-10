@@ -6,7 +6,7 @@
 
 ##### Andrea Hilborn, Charles Hannah and Lu Guan
 
-This page updates weekly with maps and figures for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of British Columbia (BC).
+This page updates weekly with maps and figures from a number of different data sources for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of British Columbia (BC).
 
 **These figures are provisional and correctness is not guaranteed. :)**
 These figures update on **Monday** using the most recent week of data. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown in the figures can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (GeoTIFF and .rds format).
