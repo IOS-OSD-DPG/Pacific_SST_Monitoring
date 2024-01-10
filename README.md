@@ -28,8 +28,8 @@ The climatologies for satellite and buoy data are calculated from the [Canadian 
 * **Spatial resolution:** 0.25&deg; (~25 km)
 * **Climatology period:** 1991–2020
 
-*5-degree intervals are marked on the SST plot in grey. 
-On the anomaly plots the lines indicate 1.29 and 2.33 standard deviations above normal (approximately the upper 90th and 99th percentiles relative to the climatology).
+*5-degree intervals are marked as lines on the SST plot (left). 
+On the anomaly plots (right) the lines indicate 1.29 and 2.33 standard deviations above normal (approximately the upper 90th and 99th percentiles relative to the climatology).
 The Canadian Exclusive Economic Zone is indicated with a dashed line.
 Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/science/data-donnees/line-p/index-eng.html).*
 
@@ -59,9 +59,9 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 * **Dataset:** Surface temperature observations from Canadian Pacific buoys maintained by [Environment and Climate Change Canada (ECCC)](https://www.canada.ca/en/environment-climate-change/services/general-marine-weather-information/observations/buoy.html) and [Fisheries and Oceans Canada (DFO)](https://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/buoydata-donneebouee/index-eng.html)
 * **Data access:** CIOOS Pacific ERDDAP [DFO_MEDS_BUOYS](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC_MSC_BUOYS](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html) records. The DFO_MEDS_BUOYS record has a detailed quality control layer outlined in [Kellogg et al., 2021](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736/resource/12786acf-a634-4a5b-9867-2b39c6c11aae)
-* **Climatology period:** 1991-2020
+* **Climatology period:** 1991–2020
 
-*The white lines outlined in black are daily mean observations from the current year. The daily mean SST from the previous year at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading).  The climatology spans 1991–2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There are no climatologies for `C46303 S. Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
+*The white lines outlined in black are daily mean observations from 2024. The daily mean SST from 2023 at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading).  The climatology spans 1991–2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There are no climatologies for `C46303 S. Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
 
 :arrow_right: To view 2021–2023 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
