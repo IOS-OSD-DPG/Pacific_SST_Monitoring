@@ -12,15 +12,6 @@ This page updates weekly with maps and figures for monitoring Sea Surface Temper
 These figures update on **Monday** using the most recent week of data. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown in the figures can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (GeoTIFF and .rds format).
 The climatologies for satellite and buoy data are calculated from the [Canadian Climate Normals](https://climate.weather.gc.ca/climate_normals/) period of **1991–2020**.
 
-#### Contents:
-
--   [OISST: weekly mean and anomaly](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#oisst)
--   [OISST: MHW conditions in the BC EEZ](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/tree/main?tab=readme-ov-file#mhw-conditions-in-the-eez)
--   [ECCC Buoy Data: daily mean and climatologies](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#eccc-buoy-data)
--   [MODIS-Aqua SST: weekly mean and anomaly](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#modis-aqua-nrt-sst)
--   [Other MHW data and links](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#other-mhw-data-sources-and-links-of-interest)
--   [References](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#references) and [Recent MHW Publications](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Literature.md)
-
 <details open>
 <summary> 
  
