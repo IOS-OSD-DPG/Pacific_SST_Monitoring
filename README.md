@@ -24,7 +24,7 @@ The climatologies for satellite and buoy data are calculated from the [Canadian 
 ## OISST
 
 * **Dataset:** NOAA Optimal Interpolation gap-filled SST (OISST)
-* **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21NrtAgg_LonPM180.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg_LonPM180.graph)
+* **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21NrtAgg_LonPM180.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg_LonPM180.graph) records
 * **Spatial resolution:** 0.25&deg; (~25 km)
 * **Climatology period:** 1991-2020
 
@@ -115,8 +115,8 @@ C46304 Entrance English Bay | 2019-10-01 |-123.3570 | 49.30167
 
 </summary>
 
-* **Dataset:** NASA MODIS-Aqua NRT SST with low-quality pixels removed
-* **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022NRTMasked.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022SQMasked.graph)
+* **Dataset:** NASA MODIS-Aqua NRT SST
+* **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022NRTMasked.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022SQMasked.graph) records with low-quality pixels removed
 * **Spatial resolution:** 0.04166&deg; (~4 km)
 * **Climatology period:** 2003-2020
 
