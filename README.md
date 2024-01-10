@@ -10,7 +10,7 @@ This page updates weekly with maps and figures for monitoring Sea Surface Temper
 
 **These figures are provisional and correctness is not guaranteed. :)**
 These figures update on **Monday** using the most recent week of data. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown in the figures can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (GeoTIFF and .rds format).
-The climatologies for satellite and buoy data are calculated from the [Canadian Climate Normals](https://climate.weather.gc.ca/climate_normals/) period of **1991-2020**.
+The climatologies for satellite and buoy data are calculated from the [Canadian Climate Normals](https://climate.weather.gc.ca/climate_normals/) period of **1991–2020**.
 
 #### Contents:
 
@@ -18,7 +18,7 @@ The climatologies for satellite and buoy data are calculated from the [Canadian 
 -   [OISST: MHW conditions in the BCEEZ](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/tree/main?tab=readme-ov-file#mhw-conditions-in-the-eez)
 -   [ECCC Buoy Data: daily mean and climatologies](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#eccc-buoy-data)
 -   [MODIS-Aqua SST: weekly mean and anomaly](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#modis-aqua-nrt-sst)
--   [Other MHW data and links](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#other-mhw-data-sources-maps-and-links-of-interest)
+-   [Other MHW data and links](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#other-mhw-data-sources-and-links-of-interest)
 -   [References](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#references) and [Recent MHW Publications](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Literature.md)
 
 ## OISST
@@ -26,7 +26,7 @@ The climatologies for satellite and buoy data are calculated from the [Canadian 
 * **Dataset:** NOAA Optimal Interpolation gap-filled SST (OISST)
 * **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21NrtAgg_LonPM180.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg_LonPM180.graph) records
 * **Spatial resolution:** 0.25&deg; (~25 km)
-* **Climatology period:** 1991-2020
+* **Climatology period:** 1991–2020
 
 *5-degree intervals are marked on the SST plot in grey. 
 On the anomaly plots the lines indicate 1.29 and 2.33 standard deviations above normal (approximately the upper 90th and 99th percentiles relative to the climatology).
@@ -61,9 +61,9 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 * **Data access:** CIOOS Pacific ERDDAP [DFO_MEDS_BUOYS](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC_MSC_BUOYS](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html) records. The DFO_MEDS_BUOYS record has a detailed quality control layer outlined in [Kellogg et al., 2021](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736/resource/12786acf-a634-4a5b-9867-2b39c6c11aae)
 * **Climatology period:** 1991-2020
 
-*The white lines outlined in black are daily mean observations from the current year. The daily mean SST from the previous year at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading).  The climatology spans 1991-2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There are no climatologies for `C46303 S. Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
+*The white lines outlined in black are daily mean observations from the current year. The daily mean SST from the previous year at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading).  The climatology spans 1991–2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There are no climatologies for `C46303 S. Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
 
-:arrow_right: To view 2021-2023 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
+:arrow_right: To view 2021–2023 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
 <img src="./figures/current/Daily_mean_buoy_overview_2024.png" width="900"/>
 
@@ -104,9 +104,11 @@ Stn ID | Start Date | Longitude| Latitude |
 [C46206 La Perouse Bank](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46206) | 1988-11-22 | -126.00 | 48.83 
 [C46207 E. Dellwood](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46207) | 1989-10-18 |  -129.91 | 50.88 
  [C46208 W. Moresby](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46208) | 1990-07-12 | -132.69 | 52.51
-C46303 S. Georgia Strait |  2019-10-01 |   -123.4300 |  49.02500 
-C46304 Entrance English Bay | 2019-10-01 |-123.3570 | 49.30167
+C46303 S. Georgia Strait* |  2019-10-01 |   -123.4300 |  49.02500 
+C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 
+*Note that these buoys do not have MEDS webpages
+  
 </details>
 <details>
 <summary> 
@@ -118,11 +120,11 @@ C46304 Entrance English Bay | 2019-10-01 |-123.3570 | 49.30167
 * **Dataset:** NASA MODIS-Aqua NRT SST
 * **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022NRTMasked.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022SQMasked.graph) records with low-quality pixels removed
 * **Spatial resolution:** 0.04166&deg; (~4 km)
-* **Climatology period:** 2003-2020
+* **Climatology period:** 2003–2020
 
 <img src="./figures/current/SST_MODISA_7-day_rollingavg.png" width="400" /> <img src="./figures/current/SST_MODISA_7-day_rollingavg_anom.png" width="405" /> 
 
-##### Number of observations in current week:
+##### Number of observations in current week
 
 *Note that pixels with fewer than 2 observations from the week are masked out.*
  
@@ -133,35 +135,35 @@ C46304 Entrance English Bay | 2019-10-01 |-123.3570 | 49.30167
 <details>
 <summary> 
  
-## Other MHW data sources, maps and links of interest
+## Other MHW data sources and links of interest
 </summary>
  
-### SST & Marine Heatwaves:
-* [**NOAA Slide Deck, November 2023** Global Ocean Monitoring: Recent Evolution, Current Status, and Predictions](https://origin.cpc.ncep.noaa.gov/products/GODAS/ocean_briefing_gif/global_ocean_monitoring_current.pdf)
+### SST and Marine Heatwaves
 * [NOAA Marine Heatwave Forecast Monthly Report](https://psl.noaa.gov/marine-heatwaves/#report)
 * [California Current Marine Heatwave Tracker](https://www.integratedecosystemassessment.noaa.gov/regions/california-current/california-current-marine-heatwave-tracker-blobtracker)
-* [Marine Heatwaves International Working Group](http://www.marineheatwaves.org/)
 * [CIOOS Pacific Marine Heatwave Monitor](https://cioospacific.ca/applied-data/marine-heat-monitor/)
+* [Climate Reanalyzer Daily Global Sea Surface Temperature](https://climatereanalyzer.org/clim/sst_daily/)
+* [Global daily SST, 7-day trend and anomaly (NOAA CoralReefWatch)](https://www.ospo.noaa.gov/Products/ocean/cb/sst5km/)
+* [Marine Heatwaves International Working Group](http://www.marineheatwaves.org/)
 * [Multi-Scale Ultra-High resolution SST Anomaly, Daily](https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.graph?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CsstAnom&amp;.trim=0&amp;.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff) ***click to view latest image**
 <img src="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.png?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CsstAnom&amp;.trim=0&amp;.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff" alt="Multi-Scale Ultra-High Resolution SST Anomaly, Daily">
 
-* [Climate Reanalyzer Daily Global Sea Surface Temperature](https://climatereanalyzer.org/clim/sst_daily/)
-* [Gulf of Maine MHWs](https://www.gmri.org/stories/gulf-of-maine-warming-update-winter-202223/)
-* [NOAA Coral Reef Watch: MHW Watch](https://coralreefwatch.noaa.gov/product/marine_heatwave/)
-* [NOAA Physical Sciences Lab Map Room: SST](https://psl.noaa.gov/map/clim/sst.shtml)
-* [Pacific Islands Ocean Observing System](https://www.pacioos.hawaii.edu/voyager/): Near-Real Time data viewer including Coral Reef Watch SST and SST anomaly
-* [Global daily SST, 7-day trend and anomaly (NOAA CoralReefWatch)](https://www.ospo.noaa.gov/Products/ocean/cb/sst5km/)
-* [GOES 1-day, 4-day SST composites](https://ocean.weather.gov/Loops/ocean_guidance.php?model=GOES&area=WasC&plot=sst&day=0&loop=0)
 * [NOAA CoastWatch Data Viewer](https://coastwatch.noaa.gov/cw_html/cwViewer.html) and [CoastWatch commonly used SST data sources](https://coastwatch.pfeg.noaa.gov/data.html)
-* [NOAA Blob article](https://www.fisheries.noaa.gov/feature-story/new-marine-heatwave-emerges-west-coast-resembles-blob) and [more recent one](https://www.fisheries.noaa.gov/feature-story/looking-back-blob-record-warming-drives-unprecedented-ocean-change)
+* [NOAA Coral Reef Watch: MHW Watch](https://coralreefwatch.noaa.gov/product/marine_heatwave/)
+* [NOAA Physical Sciences Lab Map Room: SST](https://psl.noaa.gov/map/clim/sst.shtml)![image](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/assets/24460473/6b2ea570-5fdb-4284-a29a-4c2b489b5cdd)
+* [Pacific Islands Ocean Observing System](https://www.pacioos.hawaii.edu/voyager/): Near-Real Time data viewer including Coral Reef Watch SST and SST anomaly
 
-### El Niño:
+### Articles and presentations
+* [**November 2023 NOAA Slide Deck:** Global Ocean Monitoring: Recent Evolution, Current Status, and Predictions](https://origin.cpc.ncep.noaa.gov/products/GODAS/ocean_briefing_gif/global_ocean_monitoring_current.pdf)
+* [**September 2019 NOAA Fisheries:** New Marine Heatwave Emerges off West Coast, Resembles "the Blob"](https://www.fisheries.noaa.gov/feature-story/new-marine-heatwave-emerges-west-coast-resembles-blob)
+* [**September 2019 NOAA Fisheries:** Looking Back At The Blob: Record Warming Drives Unprecedented Ocean Change](https://www.fisheries.noaa.gov/feature-story/looking-back-blob-record-warming-drives-unprecedented-ocean-change)
+
+### El Niño
+* [Australian Government Bureau of Meteorology El Niño Watch](http://www.bom.gov.au/climate/enso/index.shtml#tabs=Overview&overview-section=Sea-surface)
 * [NOAA El Niño Index Dashboard](https://psl.noaa.gov/enso/dashboard.html)
 * [NOAA ENSO Blog](https://www.climate.gov/news-features/blogs/enso)
-* [Sea Level Key Indicators: El Niño-Southern Oscillation](https://sealevel.jpl.nasa.gov/data/vital-signs/el-nino/)
-* [Australian Government Bureau of Meteorology El Niño Watch](http://www.bom.gov.au/climate/enso/index.shtml#tabs=Overview&overview-section=Sea-surface)
 
-### Other:
+### Other
 * [B.C. River Forecast Centre Map of 7-Day Average Streamflow](http://bcrfc.env.gov.bc.ca/lowflow/map_7dayflow.html)
 * [Copernicus Climate Indicators](https://climate.copernicus.eu/climate-indicators)
 * [Mapped: Attributing extreme weather to climate change](https://www.carbonbrief.org/mapped-how-climate-change-affects-extreme-weather-around-the-world/)
