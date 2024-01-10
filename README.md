@@ -6,11 +6,10 @@
 
 ##### Andrea Hilborn, Charles Hannah and Lu Guan
 
-This page has weekly maps of satellite Sea Surface Temperature (SST, degrees Celsius) and SST anomalies for the Northeast Pacific, and recent water temperatures from buoys maintained by Environment and Climate Change Canada (ECCC).
+This page updates weekly with maps and figures for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Pacific Canada EEZ.
 
 **These figures are provisional and correctness is not guaranteed. :)**
-
-These maps update on **Monday** using the most recent week of data. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (GeoTIFF and .rds format).
+These figures update on **Monday** using the most recent week of data. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown in the figures can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (GeoTIFF and .rds format).
 The climatologies for satellite and buoy data are calculated from the [Canadian Climate Normals](https://climate.weather.gc.ca/climate_normals/) period of **1991-2020**.
 
 #### Contents:
@@ -22,23 +21,12 @@ The climatologies for satellite and buoy data are calculated from the [Canadian 
 -   [Other MHW data and links](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#other-mhw-data-sources-maps-and-links-of-interest)
 -   [References](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#references) and [Recent MHW Publications](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Literature.md)
 
-<details>
-<summary> 
-Click here to read background details
-</summary>
-
-### Background:
- 
-Satellite SST data is accessed from the NOAA CoastWatch [ERDDAP server](https://coastwatch.pfeg.noaa.gov/erddap/index.html).
-
-* **NOAA Optimal Interpolation gap-filled SST (OISST)**: Anomaly maps were calculated using the current week and subtracting the 30-year mean (1991-2020). The spatial resolution is 0.25 degrees (approximately 25 km pixel width).
-* **Buoy Surface Temperature**: Surface temperature observations from Canadian Pacific buoys, including detailed quality control information, maintained by ECCC and DFO. The data sources are [Environment and Climate Change Canada (ECCC) buoys]([https://www.canada.ca/en/environment-climate-change/services/general-marine-weather-information/observations/buoy.html](https://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/buoydata-donneebouee/index-eng.html)), acquired via CIOOS Pacific (dataset IDs [`DFO_MEDS_BUOYS`](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [`ECCC_MSC_BUOYS`](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html)). The `DFO_MEDS_BUOYS` record has a detailed quality control layer outlined in [Kellogg et al., 2021](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736/resource/12786acf-a634-4a5b-9867-2b39c6c11aae).
-* **NASA MODIS-Aqua NRT SST**: Anomaly maps were calculated using the current week and subtracting the 18-year mean (2003-2020). The spatial resolution is 0.04166 degrees (~4 km pixel width) with low quality pixels removed. 
-
-
-</details>
-
 ## OISST
+
+* **Dataset:** NOAA Optimal Interpolation gap-filled SST (OISST)
+* **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21NrtAgg_LonPM180.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg_LonPM180.graph)
+* **Spatial resolution:** 0.25&deg; (~25 km)
+* **Climatology period:** 1991-2020
 
 *5-degree intervals are marked on the SST plot in grey. 
 On the anomaly plots the lines indicate 1.29 and 2.33 standard deviations above normal (approximately the upper 90th and 99th percentiles relative to the climatology).
@@ -69,7 +57,11 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 ## ECCC Buoy data
 
-*The white lines outlined in black are daily mean observations from the current year. The daily mean SST from the previous year at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading).  The climatology spans 1991-2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There is no climatology for `C46303 S. Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
+* **Dataset:** Surface temperature observations from Canadian Pacific buoys maintained by [Environment and Climate Change Canada (ECCC)](https://www.canada.ca/en/environment-climate-change/services/general-marine-weather-information/observations/buoy.html) and [Fisheries and Oceans Canada (DFO)](https://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/buoydata-donneebouee/index-eng.html)
+* **Data access:** CIOOS Pacific ERDDAP [DFO_MEDS_BUOYS](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC_MSC_BUOYS](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html) records. The DFO_MEDS_BUOYS record has a detailed quality control layer outlined in [Kellogg et al., 2021](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736/resource/12786acf-a634-4a5b-9867-2b39c6c11aae)
+* **Climatology period:** 1991-2020
+
+*The white lines outlined in black are daily mean observations from the current year. The daily mean SST from the previous year at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading).  The climatology spans 1991-2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There are no climatologies for `C46303 S. Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
 
 :arrow_right: To view 2021-2023 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
@@ -81,7 +73,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 ###### Click here to view buoy surface temperature climatologies
 </summary>
 
-<img src="./figures/current/Daily_clim_buoy_overview_2024.png" width="800"/> 
+<img src="./figures/current/Daily_clim_buoy_overview_2024.png" width="900"/> 
 
 </details>
 
@@ -120,7 +112,13 @@ C46304 Entrance English Bay | 2019-10-01 |-123.3570 | 49.30167
 <summary> 
 
 ## MODIS-Aqua NRT SST
+
 </summary>
+
+* **Dataset:** NASA MODIS-Aqua NRT SST with low-quality pixels removed
+* **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022NRTMasked.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022SQMasked.graph)
+* **Spatial resolution:** 0.04166&deg; (~4 km)
+* **Climatology period:** 2003-2020
 
 <img src="./figures/current/SST_MODISA_7-day_rollingavg.png" width="400" /> <img src="./figures/current/SST_MODISA_7-day_rollingavg_anom.png" width="405" /> 
 
