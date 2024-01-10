@@ -146,7 +146,23 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
  
 ## Other data sources and links of interest
 </summary>
- 
+
+### Articles and presentations
+* [**November 2023 NOAA Slide Deck:** Global Ocean Monitoring: Recent Evolution, Current Status, and Predictions](https://origin.cpc.ncep.noaa.gov/products/GODAS/ocean_briefing_gif/global_ocean_monitoring_current.pdf)
+* [**August 2022 Carbon Brief:** Mapped: Attributing extreme weather to climate change](https://www.carbonbrief.org/mapped-how-climate-change-affects-extreme-weather-around-the-world/)
+* [**September 2019 NOAA Fisheries:** New Marine Heatwave Emerges off West Coast, Resembles "the Blob"](https://www.fisheries.noaa.gov/feature-story/new-marine-heatwave-emerges-west-coast-resembles-blob)
+* [**September 2019 NOAA Fisheries:** Looking Back At The Blob: Record Warming Drives Unprecedented Ocean Change](https://www.fisheries.noaa.gov/feature-story/looking-back-blob-record-warming-drives-unprecedented-ocean-change)
+
+### El Niño
+* [Australian Government Bureau of Meteorology El Niño Watch](http://www.bom.gov.au/climate/enso/index.shtml#tabs=Overview&overview-section=Sea-surface)
+* [NOAA El Niño Index Dashboard](https://psl.noaa.gov/enso/dashboard.html)
+* [NOAA ENSO Blog](https://www.climate.gov/news-features/blogs/enso)
+
+### Other
+* [BC River Forecast Centre Map of 7-Day Average Streamflow](http://bcrfc.env.gov.bc.ca/lowflow/map_7dayflow.html)
+* [British Columbia Drought Information Portal](https://governmentofbc.maps.arcgis.com/apps/MapSeries/index.html?appid=838d533d8062411c820eef50b08f7ebc)
+* [Copernicus Climate Indicators](https://climate.copernicus.eu/climate-indicators)
+
 ### SST and Marine Heatwaves
 * [NOAA Marine Heatwave Forecast Monthly Report](https://psl.noaa.gov/marine-heatwaves/#report)
 * [California Current Marine Heatwave Tracker](https://www.integratedecosystemassessment.noaa.gov/regions/california-current/california-current-marine-heatwave-tracker-blobtracker)
@@ -159,23 +175,8 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 
 * [NOAA CoastWatch Data Viewer](https://coastwatch.noaa.gov/cw_html/cwViewer.html) and [CoastWatch commonly used SST data sources](https://coastwatch.pfeg.noaa.gov/data.html)
 * [NOAA Coral Reef Watch: MHW Watch](https://coralreefwatch.noaa.gov/product/marine_heatwave/)
-* [NOAA Physical Sciences Lab Map Room: SST](https://psl.noaa.gov/map/clim/sst.shtml)![image](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/assets/24460473/6b2ea570-5fdb-4284-a29a-4c2b489b5cdd)
+* [NOAA Physical Sciences Lab Map Room: SST](https://psl.noaa.gov/map/clim/sst.shtml)
 * [Pacific Islands Ocean Observing System](https://www.pacioos.hawaii.edu/voyager/): Near-Real Time data viewer including Coral Reef Watch SST and SST anomaly
-
-### Articles and presentations
-* [**November 2023 NOAA Slide Deck:** Global Ocean Monitoring: Recent Evolution, Current Status, and Predictions](https://origin.cpc.ncep.noaa.gov/products/GODAS/ocean_briefing_gif/global_ocean_monitoring_current.pdf)
-* [**September 2019 NOAA Fisheries:** New Marine Heatwave Emerges off West Coast, Resembles "the Blob"](https://www.fisheries.noaa.gov/feature-story/new-marine-heatwave-emerges-west-coast-resembles-blob)
-* [**September 2019 NOAA Fisheries:** Looking Back At The Blob: Record Warming Drives Unprecedented Ocean Change](https://www.fisheries.noaa.gov/feature-story/looking-back-blob-record-warming-drives-unprecedented-ocean-change)
-
-### El Niño
-* [Australian Government Bureau of Meteorology El Niño Watch](http://www.bom.gov.au/climate/enso/index.shtml#tabs=Overview&overview-section=Sea-surface)
-* [NOAA El Niño Index Dashboard](https://psl.noaa.gov/enso/dashboard.html)
-* [NOAA ENSO Blog](https://www.climate.gov/news-features/blogs/enso)
-
-### Other
-* [B.C. River Forecast Centre Map of 7-Day Average Streamflow](http://bcrfc.env.gov.bc.ca/lowflow/map_7dayflow.html)
-* [Copernicus Climate Indicators](https://climate.copernicus.eu/climate-indicators)
-* [Mapped: Attributing extreme weather to climate change](https://www.carbonbrief.org/mapped-how-climate-change-affects-extreme-weather-around-the-world/)
 
 </details>
 
