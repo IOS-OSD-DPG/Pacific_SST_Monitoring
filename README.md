@@ -6,7 +6,7 @@
 
 ##### Andrea Hilborn, Charles Hannah and Lu Guan
 
-This page updates weekly with maps and figures for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Pacific Canada EEZ.
+This page updates weekly with maps and figures for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Pacific Canada Exclusive Economic Zone (EEZ).
 
 **These figures are provisional and correctness is not guaranteed. :)**
 These figures update on **Monday** using the most recent week of data. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown in the figures can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (GeoTIFF and .rds format).
@@ -30,7 +30,7 @@ The climatologies for satellite and buoy data are calculated from the [Canadian 
 
 *5-degree intervals are marked as lines on the SST plot (left). 
 On the anomaly plots (right) the lines indicate 1.29 and 2.33 standard deviations above normal (approximately the upper 90th and 99th percentiles relative to the climatology).
-The Canadian Exclusive Economic Zone is indicated with a dashed line.
+The Canadian EEZ is indicated with a dashed line.
 Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/science/data-donnees/line-p/index-eng.html).*
 
 :arrow_right: To view map insets near Haida Gwaii click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Haida_Gwaii.md). :arrow_left:
@@ -39,9 +39,9 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 <img src="./figures/current/SST_OI_7-day_rollingavg.png" width="400"/> <img src="./figures/current/SST_OI_7-day_rollingavg_anom.png" width="405"/>
 
-### MHW Conditions in the BCEEZ:
+### MHW Conditions in the BC:
 
-*The 2024 MHW spatial coverage of the B.C. Exclusive Economic Zone (EEZ, red) is below, with 2023 coverage shown in grey. The stripes indicate percent area of the EEZ, Northern Shelf Bioregion (NSB) and Southern Shelf Bioregion (SSB) in MHW status for 2024. Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2023-2024.csv), and view similar plots for previous years [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md).*
+*The 2024 MHW spatial coverage of the B.C. EEZ (red) is below, with 2023 coverage shown in grey. The stripes indicate percent area of the EEZ, Northern Shelf Bioregion (NSB) and Southern Shelf Bioregion (SSB) in MHW status for 2024. Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2023-2024.csv), and view similar plots for previous years [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md).*
 
 <details>
 <summary> 
