@@ -114,10 +114,9 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 *Note that these buoys do not have MEDS webpages
   
 </details>
+
 <details>
 <summary> 
-
-</details>
 
 ## MODIS-Aqua NRT SST
 
