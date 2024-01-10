@@ -14,7 +14,7 @@ The climatologies for satellite and buoy data are calculated from the [Canadian 
 
 <details open>
 <summary> 
- 
+
 ## OISST
 
 </summary>
@@ -31,11 +31,11 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 :arrow_right: To view map insets near Haida Gwaii click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Haida_Gwaii.md). :arrow_left:
 
-### Latest week of data:
+### Latest week of data
 
 <img src="./figures/current/SST_OI_7-day_rollingavg.png" width="400"/> <img src="./figures/current/SST_OI_7-day_rollingavg_anom.png" width="405"/>
 
-### MHW Conditions in the BC:
+### MHW Conditions in the BC EEZ
 
 *The 2024 MHW spatial coverage of the BC EEZ (red) is below, with 2023 coverage shown in grey. The stripes indicate percent area of the BC EEZ, Northern Shelf Bioregion (NSB) and Southern Shelf Bioregion (SSB) in MHW status for 2024. Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2023-2024.csv), and view similar plots for previous years [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md).*
 
@@ -115,21 +115,25 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
   
 </details>
 
+</details>
+
 <details>
 <summary> 
 
-## MODIS-Aqua NRT SST
+## MODIS-Aqua SST
 
 </summary>
 
-* **Dataset:** NASA MODIS-Aqua NRT SST
+* **Dataset:** NASA MODIS-Aqua SST
 * **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022NRTMasked.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022SQMasked.graph) records with low-quality pixels removed
 * **Spatial resolution:** 0.04166&deg; (~4 km)
 * **Climatology period:** 2003–2020
 
+### Latest week of data
+
 <img src="./figures/current/SST_MODISA_7-day_rollingavg.png" width="400" /> <img src="./figures/current/SST_MODISA_7-day_rollingavg_anom.png" width="405" /> 
 
-##### Number of observations in current week
+#### Number of observations in current week
 
 *Note that pixels with fewer than 2 observations from the week are masked out.*
  
