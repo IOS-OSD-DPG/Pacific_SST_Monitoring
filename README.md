@@ -21,7 +21,12 @@ The climatologies for satellite and buoy data are calculated from the [Canadian 
 -   [Other MHW data and links](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#other-mhw-data-sources-and-links-of-interest)
 -   [References](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring#references) and [Recent MHW Publications](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Literature.md)
 
+<details open>
+<summary> 
+ 
 ## OISST
+
+</summary>
 
 * **Dataset:** NOAA Optimal Interpolation gap-filled SST (OISST)
 * **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21NrtAgg_LonPM180.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg_LonPM180.graph) records
@@ -55,7 +60,15 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 <img src="./figures/current/MHW_EEZ_perc_coverage_2024.png" width="750"/>
 
+</details>
+
+<details open>
+ 
+<summary> 
+ 
 ## ECCC Buoy data
+
+</summary>
 
 * **Dataset:** Surface temperature observations from Canadian Pacific buoys maintained by [Environment and Climate Change Canada (ECCC)](https://www.canada.ca/en/environment-climate-change/services/general-marine-weather-information/observations/buoy.html) and [Fisheries and Oceans Canada (DFO)](https://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/buoydata-donneebouee/index-eng.html)
 * **Data access:** CIOOS Pacific ERDDAP [DFO_MEDS_BUOYS](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC_MSC_BUOYS](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html) records. The DFO_MEDS_BUOYS record has a detailed quality control layer outlined in [Kellogg et al., 2021](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736/resource/12786acf-a634-4a5b-9867-2b39c6c11aae)
@@ -112,6 +125,8 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 </details>
 <details>
 <summary> 
+
+</details>
 
 ## MODIS-Aqua NRT SST
 
