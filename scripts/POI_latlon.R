@@ -45,7 +45,8 @@ buoys <- data.frame(wmo_id = c("46004","46036","46131","46132",
                                 "#009FFF","#9A4D42", "#00FFBE", "#783FC1", 
                                 "#1F9698", "#FFACFD", "#FE8F42", "#DD00FF", "#02AD24", 
                                 "#C8FF00","#886C00"))
-
+# Remove ecobuoy
+buoys = buoys %>% filter(wmo_id != "46134")
 
 # Buoy comments:
 # ECOBUOY_1: This buoy has been specially modified to serve as a platform for additional sensors, including solar radiation, salinity, temperature and chlorophyll fluorescence. This buoy is located in Saanich Inlet, near the Institute of Ocean Sciences and serves as a temporary "test bed" for new sensors and telemetry tests. This is NOT a permanent monitoring station. 
