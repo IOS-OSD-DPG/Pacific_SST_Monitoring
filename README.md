@@ -45,7 +45,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 ###### Click here to view map
 </summary>
 
-<img src="./figures/BC_MHW_Regions.png" width="400"/> 
+<img src="./figures/BC_MHW_OIRegions.png" width="400"/> 
 
 </details>
 
