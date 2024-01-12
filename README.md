@@ -74,7 +74,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 <details>
 <summary> 
 
-###### Click here to view buoy surface temperature climatologies
+###### Click here to view 1991-2020 buoy surface temperature climatologies
 </summary>
 
 <img src="./figures/current/Daily_clim_buoy_overview_2024.png" width="900"/> 
