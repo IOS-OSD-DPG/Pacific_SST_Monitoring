@@ -10,10 +10,10 @@ buoys <- data.frame(wmo_id = c("46004","46036","46131","46132",
                                "46181","46183","46184","46185",
                                "46204","46205","46206","46207","46208",
                                "46303","46304"),
-                    buoy_name = c("Middle NOMAD","South NOMAD","Sentry Shoal","South Brooks",
-                                  "ECOBUOY_1","Central Dixon Entrance","Halibut Bank","South Moresby",
-                                  "Nanakwa Shoal","North Hecate Strait","North NOMAD","South Hecate Strait",
-                                  "West Sea Otter","West Dixon Entrance","La Perouse Bank","East Dellwood Knolls","West Moresby",
+                    buoy_name = c("Middle NOMAD","S. NOMAD","Sentry Shoal","S. Brooks",
+                                  "ECOBUOY_1","Central Dixon Entrance","Halibut Bank","S. Moresby",
+                                  "Nanakwa Shoal","N. Hecate Strait","N. NOMAD","S. Hecate Strait",
+                                  "W. Sea Otter","W. Dixon Entrance","La Perouse Bank","E. Dellwood Knolls","W. Moresby",
                                   "S. Georgia Strait","Entrance English Bay"),
                     buoy_type = c("NOMAD","NOMAD","3 metre discus","3 metre discus",
                                   "3 metre discus","3 metre discus","3 metre discus","3 metre discus",
@@ -64,12 +64,12 @@ GH <- data.frame(lat <- c(52.20806, 52.44694, 52.83472, 52.80972, 52.77694, 52.6
                  lon <- c(-130.8167, -131.0886, -131.3361, -131.6556, -131.8192, -132.2208, -131.3000, -130.8919, -130.8167))
 names(GH) <- c("lat", "lon")
 
-# Gwaii Haanas east region
+# Gwaii Haanas E. region
 GH_E <- data.frame(lat <- c(52.14583, 52.20806, 52.44694, 52.83472, 52.80972, 52.77694, 52.14583),
                    lon <- c(-131.2292, -130.8167, -131.0886, -131.3361, -131.6556, -131.8192, -131.2292))
 names(GH_E) <- c("lat", "lon")
 
-# Gwaii Haanas west region
+# Gwaii Haanas W. region
 GH_W <- data.frame(lat <- c(52.77694, 52.67667, 52.00000, 52.14583, 52.77694),
                    lon <- c(-131.8192, -132.2208, -131.3000, -131.2292, -131.8192))
 names(GH_W) <- c("lat", "lon")
