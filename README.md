@@ -19,7 +19,7 @@ The climatologies for satellite and buoy data are calculated from the [Canadian 
 
 </summary>
 
-* **Dataset:** NOAA Optimal Interpolation gap-filled SST (OISST)
+* **Dataset:** [NOAA Optimal Interpolation gap-filled SST (OISST)](https://www.ncei.noaa.gov/products/optimum-interpolation-sst)
 * **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21NrtAgg_LonPM180.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg_LonPM180.graph) records
 * **Spatial resolution:** 0.25&deg; (~25 km)
 * **Climatology period:** 1991–2020
