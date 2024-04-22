@@ -162,6 +162,7 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 * [BC River Forecast Centre Map of 7-Day Average Streamflow](http://bcrfc.env.gov.bc.ca/lowflow/map_7dayflow.html)
 * [British Columbia Drought Information Portal](https://governmentofbc.maps.arcgis.com/apps/MapSeries/index.html?appid=838d533d8062411c820eef50b08f7ebc)
 * [Copernicus Climate Indicators](https://climate.copernicus.eu/climate-indicators)
+* [Copernicus Climate Pulse](https://pulse.climate.copernicus.eu/)
 
 ### SST and Marine Heatwaves
 * [NOAA Marine Heatwave Forecast Monthly Report](https://psl.noaa.gov/marine-heatwaves/#report)
