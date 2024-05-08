@@ -154,7 +154,6 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 * [**September 2019 NOAA Fisheries:** Looking Back At The Blob: Record Warming Drives Unprecedented Ocean Change](https://www.fisheries.noaa.gov/feature-story/looking-back-blob-record-warming-drives-unprecedented-ocean-change)
 
 ### El Niño
-* [Australian Government Bureau of Meteorology El Niño Watch](http://www.bom.gov.au/climate/enso/index.shtml#tabs=Overview&overview-section=Sea-surface)
 * [NOAA El Niño Index Dashboard](https://psl.noaa.gov/enso/dashboard.html)
 * [NOAA ENSO Blog](https://www.climate.gov/news-features/blogs/enso)
 
