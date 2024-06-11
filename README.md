@@ -147,19 +147,13 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 ## Other data sources and links of interest
 </summary>
 
-### Articles and presentations
-* [**November 2023 NOAA Slide Deck:** Global Ocean Monitoring: Recent Evolution, Current Status, and Predictions](https://origin.cpc.ncep.noaa.gov/products/GODAS/ocean_briefing_gif/global_ocean_monitoring_current.pdf)
-* [**August 2022 Carbon Brief:** Mapped: Attributing extreme weather to climate change](https://www.carbonbrief.org/mapped-how-climate-change-affects-extreme-weather-around-the-world/)
-* [**September 2019 NOAA Fisheries:** New Marine Heatwave Emerges off West Coast, Resembles "the Blob"](https://www.fisheries.noaa.gov/feature-story/new-marine-heatwave-emerges-west-coast-resembles-blob)
-* [**September 2019 NOAA Fisheries:** Looking Back At The Blob: Record Warming Drives Unprecedented Ocean Change](https://www.fisheries.noaa.gov/feature-story/looking-back-blob-record-warming-drives-unprecedented-ocean-change)
-
 ### El Niño
 * [NOAA El Niño Index Dashboard](https://psl.noaa.gov/enso/dashboard.html)
 * [NOAA ENSO Blog](https://www.climate.gov/news-features/blogs/enso)
 
-### Other
+### Hydrology, drought and climate
 * [BC River Forecast Centre Map of 7-Day Average Streamflow](http://bcrfc.env.gov.bc.ca/lowflow/map_7dayflow.html)
-* [British Columbia Drought Information Portal](https://governmentofbc.maps.arcgis.com/apps/MapSeries/index.html?appid=838d533d8062411c820eef50b08f7ebc)
+* [BC Drought Information Portal](https://droughtportal.gov.bc.ca/)
 * [Copernicus Climate Indicators](https://climate.copernicus.eu/climate-indicators)
 * [Copernicus Climate Pulse](https://pulse.climate.copernicus.eu/)
 
@@ -177,6 +171,13 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 * [NOAA Coral Reef Watch: MHW Watch](https://coralreefwatch.noaa.gov/product/marine_heatwave/)
 * [NOAA Physical Sciences Lab Map Room: SST](https://psl.noaa.gov/map/clim/sst.shtml)
 * [Pacific Islands Ocean Observing System](https://www.pacioos.hawaii.edu/voyager/): Near-Real Time data viewer including Coral Reef Watch SST and SST anomaly
+
+### Articles and presentations
+* [**November 2023 NOAA Slide Deck:** Global Ocean Monitoring: Recent Evolution, Current Status, and Predictions](https://origin.cpc.ncep.noaa.gov/products/GODAS/ocean_briefing_gif/global_ocean_monitoring_current.pdf)
+* [**August 2022 Carbon Brief:** Mapped: Attributing extreme weather to climate change](https://www.carbonbrief.org/mapped-how-climate-change-affects-extreme-weather-around-the-world/)
+* [**September 2019 NOAA Fisheries:** New Marine Heatwave Emerges off West Coast, Resembles "the Blob"](https://www.fisheries.noaa.gov/feature-story/new-marine-heatwave-emerges-west-coast-resembles-blob)
+* [**September 2019 NOAA Fisheries:** Looking Back At The Blob: Record Warming Drives Unprecedented Ocean Change](https://www.fisheries.noaa.gov/feature-story/looking-back-blob-record-warming-drives-unprecedented-ocean-change)
+
 
 </details>
 
