@@ -49,7 +49,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 </details>
 
-<img src="./figures/current/MHW_EEZ_perc_coverage_2024.png" width="750"/>
+<img src="./figures/current/MHW_EEZ_perc_coverage_2024_regions.png" width="750"/>
 
 </details>
 
@@ -154,19 +154,19 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 ### Hydrology, drought and climate
 * [BC River Forecast Centre Map of 7-Day Average Streamflow](http://bcrfc.env.gov.bc.ca/lowflow/map_7dayflow.html)
 * [BC Drought Information Portal](https://droughtportal.gov.bc.ca/)
-* [Copernicus Climate Indicators](https://climate.copernicus.eu/climate-indicators)
-* [Copernicus Climate Pulse](https://pulse.climate.copernicus.eu/)
 
 ### SST and Marine Heatwaves
-* [NOAA Marine Heatwave Forecast Monthly Report](https://psl.noaa.gov/marine-heatwaves/#report)
 * [California Current Marine Heatwave Tracker](https://www.integratedecosystemassessment.noaa.gov/regions/california-current/california-current-marine-heatwave-tracker-blobtracker)
 * [CIOOS Pacific Marine Heatwave Monitor](https://cioospacific.ca/applied-data/marine-heat-monitor/)
 * [Climate Reanalyzer Daily Global Sea Surface Temperature](https://climatereanalyzer.org/clim/sst_daily/)
+* [Copernicus Climate Indicators](https://climate.copernicus.eu/climate-indicators)
+* [Copernicus Climate Pulse](https://pulse.climate.copernicus.eu/)
 * [Global daily SST, 7-day trend and anomaly (NOAA CoralReefWatch)](https://www.ospo.noaa.gov/Products/ocean/cb/sst5km/)
 * [Marine Heatwaves International Working Group](http://www.marineheatwaves.org/)
 * [Multi-Scale Ultra-High resolution SST Anomaly, Daily](https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.graph?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CsstAnom&amp;.trim=0&amp;.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff) ***click to view latest image**
 <img src="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.png?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CsstAnom&amp;.trim=0&amp;.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff" alt="Multi-Scale Ultra-High Resolution SST Anomaly, Daily">
 
+* [NOAA Marine Heatwave Forecast Monthly Report](https://psl.noaa.gov/marine-heatwaves/#report)
 * [NOAA CoastWatch Data Viewer](https://coastwatch.noaa.gov/cw_html/cwViewer.html) and [CoastWatch commonly used SST data sources](https://coastwatch.pfeg.noaa.gov/data.html)
 * [NOAA Coral Reef Watch: MHW Watch](https://coralreefwatch.noaa.gov/product/marine_heatwave/)
 * [NOAA Physical Sciences Lab Map Room: SST](https://psl.noaa.gov/map/clim/sst.shtml)
