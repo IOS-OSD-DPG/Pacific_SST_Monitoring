@@ -71,23 +71,34 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 *Note: C46036 South NOMAD is currently returning unrealistic temperature values so is not shown*
 
-<img src="./figures/current/Daily_mean_SSTP_C46184.png" width="400"/>   <img src="./figures/current/Daily_mean_SSTP_C46205.png" width="400"/>
-
-
-<img src="./figures/current/Daily_mean_SSTP_C46145.png" width="400"/>   <img src="./figures/current/Daily_mean_SSTP_C46181.png" width="400"/>
-
-
-<img src="./figures/current/Daily_mean_SSTP_C46147.png" width="400"/>   <img src="./figures/current/Daily_mean_SSTP_C46185.png" width="400"/>
-
-
-<img src="./figures/current/Daily_mean_SSTP_C46204.png" width="400"/>   <img src="./figures/current/Daily_mean_SSTP_C46132.png" width="400"/>
-
-
-<img src="./figures/current/Daily_mean_SSTP_C46206.png" width="400"/>   <img src="./figures/current/Daily_mean_SSTP_C46131.png" width="400"/>
-
-
-<img src="./figures/current/Daily_mean_SSTP_C46146.png" width="400"/>
-
+<p align="center">
+  <img src="./figures/current/Daily_mean_SSTP_C46184.png" width="40%"/>
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="./figures/current/Daily_mean_SSTP_C46205.png" width="40%"/>
+</p>
+<p align="center">
+  <img src="./figures/current/Daily_mean_SSTP_C46145.png" width="40%"/>
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="./figures/current/Daily_mean_SSTP_C46181.png" width="40%"/>
+</p>
+<p align="center">
+  <img src="./figures/current/Daily_mean_SSTP_C46147.png" width="40%"/>
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="./figures/current/Daily_mean_SSTP_C46185.png" width="40%"/>
+</p>
+<p align="center">
+  <img src="./figures/current/Daily_mean_SSTP_C46204.png" width="40%"/>
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="./figures/current/Daily_mean_SSTP_C46132.png" width="40%"/>
+</p>
+<p align="center">
+  <img src="./figures/current/Daily_mean_SSTP_C46206.png" width="40%"/>
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="./figures/current/Daily_mean_SSTP_C46131.png" width="40%"/>
+</p>
+<p align="center">
+  <img src="./figures/current/Daily_mean_SSTP_C46146.png" width="40%"/>
+</p>
 
 <details>
 <summary> 
