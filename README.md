@@ -69,7 +69,25 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 :arrow_right: To view 2021–2023 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
-<img src="./figures/current/Daily_mean_buoy_overview_2024.png" width="900"/>
+*Note: C46036 South NOMAD is currently returning unrealistic temperature values so is not shown*
+
+<img src="./figures/current/Daily_mean_SSTP_C46184.png" width="400"/>   <img src="./figures/current/Daily_mean_SSTP_C46205.png" width="400"/>
+
+
+<img src="./figures/current/Daily_mean_SSTP_C46145.png" width="400"/>   <img src="./figures/current/Daily_mean_SSTP_C46181.png" width="400"/>
+
+
+<img src="./figures/current/Daily_mean_SSTP_C46147.png" width="400"/>   <img src="./figures/current/Daily_mean_SSTP_C46185.png" width="400"/>
+
+
+<img src="./figures/current/Daily_mean_SSTP_C46204.png" width="400"/>   <img src="./figures/current/Daily_mean_SSTP_C46132.png" width="400"/>
+
+
+<img src="./figures/current/Daily_mean_SSTP_C46206.png" width="400"/>   <img src="./figures/current/Daily_mean_SSTP_C46131.png" width="400"/>
+
+
+<img src="./figures/current/Daily_mean_SSTP_C46146.png" width="400"/>
+
 
 <details>
 <summary> 
