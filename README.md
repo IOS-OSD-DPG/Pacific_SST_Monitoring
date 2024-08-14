@@ -65,7 +65,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 * **Data access:** CIOOS Pacific ERDDAP [DFO_MEDS_BUOYS](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC_MSC_BUOYS](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html) records. The DFO_MEDS_BUOYS record has a detailed quality control layer outlined in [Kellogg et al., 2021](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736)
 * **Climatology period:** 1991–2020
 
-*The white lines outlined in black are daily mean observations from 2024. The daily mean SST from 2023 at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading).  The climatology spans 1991–2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There are no climatologies for `C46303 S. Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
+*The white lines outlined in black are daily mean observations from 2024. The daily mean SST from 2023 at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading).  The climatology spans 1991–2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There are no climatologies for `C46303 South Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
 
 :arrow_right: To view 2021–2023 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
@@ -122,22 +122,22 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 Stn ID | Start Date | Longitude| Latitude | 
 -------|------------|-----------|--------|
 [C46004 Middle NOMAD](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46004) | 1988-08-04 | -136.10 | 50.93
-[C46036 S. NOMAD](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46036) | 1987-09-22 | -133.94 | 48.35 
+[C46036 South NOMAD](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46036) | 1987-09-22 | -133.94 | 48.35 
 [C46131 Sentry Shoal](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46131) | 1992-10-20 |  -124.99 | 49.91 
-[C46132 S. Brooks](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46132) | 1994-05-05 | -127.93 | 49.74 
+[C46132 South Brooks](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46132) | 1994-05-05 | -127.93 | 49.74 
 [C46145 Central Dixon Entrance](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46145) |  1991-04-16 | -132.42 | 54.38 
 [C46146 Halibut Bank](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46146) | 1992-03-13  |-123.73 | 49.34 
-[C46147 S. Moresby](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46147) | 1993-06-17 |-131.23 | 51.83
+[C46147 South Moresby](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46147) | 1993-06-17 |-131.23 | 51.83
 [C46181 Nanakwa Shoal](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46181) | 1988-11-22 |-128.84 | 53.82 
-[C46183 N. Hecate Strait](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46183) | 1991-05-15 |  -131.14 | 53.57 
-[C46184 N. NOMAD](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46184) | 1987-09-20 | -138.85 | 53.92 
-[C46185 S. Hecate Strait](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46185) | 1991-09-12 | -129.79 | 52.42 
-[C46204 W. Sea Otter](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46204) | 1989-09-07 |  -128.77 | 51.38
-[C46205 W. Dixon Entrance](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46205) | 1988-11-22 | -134.32 | 54.19 
+[C46183 North Hecate Strait](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46183) | 1991-05-15 |  -131.14 | 53.57 
+[C46184 North NOMAD](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46184) | 1987-09-20 | -138.85 | 53.92 
+[C46185 South Hecate Strait](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46185) | 1991-09-12 | -129.79 | 52.42 
+[C46204 West Sea Otter](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46204) | 1989-09-07 |  -128.77 | 51.38
+[C46205 West Dixon Entrance](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46205) | 1988-11-22 | -134.32 | 54.19 
 [C46206 La Perouse Bank](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46206) | 1988-11-22 | -126.00 | 48.83 
-[C46207 E. Dellwood](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46207) | 1989-10-18 |  -129.91 | 50.88 
- [C46208 W. Moresby](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46208) | 1990-07-12 | -132.69 | 52.51
-C46303 S. Georgia Strait* |  2019-10-01 |   -123.4300 |  49.02500 
+[C46207 East Dellwood](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46207) | 1989-10-18 |  -129.91 | 50.88 
+ [C46208 West Moresby](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46208) | 1990-07-12 | -132.69 | 52.51
+C46303 South Georgia Strait* |  2019-10-01 |   -123.4300 |  49.02500 
 C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 
 *Note that these buoys do not have MEDS webpages
