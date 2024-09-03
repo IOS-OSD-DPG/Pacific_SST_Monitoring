@@ -151,9 +151,9 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 
 ## MODIS-Aqua SST
 
-**Note: this section is deprecated due to the deterioration of MODIS-Aqua. It will be replaced at a later date.**
-
 </summary>
+
+**Note: this section is deprecated due to the deterioration of MODIS-Aqua. It will be replaced at a later date.**
 
 * **Dataset:** NASA MODIS-Aqua SST
 * **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022NRTMasked.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022SQMasked.graph) records with low-quality pixels removed
