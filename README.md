@@ -37,12 +37,12 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 ### MHW Conditions in the BC EEZ
 
-*The 2024 MHW spatial coverage of the BC EEZ (red) is below, with 2023 coverage shown in grey. The same information is shown below for three sub-regions of the BC EEZ: the Offshore Pacific Bioregion (OFF), Northern Shelf Bioregion (NSB) and Southern Shelf Bioregion (SSB). Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2023-2024.csv), and view similar plots for previous years [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md).*
+*The 2024 MHW spatial coverage of the BC EEZ (red) is below, with 2023 coverage shown in grey. The current percent area of the BC EEZ in MHW status at the surface is written in the upper left corner. The same information is shown below for three sub-regions of the BC EEZ: the Offshore Pacific Bioregion (OP, light blue), Northern Shelf Bioregion (NSB, dark blue) and Southern Shelf Bioregion (SSB, yellow). Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2023-2024.csv), and view similar plots for previous years [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md).*
 
 <details>
 <summary> 
 
-###### Click here to view map
+###### Click here to view region map
 </summary>
 
 <img src="./figures/BC_MHW_OIRegions.png" width="400"/> 
@@ -62,7 +62,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 </summary>
 
 * **Dataset:** Surface temperature observations from Canadian Pacific buoys maintained by [Environment and Climate Change Canada (ECCC)](https://www.canada.ca/en/environment-climate-change/services/general-marine-weather-information/observations/buoy.html) and [Fisheries and Oceans Canada (DFO)](https://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/buoydata-donneebouee/index-eng.html)
-* **Data access:** CIOOS Pacific ERDDAP [DFO_MEDS_BUOYS](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC_MSC_BUOYS](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html) records. The DFO_MEDS_BUOYS record has a detailed quality control layer outlined in [Kellogg et al., 2021](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736)
+* **Data access:** CIOOS Pacific ERDDAP [DFO_MEDS_BUOYS](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC_MSC_BUOYS](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html) records. The DFO_MEDS_BUOYS record has a detailed quality control layer outlined in [Kellogg et al., 2021](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736) which **ends in December, 2023**
 * **Climatology period:** 1991–2020
 
 *The white lines outlined in black are daily mean observations from 2024. The daily mean SST from 2023 at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading).  The climatology spans 1991–2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There are no climatologies for `C46303 South Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
@@ -103,7 +103,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 <details>
 <summary> 
 
-###### Click here to view 1991-2020 buoy surface temperature climatologies
+###### Click here to view buoy map and 1991-2020 surface temperature climatologies
 </summary>
 
 <img src="./figures/current/Daily_clim_buoy_overview_2024.png" width="900"/> 
@@ -117,7 +117,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 </summary>
 
-*The start dates listed here may not correspond with other sources (e.g. the [ECCC website](https://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/buoydata-donneebouee/index-eng.html)) but represent the data record available at the sources listed above, as of December 2023. An up-to-date status report can be viewed here: https://collaboration.cmc.ec.gc.ca/cmc/wbs/bplatstat.html*
+*The start dates listed here may not correspond with other sources (e.g. the [ECCC website](https://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/buoydata-donneebouee/index-eng.html)) but represent the data record available at the sources listed above, as of December 2023. An up-to-date buoy status report can be viewed here: https://collaboration.cmc.ec.gc.ca/cmc/wbs/bplatstat.html*
 
 Stn ID | Start Date | Longitude| Latitude | 
 -------|------------|-----------|--------|
@@ -140,7 +140,7 @@ Stn ID | Start Date | Longitude| Latitude |
 C46303 South Georgia Strait* |  2019-10-01 |   -123.4300 |  49.02500 
 C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 
-*Note that these buoys do not have MEDS webpages
+* *Note that these buoys do not have MEDS webpages*
   
 </details>
 
