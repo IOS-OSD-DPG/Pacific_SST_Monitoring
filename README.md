@@ -81,22 +81,26 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img src="./figures/current/Daily_mean_SSTP_C46181.png" width="43%"/>
 </p>
+
 <p align="center">
+  <img src="./figures/current/Daily_mean_SSTP_C46183.png" width="43%"/>
+&nbsp; &nbsp; &nbsp; &nbsp;
   <img src="./figures/current/Daily_mean_SSTP_C46147.png" width="43%"/>
-&nbsp; &nbsp; &nbsp; &nbsp;
+</p>
+
+<p align="center">
   <img src="./figures/current/Daily_mean_SSTP_C46185.png" width="43%"/>
-</p>
-<p align="center">
+&nbsp; &nbsp; &nbsp; &nbsp;
   <img src="./figures/current/Daily_mean_SSTP_C46204.png" width="43%"/>
-&nbsp; &nbsp; &nbsp; &nbsp;
+</p>
+<p align="center">
   <img src="./figures/current/Daily_mean_SSTP_C46132.png" width="43%"/>
-</p>
-<p align="center">
-  <img src="./figures/current/Daily_mean_SSTP_C46206.png" width="43%"/>
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="./figures/current/Daily_mean_SSTP_C46131.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_C46206.png" width="43%"/>
 </p>
 <p align="center">
+  <img src="./figures/current/Daily_mean_SSTP_C46131.png" width="43%"/>
+&nbsp; &nbsp; &nbsp; &nbsp;
   <img src="./figures/current/Daily_mean_SSTP_C46146.png" width="43%"/>
 </p>
 
