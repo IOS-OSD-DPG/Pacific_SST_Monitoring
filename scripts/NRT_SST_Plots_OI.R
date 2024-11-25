@@ -59,7 +59,8 @@ s = curr_clim %>%
   filter(!is.na(sst_7day)) %>% 
   ggplot() +
   geom_tile(aes(x = lon, y = lat, fill = sst_7day)) +
-  scale_fill_gradientn(colours = jet(50), limits=c(0,30), breaks = c(0,5,10, 15, 20,25,30)) +
+  scale_fill_gradientn(colours = jet(30), #cubicl(30),
+                       limits=c(0,30), breaks = c(0,5,10, 15, 20,25,30)) +
   geom_contour(aes(x = lon, y = lat, z = sst_7day), linewidth = 0.5,
                breaks = c(0,5,10, 15,20,25,30), colour = "grey30") +
   guides(fill = guide_colorbar(barheight = 12, 
@@ -87,6 +88,9 @@ ggsave(plot = s, filename = paste0("figures/historical/SST_",datavar,"_7-day_rol
 ggsave(plot = s, filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
 
+# ggsave(plot = s, filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg_techreport.png"), 
+       # device = "png", scale = 1.6, height = 3.5, units = "in", dpi=250)
+
 # 7-day climatology anomaly ####
 curr_clim$diff_7day_deg[curr_clim$diff_7day_deg > 3] = 3
 curr_clim$diff_7day_deg[curr_clim$diff_7day_deg < -3] = -3
@@ -96,17 +100,18 @@ curr_clim %>%
   geom_tile(aes(x = lon, y = lat, fill = diff_7day_deg)) +
   scale_fill_gradientn(colours = gmt_jet, 
                        limits = c(-3,3), breaks = seq(-3,3,1)) +
-  # geom_contour(aes(x = lon, y = lat, z = perc90_above), size = 0.5,
-  #              breaks = c(0), colour = "green") +
-  geom_contour(aes(x = lon, y = lat, z = sd_above, colour = "1.29 SD"), 
-               linewidth = 0.5, breaks = 0) +
-  geom_contour(aes(x = lon, y = lat, z = sd_above2, colour = "2.33 SD"), 
+  # geom_contour(aes(x = lon, y = lat, z = perc90_above, colour = "90th perc"), linewidth = 0.7, breaks = c(0)) +
+  geom_contour(aes(x = lon, y = lat, z = sd_above, colour = "1.29 SD"), linewidth = 0.5, breaks = 0) +
+  geom_contour(aes(x = lon, y = lat, z = sd_above2, colour = "2.33 SD"),
                linewidth = 0.5, breaks = 0) +
   scale_colour_manual(name = NULL, guide = "legend", 
-                      values = c("1.29 SD" = "grey30",
-                                 "2.33 SD" = "black")) +
+                      values = c(#"90th perc" = "purple",
+                                 "1.29 SD" = "grey30", #"black",
+                                 "2.33 SD" = "black"
+                                 )
+                      ) +
   guides(fill = guide_colorbar(barheight = 12, 
-                               ticks.colour = "grey30", ticks.linewidth = 0.5, 
+                               ticks.colour = "grey40", ticks.linewidth = 0.5, 
                                frame.colour = "black", frame.linewidth = 0.3,
                                order = 1),
          colour = guide_legend(override.aes = list(linetype = c(1), shape = c(NA)))) +
@@ -124,10 +129,17 @@ curr_clim %>%
   scale_x_continuous(breaks = seq(min(lonlim),max(lonlim),5)) +
   geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5)
 
+# ggsave(filename = paste0("techreport/SST_",datavar,"_7-day_rollingavg_anom_",end,".png"), 
+       # device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
+
+
 ggsave(filename = paste0("figures/historical/SST_",datavar,"_7-day_rollingavg_anom_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
 ggsave(filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg_anom.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
+
+# ggsave(filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg_anom_techreport.png"), 
+       # device = "png", scale = 1.6, height = 3.5, units = "in", dpi=250)
 
 # Write out data as geotiff
 
