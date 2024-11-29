@@ -54,7 +54,7 @@ buoys = buoys %>% filter(wmo_id != "46134")
 # Nanakwa Shoal: This buoy is located in Douglas Channel, near Kitimat.
 
 # Marine regions of interest:
-# Bowie Seamount MPA
+# SGaan Kinghlas Bowie Seamount MPA
 SK_B <- data.frame(lat <- c(53.05211, 53.27247, 53.66367, 53.65500, 53.87131, 53.82211, 53.66736, 53.23311, 53.05211),
              lon <- c(-135.8405, -134.9987, -135.2847, -135.8963, -136.5064, -136.7925, -136.9510, -136.1667, -135.8405),
              NAME_E = "SGaan Kinghlas-Bowie Seamount MPA",
