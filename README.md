@@ -37,7 +37,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 ### MHW Conditions in the BC EEZ
 
-*The 2024 MHW spatial coverage of the BC EEZ (red) is below, with 2023 coverage shown in grey. The current percent area of the BC EEZ in MHW status at the surface is written in the upper left corner. The same information is shown below for three sub-regions of the BC EEZ: the Offshore Pacific Bioregion (OP, light blue), Northern Shelf Bioregion (NSB, dark blue) and Southern Shelf Bioregion (SSB, yellow). Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2023-2024.csv), and view similar plots for previous years [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md).*
+*The 2024 MHW spatial coverage of the BC EEZ (red) is below, with 2023 coverage shown in grey. The current percent area of the BC EEZ in MHW status at the surface is written in the upper left corner. The same information is shown below for three sub-regions of the BC EEZ: the Offshore Pacific Bioregion (OP, light blue), Northern Shelf Bioregion (NSB, dark blue) and Southern Shelf Bioregion (SSB, yellow). Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2024-2025.csv), and view similar plots for previous years [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md).*
 
 <details>
 <summary> 
