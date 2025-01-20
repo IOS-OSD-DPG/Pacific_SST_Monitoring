@@ -28,14 +28,14 @@ gmt_jet <- c("#000080", "#0000bf", "#0000FF", "#007fff", "#00FFFF", "#7fffff",
 # Plot rolling 7-day composite for datavar 
 # 7-day mean, sd, N
 curr7days <- readRDS(paste0("data/",datavar,"_SST7day_rollingavgbackup_current.rds")) %>% 
-  filter(lat < latlim[2], lat > latlim[1],
-         lon < lonlim[2], lon > lonlim[1])
+  filter(latitude < latlim[2], latitude > latlim[1],
+         longitude < lonlim[2], longitude > lonlim[1])
 # Climatological mean, sd, N
 clim7days <- readRDS(paste0("data/",datavar,"_SST7day_rollingavgbackup_climatology.rds")) %>% 
-  filter(lat < latlim[2], lat > latlim[1],
-         lon < lonlim[2], lon > lonlim[1])
+  filter(latitude < latlim[2], latitude > latlim[1],
+         longitude < lonlim[2], longitude > lonlim[1])
 
-curr_clim <- full_join(curr7days, clim7days, by = c("lon","lat"))
+curr_clim <- full_join(curr7days, clim7days, by = c("longitude","latitude"))
 curr_clim$diff_7day_deg <- curr_clim$sst_7day-curr_clim$sst_7day_clim
 # Calculate data outside 90th percentile / 1.3 times the SD
 curr_clim$sd_1.3_pos <- (curr_clim$sst_7day_clim+(curr_clim$sst_7day_climsd*1.29))
@@ -51,9 +51,9 @@ end = end[!is.na(end)]
 curr_clim %>% 
   filter(!is.na(sst_7day)) %>% 
   ggplot() +
-  geom_tile(aes(x = lon, y = lat, fill = sst_7day)) +
+  geom_tile(aes(x = longitude, y = latitude, fill = sst_7day)) +
   scale_fill_gradientn(colours = jet(50), limits=c(0,30), breaks = c(0,5,10, 15, 20,25,30)) +
-  geom_contour(aes(x = lon, y = lat, z = sst_7day), linewidth = 0.5,
+  geom_contour(aes(x = longitude, y = latitude, z = sst_7day), linewidth = 0.5,
                breaks = c(0,5,10, 15,20,25,30), colour = "grey30") +
   guides(fill = guide_colorbar(barheight = 12, 
                                ticks.colour = "grey30", ticks.linewidth = 0.5, 
@@ -96,12 +96,12 @@ curr_clim$diff_7day_deg[curr_clim$diff_7day_deg < -3] = -3
 curr_clim %>% 
   filter(!is.na(diff_7day_deg)) %>% 
   ggplot() +
-  geom_tile(aes(x = lon, y = lat, fill = diff_7day_deg)) +
+  geom_tile(aes(x = longitude, y = latitude, fill = diff_7day_deg)) +
   scale_fill_gradientn(colours = gmt_jet, 
                        limits = c(-3,3), breaks = seq(-3,3,1)) +
   # geom_contour(aes(x = lon, y = lat, z = perc90_above), size = 0.5,
   #              breaks = c(0), colour = "green") +
-  geom_contour(aes(x = lon, y = lat, z = sd_above, colour = "1.29 SD"), 
+  geom_contour(aes(x = longitude, y = latitude, z = sd_above, colour = "1.29 SD"), 
                linewidth = 0.5, breaks = 0) +
   scale_colour_manual(name = NULL, guide = "legend", 
                       values = c("1.29 SD" = "grey30")) +

@@ -40,7 +40,7 @@ curr7days <- readRDS(paste0("data/",datavar,"_SST7day_rollingavgbackup_current.r
 # Climatological mean, sd, N
 clim7days <- readRDS(paste0("data/",datavar,"_SST7day_rollingavgbackup_climatology.rds"))
 
-curr_clim <- full_join(curr7days, clim7days, by = c("lon","lat"))
+curr_clim <- full_join(curr7days, clim7days, by = c("longitude","latitude"))
 curr_clim$diff_7day_deg <- curr_clim$sst_7day-curr_clim$sst_7day_clim
 # Calculate data outside 90th percentile / 1.3 times the SD
 curr_clim$sd_1.3_pos <- (curr_clim$sst_7day_clim+(curr_clim$sst_7day_climsd*1.29))
@@ -58,14 +58,16 @@ end = end[!is.na(end)]
 s = curr_clim %>% 
   filter(!is.na(sst_7day)) %>% 
   ggplot() +
-  geom_tile(aes(x = lon, y = lat, fill = sst_7day)) +
+  geom_tile(aes(x = longitude, y = latitude, fill = sst_7day)) +
   scale_fill_gradientn(colours = jet(30), #cubicl(30),
                        limits=c(0,30), breaks = c(0,5,10, 15, 20,25,30)) +
-  geom_contour(aes(x = lon, y = lat, z = sst_7day), linewidth = 0.5,
+  geom_contour(aes(x = longitude, y = latitude, z = sst_7day), linewidth = 0.5,
                breaks = c(0,5,10, 15,20,25,30), colour = "grey30") +
   guides(fill = guide_colorbar(barheight = 12, 
-                               ticks.colour = "grey30", ticks.linewidth = 0.5, 
-                               frame.colour = "black", frame.linewidth = 0.3,
+                               ticks.colour = "grey30", 
+                               ticks.linewidth = 0.5, 
+                               frame.colour = "black", 
+                               frame.linewidth = 0.3,
                                order = 1),
          colour = guide_legend(override.aes = list(linetype = NA), order = 2)) +
   theme(legend.position = "right") +
@@ -97,12 +99,12 @@ curr_clim$diff_7day_deg[curr_clim$diff_7day_deg < -3] = -3
 curr_clim %>% 
   filter(!is.na(diff_7day_deg)) %>% 
   ggplot() +
-  geom_tile(aes(x = lon, y = lat, fill = diff_7day_deg)) +
+  geom_tile(aes(x = longitude, y = latitude, fill = diff_7day_deg)) +
   scale_fill_gradientn(colours = gmt_jet, 
                        limits = c(-3,3), breaks = seq(-3,3,1)) +
-  # geom_contour(aes(x = lon, y = lat, z = perc90_above, colour = "90th perc"), linewidth = 0.7, breaks = c(0)) +
-  geom_contour(aes(x = lon, y = lat, z = sd_above, colour = "1.29 SD"), linewidth = 0.5, breaks = 0) +
-  geom_contour(aes(x = lon, y = lat, z = sd_above2, colour = "2.33 SD"),
+  # geom_contour(aes(x = longitude, y = latitude, z = perc90_above, colour = "90th perc"), linewidth = 0.7, breaks = c(0)) +
+  geom_contour(aes(x = longitude, y = latitude, z = sd_above, colour = "1.29 SD"), linewidth = 0.5, breaks = 0) +
+  geom_contour(aes(x = longitude, y = latitude, z = sd_above2, colour = "2.33 SD"),
                linewidth = 0.5, breaks = 0) +
   scale_colour_manual(name = NULL, guide = "legend", 
                       values = c(#"90th perc" = "purple",
@@ -149,13 +151,13 @@ ggsave(filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg_anom.
 # Write out to geotiff ####
 if (WRITE_GEOTIFF == TRUE) {
   library(raster)
-  r = rasterFromXYZ(xyz = bind_cols(curr_clim$lon, curr_clim$lat, curr_clim$sst_7day), crs = 4326)
-  c = rasterFromXYZ(xyz = bind_cols(curr_clim$lon, curr_clim$lat, curr_clim$sst_7day_clim), crs = 4326)
-  sdmask_90 = rasterFromXYZ(xyz = bind_cols(curr_clim$lon, curr_clim$lat, curr_clim$sd_above), crs = 4326)
+  r = rasterFromXYZ(xyz = bind_cols(curr_clim$longitude, curr_clim$latitude, curr_clim$sst_7day), crs = 4326)
+  c = rasterFromXYZ(xyz = bind_cols(curr_clim$longitude, curr_clim$latitude, curr_clim$sst_7day_clim), crs = 4326)
+  sdmask_90 = rasterFromXYZ(xyz = bind_cols(curr_clim$longitude, curr_clim$latitude, curr_clim$sd_above), crs = 4326)
   sdmask_90[sdmask_90 >= 0] <- 0 
   sdmask_90[sdmask_90 < 0] <- 1
   
-  sdmask_98 = rasterFromXYZ(xyz = bind_cols(curr_clim$lon, curr_clim$lat, curr_clim$sd_above2), crs = 4326)
+  sdmask_98 = rasterFromXYZ(xyz = bind_cols(curr_clim$longitude, curr_clim$latitude, curr_clim$sd_above2), crs = 4326)
   sdmask_98[sdmask_98 >= 0] <- 0 
   sdmask_98[sdmask_98 < 0] <- 1
   
