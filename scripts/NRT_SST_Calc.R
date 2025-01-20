@@ -6,14 +6,12 @@ options(dplyr.summarise.inform = FALSE)
 library(ggplot2)
 library(lubridate)
 theme_set(theme_bw())
-library(lubridate)
-
 # Area
 latlim = c(30,61.5) #c(10,60)
 lonlim = c(-160,-120)
 
-MODISPROCESS = TRUE
-OIPROCESS = FALSE
+MODISPROCESS = FALSE
+OIPROCESS = TRUE
 MURPROCESS=FALSE
 
 # Time limit:
@@ -28,24 +26,33 @@ MURPROCESS=FALSE
 # end_date <- Sys.Date() - 2
 # Change so that it ends on nearest saturday
 d = Sys.Date()-2 # Give 2 day buffer so that OI data can update!
+# d = as.Date("2024-07-20")
 lastweek = seq.Date(d, d-6, -1)
 end_date = lastweek[which(wday(lastweek,label = T, abbr =T) == "Sat")]
 if (wday(end_date, label = T) != "Sat") {
   break
 }
 
-# # MANUALLY ENTERING END DATE
-# end_date = as.Date("2023-08-26")
+# # # MANUALLY ENTERING END DATE
+# end_date = as.Date("2024-12-21")
 
 # end_date <- Sys.Date() - 3
 start_date = end_date-6 #-6 for 7 days, -13 for 2 weeks 
 timelim = c(start_date, end_date)
-message(timelim)
+message(paste(timelim[1], timelim[2]))
 print(paste(yday(end_date)-yday(start_date)+1,"days"))
 
 # Adding MUR data!
 
 if (MURPROCESS == TRUE) {
+  
+  # climatology record (2003-2014): jplMURSST41clim
+      # climatology layer here
+  # anomaly sst (2002-present): jplMURSST41anom1day
+  # daily sst (2002-present): jplMURSST41
+      # masks: open_sea land open_lake open_sea_with_ice_in_the_grid open_lake_with_ice_in_the_grid (1, 2, 4, 8, 16)
+      # sea_ice_fraction (between 0 and 1)
+      # analysis_error: Estimated Error Standard Deviation of analysed_sst
   
   latlim = c(53.,55)
   lonlim = c(-133,-128)
@@ -106,6 +113,78 @@ if (MURPROCESS == TRUE) {
 }
 
 
+if (OIPROCESS == TRUE) {
+  # OI Data - Current and 30 year climatology (1990-2020) ####
+  # Datasets: 
+  # ncdcOisst21NrtAgg_LonPM180 (2020-present, 4-day lag)
+  # ncdcOisst21Agg_LonPM180 (1981-present, 17-day lag)
+  
+  # OI Rolling 7-day average ####
+  sstInfo = info("ncdcOisst21NrtAgg_LonPM180", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
+  sstdata <- griddap(sstInfo, latitude = latlim, longitude = lonlim, 
+                     time = as.character(timelim),
+                     fields = c("err","ice","sst"))$data
+  print(paste(length(unique(sstdata$time)),"DAYS FOUND"))
+  
+  sstdata_7day <- sstdata %>% 
+    filter(!is.na(sst),
+           is.na(ice)) %>%
+    group_by(latitude, longitude) %>% 
+    summarise(sst_7day = mean(sst, na.rm=T),
+              sst_7daysd = sd(sst, na.rm=T),
+              sst_7dayn = sum(!is.na(sst))) %>% 
+    # sumerror = sum(err, na.rm=T),
+    # avgerr = mean(err,na.rm=T)) %>%
+    ungroup() %>% 
+    mutate(start_date = start_date,
+           end_date = end_date)
+  
+  saveRDS(sstdata_7day, "data/OI_SST7day_rollingavgbackup_current.rds")
+  
+  # OI 7-day climatology ####
+  sstvar = info("ncdcOisst21Agg_LonPM180", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
+  yr7days <- list()
+  ct=1
+  for (i in 1991:2020) {
+    start = as.Date(paste0(i, yday(start_date)), format = "%Y%j")
+    end = start+6 # there will be a discrepancy of 1 day with leap years, however the span is still 7 days. hm. there is the lubridate::leap_year() function
+    
+    timesub = c(start, end)
+    print(timesub)
+    sstyr <- griddap(sstvar, latitude = latlim, longitude = lonlim, 
+                     time = as.character(timesub),
+                     fields = c("err","ice","sst"))$data
+    print(paste(length(unique(sstyr$time)), "days"))
+    roll7 = sstyr %>%
+      filter(!is.na(sst),
+             is.na(ice)) %>%
+      group_by(latitude, longitude) %>%
+      summarise(sst_7day = mean(sst, na.rm=T),
+                sst_7dayn = sum(!is.na(sst))) %>%
+      ungroup()
+    
+    yr7days[[ct]] <- roll7
+    ct=ct+1
+  }
+  yr7days <- do.call(rbind, yr7days)
+  
+  yr7days <- yr7days %>% 
+    filter(!is.na(sst_7day)) %>% 
+    group_by(latitude, longitude) %>% 
+    summarise(sst_7day_clim = mean(sst_7day, na.rm=T),
+              sst_7day_climsd = sd(sst_7day, na.rm=T),
+              sst_7day_climn = sum(sst_7dayn),
+              sst_7day_90 = quantile(sst_7day, probs = 0.9)) %>% 
+    ungroup()
+  saveRDS(object = yr7days, file = "data/OI_SST7day_rollingavgbackup_climatology.rds")
+  rm(roll7,sstyr)
+  
+  # Plot the plots!
+  system("Rscript ./scripts/NRT_SST_Plots_OI.R")
+  system("Rscript ./scripts/NRT_SST_Plots_OI_HG.R")
+  
+}
+
 if (MODISPROCESS == TRUE) {
   
   # MODISA ####
@@ -151,7 +230,8 @@ if (MODISPROCESS == TRUE) {
   ct=1
   for (i in 2003:2020) {
     start = as.Date(paste0(i, yday(start_date)), format = "%Y%j")
-    end = as.Date(paste0(i, yday(end_date)), format = "%Y%j")
+    end = start+6
+    # end = as.Date(paste0(i, yday(end_date)), format = "%Y%j")
     timesub = c(start, end)
     print(timesub)
     sstyr <- griddap(sstvar, latitude = latlim, longitude = lonlim, 
@@ -182,74 +262,12 @@ if (MODISPROCESS == TRUE) {
     ungroup()
   saveRDS(object = yr7days, file = "data/MODISA_SST7day_rollingavgbackup_climatology.rds")
   rm(roll7,sstyr, sstInfo)
+  
+  
+  system("Rscript ./scripts/NRT_SST_Plots_MODISA.R")
+  system("Rscript ./scripts/NRT_SST_Plots_MODISA_HG.R")
 }
 
-if (OIPROCESS == TRUE) {
-  # OI Data - Current and 30 year climatology (1990-2020) ####
-  # Datasets: 
-  # ncdcOisst21NrtAgg_LonPM180 (2020-present, 4-day lag)
-  # ncdcOisst21Agg_LonPM180 (1981-present, 17-day lag)
-  
-  # OI Rolling 7-day average ####
-  sstInfo = info("ncdcOisst21NrtAgg_LonPM180", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
-  sstdata <- griddap(sstInfo, latitude = latlim, longitude = lonlim, 
-                     time = timelim,
-                     fields = c("err","ice","sst"))$data
-  print(paste(length(unique(sstdata$time)),"DAYS FOUND"))
-  
-  sstdata_7day <- sstdata %>% 
-    filter(!is.na(sst),
-           is.na(ice)) %>%
-    group_by(lat, lon) %>% 
-    summarise(sst_7day = mean(sst, na.rm=T),
-              sst_7daysd = sd(sst, na.rm=T),
-              sst_7dayn = sum(!is.na(sst))) %>% 
-              # sumerror = sum(err, na.rm=T),
-              # avgerr = mean(err,na.rm=T)) %>%
-    ungroup() %>% 
-    mutate(start_date = start_date,
-           end_date = end_date)
-  
-  saveRDS(sstdata_7day, "data/OI_SST7day_rollingavgbackup_current.rds")
-  
-  # OI 7-day climatology ####
-  sstvar = info("ncdcOisst21Agg_LonPM180", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
-  yr7days <- list()
-  ct=1
-  for (i in 1991:2020) {
-    start = as.Date(paste0(i, yday(start_date)), format = "%Y%j")
-    end = as.Date(paste0(i, yday(end_date)), format = "%Y%j")
-    timesub = c(start, end)
-    print(timesub)
-    sstyr <- griddap(sstvar, latitude = latlim, longitude = lonlim, 
-                     time = timesub,
-                     fields = c("err","ice","sst"))$data
-    print(paste(length(unique(sstyr$time)), "days"))
-    roll7 = sstyr %>%
-      filter(!is.na(sst),
-             is.na(ice)) %>%
-      group_by(lat, lon) %>%
-      summarise(sst_7day = mean(sst, na.rm=T),
-                sst_7dayn = sum(!is.na(sst))) %>%
-      ungroup()
-    
-    yr7days[[ct]] <- roll7
-    ct=ct+1
-  }
-  yr7days <- do.call(rbind, yr7days)
-  
-  yr7days <- yr7days %>% 
-    filter(!is.na(sst_7day)) %>% 
-    group_by(lat, lon) %>% 
-    summarise(sst_7day_clim = mean(sst_7day, na.rm=T),
-              sst_7day_climsd = sd(sst_7day, na.rm=T),
-              sst_7day_climn = sum(sst_7dayn),
-              sst_7day_90 = quantile(sst_7day, probs = 0.9)) %>% 
-    ungroup()
-  saveRDS(object = yr7days, file = "data/OI_SST7day_rollingavgbackup_climatology.rds")
-  rm(roll7,sstyr)
-  
-}
 gc()
 # yr7days %>% ggplot(aes(x = lon, y = lat, fill = sst_7day_climsd)) +
 # geom_tile() + scale_fill_gradientn(colours = pals::jet(20), limits = c(0,3)) +
