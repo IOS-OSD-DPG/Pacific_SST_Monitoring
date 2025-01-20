@@ -49,7 +49,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 </details>
 
-<img src="./figures/current/MHW_EEZ_perc_coverage_2024_regions.png" width="750"/>
+<img src="./figures/current/MHW_EEZ_perc_coverage_2025_regions.png" width="750"/>
 
 </details>
 
