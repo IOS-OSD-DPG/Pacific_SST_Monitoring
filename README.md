@@ -45,6 +45,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 ###### Click here to view region map
 </summary>
 
+*The Northeast Pacific (NEP) region boundary is shown in the maps above: 30-65 N and 120-160 W.*
 <img src="./figures/BC_MHW_OIRegions.png" width="400"/> 
 
 </details>
