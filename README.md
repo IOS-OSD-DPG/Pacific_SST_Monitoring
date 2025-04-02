@@ -6,7 +6,7 @@
 
 ##### Andrea Hilborn, Charles Hannah and Lu Guan
 
-This page updates weekly with maps and figures from a number of different data sources for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of British Columbia (BC).
+This page updates weekly with maps and figures from a number of different data sources for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of British Columbia (BC). A summary of the methods and further details can be found [here](https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41282437.pdf).
 
 **These figures are provisional and correctness is not guaranteed. :)**
 These figures update on **Monday** using the most recent week of data. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown in the figures can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (GeoTIFF and .rds format).
@@ -229,6 +229,7 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 * Galbraith, P.S., Larouche, P. & Caverhill, C. (2021): A Sea-Surface
 Temperature Homogenization Blend for the Northwest Atlantic, Canadian Journal of Remote
 Sensing, [doi:10.1080/07038992.2021.1924645](https://www.tandfonline.com/doi/full/10.1080/07038992.2021.1924645)
+* Hilborn, A., Guan, L., Wan, D. & Peña, A. (2025): A Sea Surface Temperature product for monitoring Marine Heatwaves in the Northeast Pacific. Can. Tech. Rep. Hydrogr. Ocean Sci. 394: v + 23 p. [https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41282437.pdf](https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41282437.pdf)
 * Hobday, A.J., Alexander, L., Perkins, S., Smale, D.A., Straub, S., Oliver, E., Benthuysen, J.A., Burrows, M., Donat, M.G., Feng, M., Holbrook, N.J., Moore, P.J., Scannell, H., Sen Gupta, A. & Wernberg, T. (2016): A hierarchical approach to defining marine heatwaves. Progress in Oceanography. 141, 227-238, [doi:10.1016/j.pocean.2015.12.014](https://doi.org/10.1016/j.pocean.2015.12.014)
 * Hobday, A.J., Oliver, E.C.J., Sen Gupta, A., Benthuysen, J.A., Burrows, M.T., Donat, M.G., Holbrook, N.J., Moore, P.J., Thomsen, M.S., Wernberg, T., & Smale, D.A. (2018): Categorizing and naming marine heatwaves. Oceanography 31(2):162–173, [doi:10.5670/oceanog.2018.205](https://doi.org/10.5670/oceanog.2018.205)
 * Kellogg, J., Rosenstock, N., Page, S., Hourston, R., Devred, E. and Hannah, C. (2021): Quality Control of Weather/Wave Buoy Temperature Data Provided by Environment and Climate Change Canada. CIOOS Pacific. [https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736/resource/12786acf-a634-4a5b-9867-2b39c6c11aae)
