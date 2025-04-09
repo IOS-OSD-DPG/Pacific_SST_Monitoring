@@ -57,3 +57,37 @@ buoys = buoys %>% filter(wmo_id != "46134")
 
 # see 00_subregions_west.R
 
+# Gwaii Haanas east region
+GH_E <- list(lat <- c(52.2162, 52.20965, 52.21085, 52.25362, 52.41095, 52.52033, 52.70583, 52.74924, 52.77666, 52.79119, 52.79177, 52.8008, 52.8101, 52.83451, 52.44675, 52.20787, 52.21357, 52.2162),
+             lon <- c(-131.0063, -131.0601, -131.1929, -131.3064, -131.479, -131.6887, -131.8995, -131.9151, -131.8785, -131.7582, -131.7073, -131.6727, -131.6568, -131.3376, -131.0901, -130.8181, -131.0033, -131.0063),
+             NAME_E = "East Gwaii Haanas National Marine Conservation Area Reserve",
+             STN_ID = "GH_E")
+names(GH_E) <- c("lat", "lon","NAME_E","STN_ID")
+
+# Gwaii Haanas west region
+GH_W <- list(lat <- c(52.70583, 52.52033, 52.41095, 52.25362, 52.12421, 51.9998, 52.67643, 52.73469, 52.7352, 52.74139, 52.69898, 52.70583),
+             lon <- c(-131.8995, -131.6887, -131.479, -131.3064, -131.2634, -131.3015, -132.2226, -132.1081, -132.1077, -132.089, -131.9676, -131.8995),
+             NAME_E = "West Gwaii Haanas National Marine Conservation Area Reserve",
+             STN_ID = "GH_W")
+names(GH_W) <- c("lat", "lon","NAME_E","STN_ID")
+
+# Gwaii Haanas south region
+# NEW:
+GH_S <- list(lat <- c(51.9998, 52.12421, 52.25362, 52.21085, 52.20965, 52.2162, 52.21357, 52.20787, 51.79925, 51.9998),
+             lon <- c(-131.3015, -131.2634, -131.3064, -131.1929, -131.0601, -131.0063, -131.0033, -130.8181, -130.8934, -131.3015),
+             NAME_E = "South Gwaii Haanas National Marine Conservation Area Reserve",
+             STN_ID = "GH_S")
+names(GH_S) <- c("lat", "lon","NAME_E","STN_ID")
+
+# Gwaii Haanas Offshore box
+GH_O <- list(lat <- c(52.18750, 51.60417, 51.60417, 52.18750, 52.18750),
+             lon <- c(-132.1042, -131.3958, -132.2708, -132.9792, -132.1042),
+             NAME_E = "Offshore Gwaii Haanas National Marine Conservation Area Reserve",
+             STN_ID = "GH_O")
+names(GH_O) <- c("lat", "lon","NAME_E","STN_ID")
+
+GH_E = as.data.frame(GH_E)
+GH_W = as.data.frame(GH_W)
+GH_S = as.data.frame(GH_S)
+GH_O = as.data.frame(GH_O)
+
