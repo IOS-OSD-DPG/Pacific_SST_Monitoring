@@ -6,7 +6,7 @@
 
 ##### Andrea Hilborn, Charles Hannah and Lu Guan
 
-This page updates weekly with maps and figures from a number of different data sources for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of British Columbia (BC). A summary of the methods and further details can be found [here](https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41282437.pdf).
+This page updates weekly with maps and figures from a number of different data sources for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of British Columbia (BC). A summary of the methods and further details can be found [here](https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41282437.pdf). The OISST and buoy data can also now be found in the [`pacea` R package](https://github.com/pbs-assess/pacea).
 
 **These figures are provisional and correctness is not guaranteed. :)**
 These figures update on **Monday** using the most recent week of data. A limited number of prior images [can be found here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/figures). Data shown in the figures can be downloaded [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/data) (GeoTIFF and .rds format).
