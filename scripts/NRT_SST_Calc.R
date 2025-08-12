@@ -1,5 +1,6 @@
 # Near real-time plots of SST and anomalies using CoastWatch Data
 rm(list=ls())
+gc()
 library(rerddap)
 library(dplyr)
 options(dplyr.summarise.inform = FALSE)
@@ -12,7 +13,7 @@ lonlim = c(-160,-120)
 
 MODISPROCESS = FALSE
 OIPROCESS = TRUE
-MURPROCESS=FALSE
+MURPROCESS = FALSE
 
 # Time limit:
 # all_args <- commandArgs(trailingOnly=TRUE)
