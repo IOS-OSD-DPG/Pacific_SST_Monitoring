@@ -104,13 +104,18 @@ curr_clim %>%
   geom_contour(aes(x = longitude, y = latitude, z = sd_above, colour = "1.29 SD"), 
                linewidth = 0.5, breaks = 0) +
   scale_colour_manual(name = NULL, guide = "legend", 
-                      values = c("1.29 SD" = "grey30")) +
+                      values = c("1.29 SD" = "grey30",
+                                 "2.33 SD" = "black")) +
   guides(fill = guide_colorbar(barheight = 12, 
-                               ticks.colour = "grey30", ticks.linewidth = 0.5, 
+                               ticks.colour = "grey40", ticks.linewidth = 0.5, 
                                frame.colour = "black", frame.linewidth = 0.3,
                                order = 1),
-         colour = guide_legend(override.aes = list(linetype = c(1), shape = c(NA)))) +
-  theme(legend.position = "right", panel.background = element_rect(fill = "grey80")) +
+         colour = guide_legend(order = 2,
+                               override.aes = list(linetype = c(1), 
+                                                   shape = c(NA)),
+                               theme = theme(legend.key = element_rect(fill = NA, color = NULL)))) +
+  theme(legend.position = "right", 
+        panel.background = element_rect(fill = "grey80")) +
   geom_point(data = line_p, aes(x = lon, y = lat), size = 1.2, shape = 15) +
   geom_text(data = line_p, aes(x = lon, y = lat, label = stn), nudge_y = -0.5, size = 3) +
   labs(fill = expression("Anomaly " ( degree*C)),
