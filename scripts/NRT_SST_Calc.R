@@ -7,7 +7,8 @@ options(dplyr.summarise.inform = FALSE)
 library(ggplot2)
 library(lubridate)
 theme_set(theme_bw())
-# Area
+
+# region to download
 latlim = c(30,61.5) #c(10,60)
 lonlim = c(-160,-120)
 
@@ -24,26 +25,21 @@ MURPROCESS = FALSE
 #   break
 # }
 
-# end_date <- Sys.Date() - 2
 # Change so that it ends on nearest saturday
 d = Sys.Date()-2 # Give 2 day buffer so that OI data can update!
-# d = as.Date("2024-07-20")
+# d = as.Date("2025-07-28")
 lastweek = seq.Date(d, d-6, -1)
 end_date = lastweek[which(wday(lastweek,label = T, abbr =T) == "Sat")]
 if (wday(end_date, label = T) != "Sat") {
   break
 }
 
-# # # MANUALLY ENTERING END DATE
-# end_date = as.Date("2024-12-21")
-
-# end_date <- Sys.Date() - 3
 start_date = end_date-6 #-6 for 7 days, -13 for 2 weeks 
 timelim = c(start_date, end_date)
 message(paste(timelim[1], timelim[2]))
 print(paste(yday(end_date)-yday(start_date)+1,"days"))
 
-# Adding MUR data!
+# Adding MUR data (incomplete)
 
 if (MURPROCESS == TRUE) {
   
@@ -66,40 +62,39 @@ if (MURPROCESS == TRUE) {
   sstdata = griddap(sstInfo, latitude = latlim, longitude = lonlim, 
                     time = c(as.Date("2023-01-01"), as.Date("2023-08-22-31")),
                     fields = c("analysed_sst","mask","sea_ice_fraction","analysis_error"))$data
-  # (2002-06-01T09:00:00Z, 2023-08-22T09:00:00Z)
   # 2003-2014 climatology: https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41clim.graph
   # Daily temp data https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41.graph
   
   sstdata = sstdata %>% filter(mask == 1) # Remove land (value of 2)
   print(paste(length(unique(sstdata$time)),"DAYS FOUND"))
   sstdata$time = as.POSIXct(sstdata$time)
-  sstdata %>% 
-    group_by(lon, lat) %>% 
-    summarise(sst = mean(analysed_sst,na.rm=T)) %>% ungroup() %>% 
-    # filter(dayOfYear == 225) %>% 
-    ggplot(aes(x = lon, y = lat)) +
-    # geom_tile(aes(fill = sstAnom)) +
-    geom_tile(aes(fill = sst)) +
-    scale_fill_gradientn(colours = pals::jet(20), limits = c(0,30)) +
-    coord_quickmap(xlim = c(-132,-129.5),
-                   ylim = c(53.25,54.5))
+  # Quick plot
+  # sstdata %>% 
+  #   group_by(lon, lat) %>% 
+  #   summarise(sst = mean(analysed_sst,na.rm=T)) %>% ungroup() %>% 
+  #   # filter(dayOfYear == 225) %>% 
+  #   ggplot(aes(x = lon, y = lat)) +
+  #   # geom_tile(aes(fill = sstAnom)) +
+  #   geom_tile(aes(fill = sst)) +
+  #   scale_fill_gradientn(colours = pals::jet(20), limits = c(0,30)) +
+  #   coord_quickmap(xlim = c(-132,-129.5),
+  #                  ylim = c(53.25,54.5))
   
-  # Make a north hecate plot
-  lo=-131.14
-  la=53.57
-  lonlim=c(lo-0.02,lo+0.02)
-  latlim = c(la-0.02,la+0.02)
-  
-  sstdata = sstdata %>% filter(lat > la-0.02,
-                     lat < la+0.02,
-                     lon < lo+0.02,
-                     lon > lo-0.02)
+  # # Make a north hecate plot
+  # lo=-131.14
+  # la=53.57
+  # lonlim=c(lo-0.02,lo+0.02)
+  # latlim = c(la-0.02,la+0.02)
+  # 
+  # sstdata = sstdata %>% filter(lat > la-0.02,
+  #                    lat < la+0.02,
+  #                    lon < lo+0.02,
+  #                    lon > lo-0.02)
   
   sstdata = griddap(sstInfo, latitude = latlim, longitude = lonlim, 
                     time = c(as.Date("2023-01-01"), as.Date("2023-08-22-31")),
                     fields = c("analysed_sst","mask","sea_ice_fraction","analysis_error"))$data
   
-  str(sstdata)
   sst = sstdata
   sst %>% group_by(time) %>% summarise(mean_sst = mean(analysed_sst,na.rm=T)) %>% 
     ungroup() %>% 
@@ -117,8 +112,8 @@ if (MURPROCESS == TRUE) {
 if (OIPROCESS == TRUE) {
   # OI Data - Current and 30 year climatology (1990-2020) ####
   # Datasets: 
-  # ncdcOisst21NrtAgg_LonPM180 (2020-present, 4-day lag)
-  # ncdcOisst21Agg_LonPM180 (1981-present, 17-day lag)
+  # ncdcOisst21NrtAgg_LonPM180 (2020-present, ~4-day lag)
+  # ncdcOisst21Agg_LonPM180 (1981-present, ~17-day lag)
   
   # OI Rolling 7-day average ####
   sstInfo = info("ncdcOisst21NrtAgg_LonPM180", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
@@ -148,7 +143,7 @@ if (OIPROCESS == TRUE) {
   ct=1
   for (i in 1991:2020) {
     start = as.Date(paste0(i, yday(start_date)), format = "%Y%j")
-    end = start+6 # there will be a discrepancy of 1 day with leap years, however the span is still 7 days. hm. there is the lubridate::leap_year() function
+    end = start+6 # there will be a discrepancy of 1 day with leap years, however the span is still 7 days. there is the lubridate::leap_year() function
     
     timesub = c(start, end)
     print(timesub)
@@ -187,7 +182,7 @@ if (OIPROCESS == TRUE) {
 }
 
 if (MODISPROCESS == TRUE) {
-  
+  print("This section is now deprecated")
   # MODISA ####
   # Datasets: 
   # MODIS-Aqua SST masked, 2003-present,approx 4km resolution
@@ -270,7 +265,8 @@ if (MODISPROCESS == TRUE) {
 }
 
 gc()
+
+# Quickplot
 # yr7days %>% ggplot(aes(x = lon, y = lat, fill = sst_7day_climsd)) +
 # geom_tile() + scale_fill_gradientn(colours = pals::jet(20), limits = c(0,3)) +
   # ylab("test")
-beepr::beep()
