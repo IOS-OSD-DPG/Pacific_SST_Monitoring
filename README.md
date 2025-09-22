@@ -70,8 +70,6 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 :arrow_right: To view 2021–2024 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
-*Note: C46036 South NOMAD is currently returning unrealistic temperature values so is not shown*
-
 <p align="center">
   <img src="./figures/current/Daily_mean_SSTP_C46184.png" width="43%"/>
 &nbsp; &nbsp; &nbsp; &nbsp;
@@ -95,6 +93,11 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
   <img src="./figures/current/Daily_mean_SSTP_C46204.png" width="43%"/>
 </p>
 <p align="center">
+  <img src="./figures/current/Daily_mean_SSTP_C46004.png" width="43%"/>
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="./figures/current/Daily_mean_SSTP_C46207.png" width="43%"/>
+</p>
+<p align="center">
   <img src="./figures/current/Daily_mean_SSTP_C46132.png" width="43%"/>
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img src="./figures/current/Daily_mean_SSTP_C46206.png" width="43%"/>
@@ -104,6 +107,10 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img src="./figures/current/Daily_mean_SSTP_C46146.png" width="43%"/>
 </p>
+<p align="center">
+  <img src="./figures/current/Daily_mean_SSTP_C46036.png" width="43%"/>
+</p>
+  
 
 <details>
 <summary> 
