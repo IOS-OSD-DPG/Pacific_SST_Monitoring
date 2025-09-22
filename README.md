@@ -66,7 +66,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 * **Data access:** CIOOS Pacific ERDDAP [DFO_MEDS_BUOYS](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC_MSC_BUOYS](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html) records. The DFO_MEDS_BUOYS record has a detailed quality control layer outlined in [Kellogg et al., 2021](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736) which **ends in December, 2023**
 * **Climatology period:** 1991–2020
 
-*The white lines outlined in black are daily mean observations from 2025. The daily mean SST from 2024 at each buoy are shown as coloured lines, plotted over the buoy climatological mean (grey line) with 10th and 90th percentiles (grey shading).  The climatology spans 1991–2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There are no climatologies for `C46303 South Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
+*The white lines outlined in black are daily mean observations from 2025. The buoy climatological mean (grey line) is plotted with 10th and 90th percentiles (grey shading).  The climatology spans 1991–2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There are no climatologies for `C46303 South Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
 
 :arrow_right: To view 2021–2024 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
