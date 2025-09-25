@@ -69,7 +69,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 *The point indicates the mean of the SST by month, with the bars indicating the monthly standard deviation bounds. The years are indicated on the left, with warmest indicated with a rank of "1."*
 
-<img src="./figures/current/Ranked_SST_Anom_months.png" width="750"/> 
+<img src="./figures/current/Ranked_SST_months.png" width="750"/> 
 
 #### Mean monthly SST Anomaly:
 
