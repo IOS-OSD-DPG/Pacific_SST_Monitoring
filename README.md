@@ -54,10 +54,36 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 </details>
 
-<details open>
- 
+
+### How does 2025 SST in the Northeast Pacific compare to other years?
+
+<img src="./figures/current/NEP_progress.png" width="700"/>
+
+<details>
 <summary> 
- 
+
+###### Click here to view rankings of the warmest years
+</summary>
+
+#### Mean monthly SST:
+
+*The point indicates the mean of the SST by month, with the bars indicating the monthly standard deviation bounds. The years are indicated on the left, with warmest indicated with a rank of "1."*
+
+<img src="./figures/current/Ranked_SST_Anom_months.png" width="750"/> 
+
+#### Mean monthly SST Anomaly:
+
+*The point indicates the mean SST **anomaly** by month, with the bars indicating the monthly mean anomaly standard deviation bounds. The years are indicated on the left, with highest mean anomaly indicated with a rank of "1."*
+
+<img src="./figures/current/Ranked_SST_Anom_months.png" width="750"/> 
+
+</details>
+
+
+<details open>
+
+<summary> 
+
 ## ECCC Buoy data
 
 </summary>
@@ -156,32 +182,6 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
   
 </details>
 
-</details>
-
-<details>
-<summary> 
-
-## MODIS-Aqua SST
-
-</summary>
-
-**Note: this section is deprecated due to the deterioration of MODIS-Aqua. It will be replaced at a later date.**
-
-* **Dataset:** NASA MODIS-Aqua SST
-* **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022NRTMasked.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022SQMasked.graph) records with low-quality pixels removed
-* **Spatial resolution:** 0.04166&deg; (~4 km)
-* **Climatology period:** 2003–2020
-
-### Latest week of data
-
-<img src="./figures/current/SST_MODISA_7-day_rollingavg.png" width="400" /> <img src="./figures/current/SST_MODISA_7-day_rollingavg_anom.png" width="405" /> 
-
-#### Number of observations in current week
-
-*Note that pixels with fewer than 2 observations from the week are masked out.*
- 
-<img src="./figures/current/SST_MODISA_7-day_rollingavg_n.png" width="400" /> 
- 
 </details>
 
 <details>
