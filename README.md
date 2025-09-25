@@ -59,12 +59,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 <img src="./figures/current/NEP_progress.png" width="700"/>
 
-<details>
-<summary> 
-
-###### Click here to view rankings of the warmest years
-</summary>
-
+### Rankings of 10 warmest years
 #### Mean monthly SST:
 
 *The point indicates the mean of the SST by month, with the bars indicating the monthly standard deviation bounds. The years are indicated on the left, with warmest indicated with a rank of "1."*
@@ -76,9 +71,6 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 *The point indicates the mean SST **anomaly** by month, with the bars indicating the monthly mean anomaly standard deviation bounds. The years are indicated on the left, with highest mean anomaly indicated with a rank of "1."*
 
 <img src="./figures/current/Ranked_SST_Anom_months.png" width="750"/> 
-
-</details>
-
 
 <details open>
 
