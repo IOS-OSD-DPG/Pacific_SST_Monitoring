@@ -189,6 +189,7 @@ C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 ### Hydrology, drought and climate
 * [BC River Forecast Centre Map of 7-Day Average Streamflow](http://bcrfc.env.gov.bc.ca/lowflow/map_7dayflow.html)
 * [BC Drought Information Portal](https://droughtportal.gov.bc.ca/)
+* [BC Snow Conditions Summary](https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/river-forecast-centre/snow-survey-water-supply-bulletin/snow-conditions-commentary)
 
 ### SST and Marine Heatwaves
 * [California Current Marine Heatwave Tracker](https://www.integratedecosystemassessment.noaa.gov/regions/california-current/california-current-marine-heatwave-tracker-blobtracker)
