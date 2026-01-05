@@ -170,7 +170,7 @@ Stn ID | Start Date | Longitude| Latitude |
 C46303 South Georgia Strait* |  2019-10-01 |   -123.4300 |  49.02500 
 C46304 Entrance English Bay* | 2019-10-01 |-123.3570 | 49.30167
 
-* *Note that these buoys do not have MEDS webpages*
+* *Note that these buoys do not have MEDS webpages with data*
   
 </details>
 
