@@ -89,44 +89,44 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 :arrow_right: To view 2021–2024 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
 
 <p align="center">
-  <img src="./figures/current/Daily_mean_SSTP_C46184.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46184.png" width="43%"/>
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="./figures/current/Daily_mean_SSTP_C46205.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46205.png" width="43%"/>
 </p>
 <p align="center">
-  <img src="./figures/current/Daily_mean_SSTP_C46145.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46145.png" width="43%"/>
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="./figures/current/Daily_mean_SSTP_C46181.png" width="43%"/>
-</p>
-
-<p align="center">
-  <img src="./figures/current/Daily_mean_SSTP_C46183.png" width="43%"/>
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="./figures/current/Daily_mean_SSTP_C46147.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46181.png" width="43%"/>
 </p>
 
 <p align="center">
-  <img src="./figures/current/Daily_mean_SSTP_C46185.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46183.png" width="43%"/>
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="./figures/current/Daily_mean_SSTP_C46204.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46147.png" width="43%"/>
+</p>
+
+<p align="center">
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46185.png" width="43%"/>
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46204.png" width="43%"/>
 </p>
 <p align="center">
-  <img src="./figures/current/Daily_mean_SSTP_C46004.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46004.png" width="43%"/>
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="./figures/current/Daily_mean_SSTP_C46207.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46207.png" width="43%"/>
 </p>
 <p align="center">
-  <img src="./figures/current/Daily_mean_SSTP_C46132.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46132.png" width="43%"/>
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="./figures/current/Daily_mean_SSTP_C46206.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46206.png" width="43%"/>
 </p>
 <p align="center">
-  <img src="./figures/current/Daily_mean_SSTP_C46131.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46131.png" width="43%"/>
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="./figures/current/Daily_mean_SSTP_C46146.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46146.png" width="43%"/>
 </p>
 <p align="center">
-  <img src="./figures/current/Daily_mean_SSTP_C46036.png" width="43%"/>
+  <img src="./figures/current/Daily_mean_SSTP_2026_C46036.png" width="43%"/>
 </p>
   
 
