@@ -2,8 +2,6 @@
 
 # Sea Surface Temperature in the Northeast Pacific
 
-### Experimental maps and data of current conditions
-
 ##### Andrea Hilborn, Charles Hannah and Lu Guan
 
 This page updates weekly with maps and figures from a number of different data sources for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of British Columbia (BC). A summary of the methods and further details can be found [here](https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41282437.pdf). The OISST and buoy data can also now be found in the [`pacea` R package](https://github.com/pbs-assess/pacea).
