@@ -158,7 +158,6 @@ if (WRITE_GEOTIFF == TRUE) {
   sdmask_98[sdmask_98 >= 0] <- 0 
   sdmask_98[sdmask_98 < 0] <- 1
   
-  terra::writeRaster()
   writeRaster(x = r, filename = "./data/OI_SST7day_current.tif", NAflag = NaN, overwrite = T)
   writeRaster(x = c, filename = "./data/OI_SST7day_climatology_current.tif", NAflag = NaN, overwrite = T)
   writeRaster(x = sdmask_90, filename = "./data/OI_SST7day_mask_SD1.29_current.tif", NAflag = NaN, overwrite = T)
