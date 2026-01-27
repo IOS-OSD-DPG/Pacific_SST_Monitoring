@@ -2,6 +2,7 @@ library(dplyr)
 library(ggplot2)
 library(mapdata)
 library(sf)
+library(terra)
 library(pals)
 theme_set(theme_bw())
 reg = map_data("world2Hires")
@@ -77,8 +78,8 @@ s = curr_clim %>%
   # geom_point(data = buoys, aes(x = lon, y = lat), size = 1.2, shape = 3, colour = "white") +
   coord_sf(xlim = lonlim, ylim = latlim, expand = F) +
   labs(fill = expression("SST " ( degree*C)),
-       title = paste(start, "to", end,"Mean Day SST"),
-       subtitle = paste(datavar,"NRT Sea Surface Temperature"),
+       title = paste(start, "to", end),
+       subtitle = paste(datavar,"NRT SST weekly mean"),
        caption = datasource) + xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim), max(lonlim),5)) + 
@@ -89,7 +90,8 @@ ggsave(plot = s, filename = paste0("figures/historical/SST_",datavar,"_7-day_rol
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
 ggsave(plot = s, filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
-
+ggsave(plot = s, filename = paste0("../Pacific_SST_Monitoring_Site/figures/SST_",datavar,"_7-day_rollingavg.png"), 
+       device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
 # ggsave(plot = s, filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg_techreport.png"), 
        # device = "png", scale = 1.6, height = 3.5, units = "in", dpi=250)
 
@@ -108,7 +110,7 @@ curr_clim %>%
                linewidth = 0.5, breaks = 0) +
   scale_colour_manual(name = NULL, guide = "legend", 
                       values = c(#"90th perc" = "purple",
-                                 "1.29 SD" = "grey30", #"black",
+                                 "1.29 SD" = "grey50", #"black",
                                  "2.33 SD" = "black"
                                  )
                       ) +
@@ -127,47 +129,39 @@ curr_clim %>%
   geom_sf(data = eez, linetype = "dotted") +
   coord_sf(xlim = lonlim, ylim = latlim, expand = F) +
   labs(fill = expression("Anomaly " ( degree*C)),
-       title = paste(start, "to", end,"SST Anomaly"),
-       subtitle = paste(datavar,"NRT Sea Surface Temperature Anomaly"),
+       title = paste(start, "to", end),
+       subtitle = paste(datavar,"NRT SST weekly mean anomaly"),
        caption = datasource) +
   xlab(NULL) + ylab(NULL) +
   scale_y_continuous(breaks = seq(min(latlim), max(latlim), 5)) +
   scale_x_continuous(breaks = seq(min(lonlim),max(lonlim),5)) +
-  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5)
-
+  geom_polygon(data = reg, aes(x = long, y = lat, group = group), fill = "grey70", colour = "grey40", linewidth = 0.5) -> sa
 # ggsave(filename = paste0("techreport/SST_",datavar,"_7-day_rollingavg_anom_",end,".png"), 
        # device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-
-
-ggsave(filename = paste0("figures/historical/SST_",datavar,"_7-day_rollingavg_anom_",end,".png"), 
+ggsave(plot = sa, filename = paste0("figures/historical/SST_",datavar,"_7-day_rollingavg_anom_",end,".png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in")
-ggsave(filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg_anom.png"), 
+ggsave(plot = sa, filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg_anom.png"), 
        device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
-
-# ggsave(filename = paste0("figures/current/SST_",datavar,"_7-day_rollingavg_anom_techreport.png"), 
-       # device = "png", scale = 1.6, height = 3.5, units = "in", dpi=250)
-
-# Write out data as geotiff
-
-
-
+ggsave(plot = sa, filename = paste0("../Pacific_SST_Monitoring_Site/figures/SST_",datavar,"_7-day_rollingavg_anom.png"), 
+       device = "png", scale = 1.9, height = 3.5, width = 3.5, units = "in", dpi=250)
 
 # Write out to geotiff ####
 if (WRITE_GEOTIFF == TRUE) {
-  library(raster)
-  r = rasterFromXYZ(xyz = bind_cols(curr_clim$longitude, curr_clim$latitude, curr_clim$sst_7day), crs = 4326)
-  c = rasterFromXYZ(xyz = bind_cols(curr_clim$longitude, curr_clim$latitude, curr_clim$sst_7day_clim), crs = 4326)
-  sdmask_90 = rasterFromXYZ(xyz = bind_cols(curr_clim$longitude, curr_clim$latitude, curr_clim$sd_above), crs = 4326)
+  library(terra)
+  r = rast(x = bind_cols(curr_clim$longitude, curr_clim$latitude, curr_clim$sst_7day), type = "xyz", crs = "epsg:4326")
+  c = rast(x = bind_cols(curr_clim$longitude, curr_clim$latitude, curr_clim$sst_7day_clim), type = "xyz", crs = "epsg:4326")
+  sdmask_90 = rast(x = bind_cols(curr_clim$longitude, curr_clim$latitude, curr_clim$sd_above), type = "xyz", crs = "epsg:4326")
   sdmask_90[sdmask_90 >= 0] <- 0 
   sdmask_90[sdmask_90 < 0] <- 1
   
-  sdmask_98 = rasterFromXYZ(xyz = bind_cols(curr_clim$longitude, curr_clim$latitude, curr_clim$sd_above2), crs = 4326)
+  sdmask_98 = rast(x = bind_cols(curr_clim$longitude, curr_clim$latitude, curr_clim$sd_above2), type = "xyz", crs = "epsg:4326")
   sdmask_98[sdmask_98 >= 0] <- 0 
   sdmask_98[sdmask_98 < 0] <- 1
   
-  writeRaster(x = r, filename = "./data/OI_SST7day_current.tif", format="GTiff", NAflag = NaN, overwrite = T)
-  writeRaster(x = c, filename = "./data/OI_SST7day_climatology_current.tif", format="GTiff", NAflag = NaN, overwrite = T)
-  writeRaster(x = sdmask_90, filename = "./data/OI_SST7day_mask_SD1.29_current.tif", format="GTiff", NAflag = NaN, overwrite = T)
-  writeRaster(x = sdmask_98, filename = "./data/OI_SST7day_mask_SD2.33_current.tif", format="GTiff", NAflag = NaN, overwrite = T)
+  terra::writeRaster()
+  writeRaster(x = r, filename = "./data/OI_SST7day_current.tif", NAflag = NaN, overwrite = T)
+  writeRaster(x = c, filename = "./data/OI_SST7day_climatology_current.tif", NAflag = NaN, overwrite = T)
+  writeRaster(x = sdmask_90, filename = "./data/OI_SST7day_mask_SD1.29_current.tif", NAflag = NaN, overwrite = T)
+  writeRaster(x = sdmask_98, filename = "./data/OI_SST7day_mask_SD2.33_current.tif", NAflag = NaN, overwrite = T)
 }
 
