@@ -27,7 +27,7 @@ MURPROCESS = FALSE
 
 # Change so that it ends on nearest saturday
 d = Sys.Date()-2 # Give 2 day buffer so that OI data can update!
-# d = as.Date("2025-07-28")
+# d = as.Date("2026-01-17")
 lastweek = seq.Date(d, d-6, -1)
 end_date = lastweek[which(wday(lastweek,label = T, abbr =T) == "Sat")]
 if (wday(end_date, label = T) != "Sat") {
@@ -36,6 +36,11 @@ if (wday(end_date, label = T) != "Sat") {
 
 start_date = end_date-6 #-6 for 7 days, -13 for 2 weeks 
 timelim = c(start_date, end_date)
+if (length(unique(year(timelim)))>1) {
+  print("straddling 2 years!")
+  break
+}
+
 message(paste(timelim[1], timelim[2]))
 print(paste(yday(end_date)-yday(start_date)+1,"days"))
 
@@ -117,6 +122,8 @@ if (OIPROCESS == TRUE) {
   
   # OI Rolling 7-day average ####
   sstInfo = info("ncdcOisst21NrtAgg_LonPM180", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
+  # For filling in older records:
+  # sstInfo = info("ncdcOisst21Agg_LonPM180", url = "https://coastwatch.pfeg.noaa.gov/erddap/")
   sstdata <- griddap(sstInfo, latitude = latlim, longitude = lonlim, 
                      time = as.character(timelim),
                      fields = c("err","ice","sst"))$data
