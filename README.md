@@ -35,7 +35,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 ### MHW Conditions in the NEP and BC EEZ
 
-*The 2025 MHW spatial coverage of the NEP and BC EEZ (red) is below, with 2024 coverage shown in grey. The current percent area of the BC EEZ in MHW status at the surface is written in the upper left corner. The same information is shown below for the NEP (black), and three sub-regions of the BC EEZ: the Offshore Pacific Bioregion (OP, light blue), Northern Shelf Bioregion (NSB, dark blue) and Southern Shelf Bioregion (SSB, yellow). Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2024-2025.csv), and view similar plots for previous years [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md).*
+*The 2026 MHW spatial coverage of the NEP and BC EEZ (red) is below, with 2025 coverage shown in grey. The current percent area of the BC EEZ in MHW status at the surface is written in the upper left corner. The same information is shown below for the NEP (black), and three sub-regions of the BC EEZ: the Offshore Pacific Bioregion (OP, light blue), Northern Shelf Bioregion (NSB, dark blue) and Southern Shelf Bioregion (SSB, yellow). Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2025-2026.csv), and view similar plots for previous years [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md).*
 
 <details>
 <summary> 
@@ -48,12 +48,12 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 
 </details>
 
-<img src="./figures/current/MHW_EEZ_perc_coverage_2025_regions.png" width="750"/>
+<img src="./figures/current/MHW_EEZ_perc_coverage_2026_regions.png" width="750"/>
 
 </details>
 
 
-### How does 2025 SST in the Northeast Pacific compare to other years?
+### How does 2026 SST in the Northeast Pacific compare to other years?
 
 <img src="./figures/current/NEP_progress.png" width="700"/>
 
@@ -82,7 +82,7 @@ Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/scien
 * **Data access:** CIOOS Pacific ERDDAP [DFO_MEDS_BUOYS](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC_MSC_BUOYS](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html) records. The DFO_MEDS_BUOYS record has a detailed quality control layer outlined in [Kellogg et al., 2021](https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736) which **ends in December, 2023**
 * **Climatology period:** 1991–2020
 
-*The white lines outlined in black are daily mean observations from 2025. The buoy climatological mean (grey line) is plotted with 10th and 90th percentiles (grey shading).  The climatology spans 1991–2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There are no climatologies for `C46303 South Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
+*The white lines outlined in black are daily mean observations from 2026. The buoy climatological mean (grey line) is plotted with 10th and 90th percentiles (grey shading).  The climatology spans 1991–2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`. There are no climatologies for `C46303 South Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
 **C46147 South Moresby and C46183 North Hecate Strait are currently offline.**
 
 :arrow_right: To view 2021–2024 data click [here](https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Buoy_temperature.md). :arrow_left:
