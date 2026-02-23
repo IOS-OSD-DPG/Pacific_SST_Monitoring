@@ -4,6 +4,9 @@
 
 ##### Andrea Hilborn, Charles Hannah and Lu Guan
 
+> [!TIP]  
+> We have a new SST monitoring page! [`Check it out here`](https://ios-osd-dpg.github.io/Pacific_SST_Monitoring_Site)
+
 This page updates weekly with maps and figures from a number of different data sources for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of British Columbia (BC). A summary of the methods and further details can be found [here](https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41282437.pdf). The OISST and buoy data can also now be found in the [`pacea` R package](https://github.com/pbs-assess/pacea).
 
 **These figures are provisional and correctness is not guaranteed. :)**
